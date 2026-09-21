@@ -395,23 +395,48 @@
             position: relative;
         }
 
+        .recommendation-card.featured {
+            border: 1px solid var(--gold);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+            background: rgba(15, 32, 61, 0.9);
+        }
+
+        .recommendation-category {
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
         .recommendation-quote {
             font-style: italic;
             color: var(--text-light);
-            font-size: 0.95rem;
+            font-size: 0.98rem;
             line-height: 1.6;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
         }
 
         .recommendation-author {
             color: var(--gold-light);
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 0.92rem;
+            margin-bottom: 2px;
         }
 
         .recommendation-role {
             color: var(--text-muted);
-            font-size: 0.8rem;
+            font-size: 0.82rem;
+            margin-bottom: 8px;
+        }
+
+        .recommendation-source {
+            font-size: 0.72rem;
+            color: rgba(203, 213, 225, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         /* RECOGNITION & MEDIA SECTION */
@@ -757,7 +782,7 @@
                             </div>
                             <p>Per ogni candidato che consiglio, evidenzio esperienza rilevante, competenze trasferibili, motivazioni ed eventuali aspetti da approfondire.</p>
                             <div class="featured-box" style="margin: 15px 0 0 0; padding: 12px 18px;">
-                                <p style="font-size:0.95rem;">Ti presento persone che ritengo valga la pena incontrare.</p>
+                                <p style="font-size:0.95rem;">Le presento persone che ritengo valga la pena incontrare.</p>
                             </div>
                         </div>
                         <div class="process-step">
@@ -774,41 +799,54 @@
                     <h2>Il Suo team è occupato. I candidati non dovrebbero risentirne.</h2>
                     <p>Quando seguo una ricerca, rimango in contatto con i candidati: spiego l'opportunità, gestisco le aspettative e li tengo aggiornati.</p>
                     <p>In questo modo il Suo team può concentrarsi sulle proprie priorità, mentre i candidati ricevono una comunicazione chiara e professionale.</p>
-                    <p>Il mio approccio è stato riconosciuto anche attraverso raccomandazioni ricevute su LinkedIn.</p>
 
                     <div class="featured-box" style="margin-top:20px;">
-                        <p>Una buona Candidate Experience contribuisce a tutelare il tuo employer brand.</p>
+                        <p>Una buona Candidate Experience contribuisce a tutelare il Suo employer brand.</p>
                     </div>
                 </section>
 
 
-                <!-- 4. DICONO DI ME (RECOMMENDATIONS - IT) -->
+                <!-- 4. DICONO DI ME (VERIFIED TESTIMONIALS - IT) -->
                 <section id="recommendations-it" class="section-block">
                     <h2>Dicono di me</h2>
-                    <p>Alcune raccomandazioni ricevute da manager e professionisti con cui ho collaborato:</p>
+                    <p>Alcune raccomandazioni ricevute da manager e professionisti con cui ho collaborato.</p>
 
-                    <div class="recommendation-card">
-                        <p class="recommendation-quote">"Marco was instrumental in supporting my recruitment process. He demonstrated high professionalism, transparent communication, and genuine care for the candidate's journey."</p>
+                    <!-- FEATURED RECOMMENDATION: DIMITRIOS -->
+                    <div class="recommendation-card featured">
+                        <span class="recommendation-category">CLIENT PARTNERSHIP</span>
+                        <p class="recommendation-quote">“Marco stands out for his excellent communication and collaboration skills. Over the years, he has consistently demonstrated the ability to align stakeholders, manage expectations, and keep complex recruitment processes running smoothly.”</p>
                         <p class="recommendation-author">Dimitrios Panagiotopoulos</p>
-                        <p class="recommendation-role">Risk & Compliance Executive</p>
+                        <p class="recommendation-role">Business Continuity Manager at MITA (Malta Information Technology Agency)</p>
+                        <span class="recommendation-source">LinkedIn Recommendation</span>
                     </div>
 
-                    <div class="recommendation-card">
-                        <p class="recommendation-quote">"A truly dedicated recruitment professional who takes the time to understand both the technical requirements and the personal expectations of candidates."</p>
-                        <p class="recommendation-author">Kirsten Abela</p>
-                        <p class="recommendation-role">Human Resources Leader</p>
-                    </div>
+                    <div class="grid-3" style="margin-top:20px;">
+                        <!-- KIRSTEN -->
+                        <div class="recommendation-card">
+                            <span class="recommendation-category">RICERCA DIRETTA</span>
+                            <p class="recommendation-quote">“A few months ago Marco approached me regarding a position that could interest me, and while I was not actively seeking to change jobs, I am very thankful I gave him a chance and now working at a new workplace.”</p>
+                            <p class="recommendation-author">Kirsten Abela</p>
+                            <p class="recommendation-role">Financial Risk Manager at Izola Bank plc</p>
+                            <span class="recommendation-source">LinkedIn Recommendation</span>
+                        </div>
 
-                    <div class="recommendation-card">
-                        <p class="recommendation-quote">"Marco approaches search assignments with impressive rigor, clear communication, and an efficient approach to identifying top market talent."</p>
-                        <p class="recommendation-author">Somdeep Sen</p>
-                        <p class="recommendation-role">Academic & Strategic Advisor</p>
-                    </div>
+                        <!-- SOMDEEP -->
+                        <div class="recommendation-card">
+                            <span class="recommendation-category">PROCESSO DI SELEZIONE</span>
+                            <p class="recommendation-quote">“Marco has been instrumental in helping me secure the opportunity with the largest bank in Valletta. In fact, he was the one who reached out to me regarding the opening and managed the entire hiring process with the highest level of professionalism.”</p>
+                            <p class="recommendation-author">Somdeep Sen</p>
+                            <p class="recommendation-role">Senior Manager, Model Validation Unit</p>
+                            <span class="recommendation-source">LinkedIn Recommendation</span>
+                        </div>
 
-                    <div class="recommendation-card">
-                        <p class="recommendation-quote">"Working with Marco was a seamless experience. His structured follow-up and professional integrity make him an exceptional search partner."</p>
-                        <p class="recommendation-author">Mario Cassar</p>
-                        <p class="recommendation-role">Senior Operations Executive</p>
+                        <!-- PIERLUIGI -->
+                        <div class="recommendation-card">
+                            <span class="recommendation-category">PROFESSIONALITÀ</span>
+                            <p class="recommendation-quote">“I can highly recommend Marco for his professionalism, reliability, and consistently high standards. I have had the pleasure of knowing him as part of a placement, during which he demonstrated clear communication, constant availability, and unwavering support.”</p>
+                            <p class="recommendation-author">Pierluigi De Lillo</p>
+                            <p class="recommendation-role">Head of Legal at Stellantis Insurance</p>
+                            <span class="recommendation-source">LinkedIn Recommendation</span>
+                        </div>
                     </div>
 
                     <div style="text-align:center; margin-top:25px;">
@@ -836,14 +874,14 @@
                                 <h4>NESSUN RETAINER PER AVVIARE LA RICERCA</h4>
                             </div>
                             <div class="commercial-card">
-                                <h4>NESSUN COMPENSO SE NON ASSUMI UN CANDIDATO CHE TI HO PRESENTATO</h4>
+                                <h4>NESSUN COMPENSO SE NON ASSUME UN CANDIDATO CHE LE HO PRESENTATO</h4>
                             </div>
                         </div>
 
                         <p style="margin-top:15px; font-size:0.95rem;">Il compenso è dovuto solo in caso di assunzione di un candidato da me presentato, con pagamento entro 30 giorni di calendario dalla data di inizio, secondo i termini concordati.</p>
 
                         <div class="featured-box" style="margin:15px 0 0 0;">
-                            <p>Tu paghi solo se assumi un candidato che ti ho presentato.</p>
+                            <p>Il compenso è dovuto solo se assume un candidato che Le ho presentato.</p>
                         </div>
                     </div>
 
@@ -927,7 +965,7 @@
                             <form action="https://formspree.io/f/mknpqqle" method="POST">
                                 <div class="form-group">
                                     <label>Nome e cognome</label>
-                                    <input type="text" name="name" required placeholder="Il tuo nome">
+                                    <input type="text" name="name" required placeholder="Il Suo nome">
                                 </div>
                                 <div class="form-group">
                                     <label>Azienda</label>
@@ -947,7 +985,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Messaggio</label>
-                                    <textarea name="message" rows="4" required placeholder="Descrivi brevemente la figura ricercata..."></textarea>
+                                    <textarea name="message" rows="4" required placeholder="Descriva brevemente la figura ricercata..."></textarea>
                                 </div>
                                 <button type="submit" class="btn-submit btn-form-submit">PARLIAMO DELLA SUA RICERCA</button>
                             </form>
@@ -1066,7 +1104,6 @@
                     <h2>Your team is busy. Your candidates shouldn't feel it.</h2>
                     <p>When I manage a search, I stay in contact with candidates, explain the opportunity, manage expectations and keep them updated.</p>
                     <p>Your team can focus on its priorities while candidates receive clear, professional communication.</p>
-                    <p>My approach has also been recognised through recommendations from candidates on LinkedIn.</p>
 
                     <div class="featured-box" style="margin-top:20px;">
                         <p>A professional Candidate Experience helps protect your employer brand.</p>
@@ -1074,33 +1111,47 @@
                 </section>
 
 
-                <!-- 4. WHAT PEOPLE SAY (RECOMMENDATIONS - EN) -->
+                <!-- 4. WHAT PEOPLE SAY (VERIFIED TESTIMONIALS - EN) -->
                 <section id="recommendations" class="section-block">
                     <h2>What People Say</h2>
-                    <p>Direct recommendations from executives, leaders, and professionals I have collaborated with:</p>
+                    <p>Selected recommendations from managers and professionals I've worked with.</p>
 
-                    <div class="recommendation-card">
-                        <p class="recommendation-quote">"Marco was instrumental in supporting my recruitment process. He demonstrated high professionalism, transparent communication, and genuine care for the candidate's journey."</p>
+                    <!-- FEATURED RECOMMENDATION: DIMITRIOS -->
+                    <div class="recommendation-card featured">
+                        <span class="recommendation-category">CLIENT PARTNERSHIP</span>
+                        <p class="recommendation-quote">“Marco stands out for his excellent communication and collaboration skills. Over the years, he has consistently demonstrated the ability to align stakeholders, manage expectations, and keep complex recruitment processes running smoothly.”</p>
                         <p class="recommendation-author">Dimitrios Panagiotopoulos</p>
-                        <p class="recommendation-role">Risk & Compliance Executive</p>
+                        <p class="recommendation-role">Business Continuity Manager at MITA (Malta Information Technology Agency)</p>
+                        <span class="recommendation-source">LinkedIn Recommendation</span>
                     </div>
 
-                    <div class="recommendation-card">
-                        <p class="recommendation-quote">"A truly dedicated recruitment professional who takes the time to understand both the technical requirements and the personal expectations of candidates."</p>
-                        <p class="recommendation-author">Kirsten Abela</p>
-                        <p class="recommendation-role">Human Resources Leader</p>
-                    </div>
+                    <div class="grid-3" style="margin-top:20px;">
+                        <!-- KIRSTEN -->
+                        <div class="recommendation-card">
+                            <span class="recommendation-category">DIRECT SEARCH</span>
+                            <p class="recommendation-quote">“A few months ago Marco approached me regarding a position that could interest me, and while I was not actively seeking to change jobs, I am very thankful I gave him a chance and now working at a new workplace.”</p>
+                            <p class="recommendation-author">Kirsten Abela</p>
+                            <p class="recommendation-role">Financial Risk Manager at Izola Bank plc</p>
+                            <span class="recommendation-source">LinkedIn Recommendation</span>
+                        </div>
 
-                    <div class="recommendation-card">
-                        <p class="recommendation-quote">"Marco approaches search assignments with impressive rigor, clear communication, and an efficient approach to identifying top market talent."</p>
-                        <p class="recommendation-author">Somdeep Sen</p>
-                        <p class="recommendation-role">Academic & Strategic Advisor</p>
-                    </div>
+                        <!-- SOMDEEP -->
+                        <div class="recommendation-card">
+                            <span class="recommendation-category">RECRUITMENT PROCESS</span>
+                            <p class="recommendation-quote">“Marco has been instrumental in helping me secure the opportunity with the largest bank in Valletta. In fact, he was the one who reached out to me regarding the opening and managed the entire hiring process with the highest level of professionalism.”</p>
+                            <p class="recommendation-author">Somdeep Sen</p>
+                            <p class="recommendation-role">Senior Manager, Model Validation Unit</p>
+                            <span class="recommendation-source">LinkedIn Recommendation</span>
+                        </div>
 
-                    <div class="recommendation-card">
-                        <p class="recommendation-quote">"Working with Marco was a seamless experience. His structured follow-up and professional integrity make him an exceptional search partner."</p>
-                        <p class="recommendation-author">Mario Cassar</p>
-                        <p class="recommendation-role">Senior Operations Executive</p>
+                        <!-- PIERLUIGI -->
+                        <div class="recommendation-card">
+                            <span class="recommendation-category">PROFESSIONALISM</span>
+                            <p class="recommendation-quote">“I can highly recommend Marco for his professionalism, reliability, and consistently high standards. I have had the pleasure of knowing him as part of a placement, during which he demonstrated clear communication, constant availability, and unwavering support.”</p>
+                            <p class="recommendation-author">Pierluigi De Lillo</p>
+                            <p class="recommendation-role">Head of Legal at Stellantis Insurance</p>
+                            <span class="recommendation-source">LinkedIn Recommendation</span>
+                        </div>
                     </div>
 
                     <div style="text-align:center; margin-top:25px;">

@@ -3,481 +3,1140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marco Lia | Executive Search & Talent Acquisition Advisory</title>
     
-    <!-- Open Graph Meta Tags for Link Preview -->
-    <meta property="og:title" content="MLS | Marco Lia Executive Search Advisory">
-    <meta property="og:description" content="Senior Talent Acquisition Consultant & Executive Search Specialist | Corporate Sourcing & Key Roles | Milan">
+    <!-- Primary Meta Tags & SEO -->
+    <title>Marco Lia Search | Executive Search & Direct Sourcing | Milan & Italy</title>
+    <meta name="description" content="Independent Executive Search & Direct Search consultant in Milan, Italy. Headhunting, talent mapping, and candidate assessment with a success-based model.">
+    <meta name="keywords" content="Executive Search Milan, Executive Search Italy, Independent Recruiter Milan, Headhunter Milan, Direct Search Italy, Recruitment Consultant Milan">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Marco Lia Search | Executive Search Advisory">
+    <meta property="og:description" content="Independent Executive Search & Direct Search in Milan. Success-based model, no upfront fees.">
     <meta property="og:image" content="https://marcolia323.github.io/MarcoLiaSearch/Business_Card.jpeg">
     <meta property="og:url" content="https://marcolia323.github.io/MarcoLiaSearch/">
     <meta property="og:type" content="website">
 
-    <!-- Twitter / Messaging Large Preview Card -->
+    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MLS | Marco Lia Executive Search Advisory">
-    <meta name="twitter:description" content="Senior Talent Acquisition Consultant & Executive Search Specialist | Corporate Sourcing & Key Roles | Milan">
+    <meta name="twitter:title" content="Marco Lia Search | Executive Search Advisory">
+    <meta name="twitter:description" content="Independent Executive Search & Direct Search in Milan. Success-based model, no upfront fees.">
     <meta name="twitter:image" content="https://marcolia323.github.io/MarcoLiaSearch/Business_Card.jpeg">
 
-    <!-- Geometric Sans-Serif Font: Montserrat -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --bg-blue: #071326;
             --bg-purple: #1f0f33;
             --card-bg: rgba(11, 25, 48, 0.85);
+            --card-bg-alt: rgba(20, 15, 38, 0.75);
             --gold: #d4af37;
             --gold-light: #f3e5ab;
             --text-light: #ffffff;
             --text-muted: #cbd5e1;
-            --border-color: rgba(212, 175, 55, 0.38);
+            --border-color: rgba(212, 175, 55, 0.35);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--bg-blue);
             background-image: 
-                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='200' viewBox='0 0 120 200'%3E%3Cpath d='M0 0 L60 100 L120 0 M0 200 L60 100 L120 200 M60 0 L60 200 M0 100 L120 100' stroke='%23d4af37' stroke-width='0.8' stroke-opacity='0.25' fill='none'/%3E%3Cpath d='M30 0 L60 50 L90 0 M30 200 L60 150 L90 200' stroke='%23f3e5ab' stroke-width='0.5' stroke-opacity='0.2' fill='none'/%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='200' viewBox='0 0 120 200'%3E%3Cpath d='M0 0 L60 100 L120 0 M0 200 L60 100 L120 200 M60 0 L60 200 M0 100 L120 100' stroke='%23d4af37' stroke-width='0.8' stroke-opacity='0.22' fill='none'/%3E%3Cpath d='M30 0 L60 50 L90 0 M30 200 L60 150 L90 200' stroke='%23f3e5ab' stroke-width='0.5' stroke-opacity='0.18' fill='none'/%3E%3C/svg%3E"),
                 radial-gradient(circle at 50% 20%, #231238 0%, #071326 100%);
             background-size: 120px 200px, 100% 100%;
             background-attachment: fixed;
             color: var(--text-light);
-            margin: 0;
-            padding: 0;
             line-height: 1.7;
             -webkit-font-smoothing: antialiased;
         }
 
-        .lang-nav {
-            display: flex;
-            justify-content: flex-end;
-            padding: 15px 30px;
-            background: rgba(7, 19, 38, 0.92);
-            border-bottom: 1px solid var(--border-color);
+        /* HEADER & NAVIGATION */
+        header {
             position: sticky;
             top: 0;
-            backdrop-filter: blur(10px);
+            background: rgba(7, 19, 38, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            backdrop-filter: blur(12px);
             z-index: 1000;
         }
 
-        .lang-btn {
-            background: rgba(212, 175, 55, 0.05);
-            border: 1px solid var(--gold);
-            color: var(--gold-light);
-            padding: 8px 16px;
-            margin-left: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: 700;
-            font-size: 0.85rem;
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
             display: flex;
             align-items: center;
-            gap: 6px;
-            transition: all 0.3s ease;
-            font-family: 'Montserrat', sans-serif;
+            justify-content: space-between;
+            padding: 12px 24px;
         }
 
-        .lang-btn.active, .lang-btn:hover {
+        .brand-logo {
+            font-size: 1.15rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: var(--gold);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-logo span {
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 0.85rem;
+            border-left: 1px solid var(--border-color);
+            padding-left: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--gold-light);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn-cta-nav {
+            background: linear-gradient(180deg, #f3e5ab 0%, #d4af37 100%);
+            color: #071326;
+            padding: 8px 18px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn-cta-nav:hover {
+            background: #f5d76e;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .lang-toggle {
+            display: flex;
+            border: 1px solid var(--gold);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: var(--gold-light);
+            padding: 5px 10px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        .lang-btn.active {
             background: var(--gold);
             color: #071326;
-            box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
         }
 
+        /* MOBILE MENU TOGGLE */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--gold);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* CONTAINER & LAYOUT */
         .container {
-            max-width: 920px;
+            max-width: 1050px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 50px 20px;
         }
 
-        .header {
-            text-align: center;
-            padding-bottom: 40px;
-            border-bottom: 1px solid var(--border-color);
+        .section-block {
+            margin-bottom: 70px;
+            scroll-margin-top: 100px;
         }
 
-        .profile-img {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--gold);
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
-            margin-bottom: 20px;
-            background-color: var(--bg-purple);
-        }
-
-        h1 {
-            background: linear-gradient(180deg, #fff7d6 0%, #d4af37 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 2.8rem;
-            margin: 0 0 10px 0;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-        }
-
-        .tagline-bar {
-            color: var(--gold-light);
-            font-size: 0.95rem;
-            font-weight: 600;
-            max-width: 800px;
-            margin: 12px auto 0;
-            line-height: 1.6;
-            letter-spacing: 0.2px;
-            opacity: 0.95;
-        }
-
-        .section {
-            margin-top: 40px;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 35px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-            backdrop-filter: blur(8px);
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 15px;
         }
 
         h2 {
+            font-size: 1.8rem;
             color: var(--gold);
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 12px;
-            margin-top: 0;
-            font-size: 1.45rem;
-            font-weight: 700;
+            margin-bottom: 25px;
             letter-spacing: -0.3px;
         }
 
         p {
             color: var(--text-muted);
-            font-size: 0.98rem;
+            font-size: 1rem;
             font-weight: 400;
             margin-bottom: 18px;
-            text-align: justify;
         }
 
-        .quote-box {
-            background: rgba(212, 175, 55, 0.08);
-            border-left: 4px solid var(--gold);
-            padding: 18px 22px;
-            margin: 20px 0;
-            font-style: italic;
-            color: #f8fafc;
-            border-radius: 0 6px 6px 0;
-            font-weight: 400;
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            margin-bottom: 40px;
         }
 
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            background: linear-gradient(180deg, #fff7d6 0%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero .hero-sub {
+            font-size: 1.2rem;
+            color: var(--gold-light);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .hero .hero-desc {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            font-size: 1.02rem;
+        }
+
+        .hero .hero-services {
+            font-size: 0.9rem;
+            color: var(--gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .hero .hero-commercial {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        /* CARDS & GRIDS */
         .grid-2 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 20px;
         }
 
-        .form-group {
-            margin-bottom: 18px;
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        label {
-            display: block;
-            margin-bottom: 6px;
+        .card h3 {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+
+        .card-link {
+            display: inline-block;
+            margin-top: 15px;
             color: var(--gold-light);
-            font-size: 0.88rem;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card-link:hover {
+            color: var(--gold);
+            text-decoration: underline;
+        }
+
+        /* FEATURED HIGHLIGHT BOX */
+        .featured-box {
+            background: rgba(212, 175, 55, 0.08);
+            border-left: 4px solid var(--gold);
+            padding: 22px 28px;
+            margin: 25px 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .featured-box p {
+            margin: 0;
+            font-size: 1.05rem;
+            color: #ffffff;
             font-weight: 600;
         }
 
-        input, textarea, select {
-            width: 100%;
-            padding: 12px;
-            background: rgba(7, 19, 38, 0.85);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            color: #ffffff;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.95rem;
-            box-sizing: border-box;
+        /* PROCESS STEPS */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
         }
 
-        input:focus, textarea:focus, select:focus {
+        .process-step {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 25px;
+            position: relative;
+        }
+
+        .step-number {
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        /* ABOUT SECTION SPECIFICS */
+        .about-wrapper {
+            display: flex;
+            gap: 35px;
+            align-items: flex-start;
+        }
+
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            flex-shrink: 0;
+        }
+
+        /* FORM STYLING */
+        .form-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--gold-light);
+            font-size: 0.88rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            background: rgba(7, 19, 38, 0.9);
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .form-group input:focus, 
+        .form-group textarea:focus {
             outline: none;
             border-color: var(--gold);
             box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
         }
 
-        .submit-btn {
+        .btn-submit {
             background: linear-gradient(180deg, #f3e5ab 0%, #d4af37 100%);
             color: #071326;
             border: none;
             padding: 14px 28px;
             font-weight: 700;
-            border-radius: 6px;
+            font-size: 1rem;
+            border-radius: 5px;
             cursor: pointer;
             width: 100%;
-            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             transition: all 0.3s ease;
-            font-family: 'Montserrat', sans-serif;
         }
 
-        .submit-btn:hover {
+        .btn-submit:hover {
             background: #f5d76e;
             box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
         }
 
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 25px;
-        }
-
-        .social-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(212, 175, 55, 0.1);
-            border: 1px solid var(--gold);
-            color: var(--gold-light);
-            padding: 10px 22px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .social-btn:hover {
-            background: var(--gold);
-            color: #071326;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 30px;
-            color: var(--text-muted);
-            font-size: 0.85rem;
+        /* FOOTER */
+        footer {
             border-top: 1px solid var(--border-color);
-            margin-top: 50px;
-            font-weight: 400;
+            padding: 40px 20px;
+            text-align: center;
+            background: rgba(7, 19, 38, 0.95);
+            margin-top: 60px;
         }
 
-        .lang-content {
+        footer p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 5px;
+        }
+
+        .lang-block {
             display: none;
         }
 
-        .lang-content.active {
+        .lang-block.active {
             display: block;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 900px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(7, 19, 38, 0.98);
+                border-bottom: 1px solid var(--border-color);
+                padding: 20px;
+            }
+
+            nav.mobile-open {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .nav-actions {
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 15px;
+                padding-top: 15px;
+                border-top: 1px solid var(--border-color);
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .about-wrapper {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="lang-nav">
-        <button class="lang-btn active" onclick="switchLang('en')">🇬🇧 ENG</button>
-        <button class="lang-btn" onclick="switchLang('it')">🇮🇹 ITA</button>
-    </div>
+    <!-- NAVIGATION HEADER -->
+    <header>
+        <div class="nav-container">
+            <a href="#home" class="brand-logo">
+                MARCO LIA SEARCH
+                <span>Milan</span>
+            </a>
 
-    <div class="container">
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">☰</button>
 
-        <!-- ENGLISH CONTENT (UK ENGLISH) -->
-        <div id="lang-en" class="lang-content active">
-            
-            <div class="header">
-                <img src="profile.jpg" alt="Marco Lia" class="profile-img" onerror="this.style.display='none'">
-                
-                <h1>Marco Lia</h1>
-                
-                <div class="tagline-bar">
-                    Senior Talent Acquisition Consultant | Executive Search | Corporate Sourcing & Key Roles | Milano
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#services" class="nav-link" data-en="Search Services" data-it="Servizi di Ricerca">Search Services</a></li>
+                    <li><a href="#how-i-work" class="nav-link" data-en="How I Work" data-it="Come Opero">How I Work</a></li>
+                    <li><a href="#candidate-experience" class="nav-link" data-en="Candidate Experience" data-it="Candidate Experience">Candidate Experience</a></li>
+                    <li><a href="#search-intelligence" class="nav-link" data-en="Search Intelligence" data-it="Search Intelligence">Search Intelligence</a></li>
+                    <li><a href="#about" class="nav-link" data-en="About Marco" data-it="Profilo">About Marco</a></li>
+                    <li><a href="#commercial-model" class="nav-link" data-en="Commercial Model" data-it="Modello Commerciale">Commercial Model</a></li>
+                    <li><a href="#contact" class="nav-link" data-en="Contact" data-it="Contatti">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="lang-toggle">
+                    <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+                    <button class="lang-btn" onclick="switchLang('it')">IT</button>
+                </div>
+                <a href="#contact" class="btn-cta-nav" data-en="Discuss a Search" data-it="Discuti una Ricerca">Discuss a Search</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- ==================== ENGLISH CONTENT ==================== -->
+        <div id="lang-en" class="lang-block active">
+
+            <!-- HOME PAGE HERO -->
+            <section id="home" class="section-block">
+                <div class="hero">
+                    <h1>Finding the people who aren't applying.</h1>
+                    <p class="hero-sub">Independent Executive Search & Recruitment support for companies hiring professionals, managers and leadership talent.</p>
+                    <p class="hero-desc">I help companies identify, approach and assess relevant professionals through direct search and headhunting — including candidates who are not actively applying.</p>
+                    <p class="hero-services">Executive Search | Direct Search | Headhunting | Talent Mapping & Assessment</p>
+                    <p class="hero-commercial">No upfront recruitment fee. Success-based model.</p>
+                    <a href="#contact" class="btn-cta-nav" style="display:inline-block; padding:12px 28px; font-size:0.9rem;">Discuss a Search</a>
                 </div>
 
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/marco-lia-liam0001/" target="_blank" class="social-btn">
-                        Connect on LinkedIn
-                    </a>
-                </div>
-            </div>
-
-            <!-- WHY SECTION -->
-            <div class="section">
-                <h2>Why I Am Doing This: A Personal Commitment to Quality</h2>
-                <p>I relocated to Italy in February 2026. By September 2026, I had submitted over 350 tailored applications across standard channels. The vast majority went unanswered, many triggered automated rejections, but most disappointing was the total silence from recruitment agencies—the very professionals who are meant to guide and engage with talent.</p>
-                <div class="quote-box">
-                    "I established my independent executive search practice to deliver the exact standard I wished to experience myself: genuine respect, transparent communication, and an unwavering focus on individual human value."
-                </div>
-                <p>Because of this experience, I refuse to operate a volume-driven recruitment agency. I purposefully partner with a limited portfolio of clients to guarantee quality over numbers. Every candidate I engage with receives clear updates, structured feedback, and professional dignity. Candidates are human professionals, not entries in a database.</p>
-            </div>
-
-            <!-- PROFESSIONAL BACKGROUND -->
-            <div class="section">
-                <h2>Professional Background & Sector Expertise</h2>
-                
-                <p>My career is defined by a strong foundation in commercial banking followed by extensive experience in international recruitment and executive search. Prior to focusing fully on talent acquisition, I spent 14 years within the banking and financial services sector, progressing through operational, lending supervision, and relationship management roles across major European banking networks. This background provided me with firsthand understanding of regulated corporate environments, credit risk assessment, and complex organizational structures.</p>
-
-                <p>Transitioning into recruitment in late 2021, I spent several years with a specialized financial recruitment agency, advancing to Senior Consultant. During this period, I managed end-to-end executive search assignments for international corporate clients, specialising in Financial Services, Corporate Finance, B2B Sales, and selected Technology functions. My search methodology combines direct headhunting and proactive talent mapping with a consultative evaluation of transferable skills and career progression.</p>
-
-                <p>Today, I operate independently in Milan as a Talent Acquisition Consultant. I support local market requirements—focusing primarily on B2B Sales leadership—while continuing an ongoing freelance executive search partnership for international financial search assignments. Grounded in both practical recruitment and data analytics, my approach ensures efficient sourcing, clear stakeholder alignment, and a high-quality candidate experience from initial outreach through to onboarding.</p>
-            </div>
-
-            <!-- BUSINESS TERMS & PHILOSOPHY -->
-            <div class="section">
-                <h2>Engagement Model & Terms</h2>
+                <!-- HOMEPAGE 4 SUMMARY CARDS -->
                 <div class="grid-2">
-                    <div>
-                        <h3 style="color:var(--gold); font-size:1.1rem; font-weight:700;">Zero Upfront Fees</h3>
-                        <p>Services are provided strictly on a success-fee model. You incur no initial costs or setup fees; payment is due only upon successful placement following candidate onboarding.</p>
+                    <div class="card">
+                        <div>
+                            <h3>Why Work With Me?</h3>
+                            <p>Direct search, professional candidate assessment and personal service. You work directly with the recruiter conducting your search — from briefing to placement.</p>
+                        </div>
+                        <a href="#how-i-work" class="card-link">Learn More →</a>
                     </div>
-                    <div>
-                        <h3 style="color:var(--gold); font-size:1.1rem; font-weight:700;">Dedicated Partnership</h3>
-                        <p>By restricting active client mandates, I deliver direct headhunting focus, rapid turnaround times, and superior candidate quality without corporate bureaucracy.</p>
+
+                    <div class="card">
+                        <div>
+                            <h3>Searches I Support</h3>
+                            <p>Executive, management, senior, specialist and difficult-to-fill positions across industries and functions. I assess every assignment individually rather than limiting my work to one sector.</p>
+                        </div>
+                        <a href="#services" class="card-link">Search Support →</a>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <h3>How I Work</h3>
+                            <p>Understand the requirement → Map the market → Direct approach → Assess → Present → Support the process.</p>
+                        </div>
+                        <a href="#how-i-work" class="card-link">How I Work →</a>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <h3>About Marco</h3>
+                            <p>Almost 5 years in Recruitment & Executive Search, supported by approximately 14 years of previous professional experience in Banking & Financial Services. Based in Milan and working with Italian and international markets.</p>
+                        </div>
+                        <a href="#about" class="card-link">About Me →</a>
                     </div>
                 </div>
-            </div>
 
-            <!-- CONTACT FORM SECTION -->
-            <div class="section">
-                <h2>Initiate a Consultation</h2>
-                <p>Available for <strong>video calls</strong> or <strong>in-person meetings in Milan</strong> to discuss your recruitment requirements.</p>
+                <!-- FINAL HOMEPAGE CTA -->
+                <div class="card" style="margin-top:30px; text-align:center; padding:40px;">
+                    <h3 style="font-size:1.5rem;">Have a difficult position to fill?</h3>
+                    <p style="margin-bottom:20px;">Let's have a short conversation about the search and whether I can help.</p>
+                    <div>
+                        <a href="#contact" class="btn-cta-nav" style="display:inline-block; padding:12px 28px;">Discuss a Search</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEARCH SERVICES PAGE -->
+            <section id="services" class="section-block">
+                <h2>Searches I Support</h2>
+                <p>I support companies with recruitment assignments where finding the right person requires more than publishing a job advert and waiting for applications. My approach is based on understanding the requirement, mapping the relevant market, identifying potential candidates and approaching professionals directly.</p>
+
+                <div class="grid-3" style="margin: 25px 0;">
+                    <div class="card">
+                        <h3>Leadership & Executive</h3>
+                        <p>Executive and Leadership roles across core business functions.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Management Talent</h3>
+                        <p>Management positions driving operational and business objectives.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Senior Professionals</h3>
+                        <p>Senior and experienced professionals with specialized expertise.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Specialist Profiles</h3>
+                        <p>Specialist and difficult-to-find profiles within tight markets.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Commercial Roles</h3>
+                        <p>Commercial and business-critical positions that drive growth.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Unresponsive Ad Searches</h3>
+                        <p>Roles where traditional advertising has not produced the right candidates.</p>
+                    </div>
+                </div>
+
+                <p>I do not limit my work to one specific industry or function. Before accepting a search, I first discuss the requirement with the client to understand the role, market and expectations. I only take on assignments where I believe I can provide genuine value through direct search and professional candidate assessment.</p>
+
+                <div style="text-align:center; margin-top:30px;">
+                    <p style="font-weight:600;">Have a difficult position to fill? Let's discuss the search.</p>
+                    <a href="#contact" class="btn-cta-nav" style="display:inline-block; margin-top:10px;">Discuss a Search</a>
+                </div>
+            </section>
+
+            <!-- HOW I WORK PAGE -->
+            <section id="how-i-work" class="section-block">
+                <h2>How I Work</h2>
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">Step 01</div>
+                        <h3>Understand the Search</h3>
+                        <p>We discuss the position, business context, required experience, priorities and the type of person who is likely to succeed in the role.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">Step 02</div>
+                        <h3>Map the Market</h3>
+                        <p>I identify relevant companies, sectors and potential candidate profiles rather than relying only on active applicants.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">Step 03</div>
+                        <h3>Direct Approach</h3>
+                        <p>I proactively contact suitable professionals, including passive candidates who may not currently be searching for a new position.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">Step 04</div>
+                        <h3>Assess</h3>
+                        <p>I speak directly with candidates to understand their experience, motivations, expectations and potential fit. Where a CV appears to contain a gap, I investigate it rather than automatically assuming the experience is missing.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">Step 05</div>
+                        <h3>Present</h3>
+                        <p>I provide context on their relevant experience, transferable skills, motivations, potential gaps and reasons the profile deserves consideration.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">Step 06</div>
+                        <h3>Support the Process</h3>
+                        <p>I remain involved through interviews, feedback and offer discussions, maintaining communication with both client and candidate throughout.</p>
+                    </div>
+                </div>
+
+                <div class="featured-box">
+                    <p>I don't simply send CVs.</p>
+                </div>
+            </section>
+
+            <!-- CANDIDATE EXPERIENCE PAGE -->
+            <section id="candidate-experience" class="section-block">
+                <h2>Candidate Experience Matters</h2>
+                <p>Every candidate I approach also forms an impression of the company I represent. For this reason, I believe candidate experience is part of good Executive Search.</p>
+                <p>I aim to provide candidates with clear information about the opportunity, realistic expectations about the process and regular communication throughout their candidacy.</p>
+                <p>Before interviews, I help candidates understand the opportunity and selection process so they can prepare effectively. I also prioritise responding to candidates rather than leaving people without communication once they have entered a recruitment process.</p>
+                <p>My approach to candidate communication and support has been recognised through recommendations received from candidates on LinkedIn.</p>
+
+                <div class="featured-box">
+                    <p>A professional candidate experience does not only benefit the candidate. It also protects the client's employer brand.</p>
+                </div>
+            </section>
+
+            <!-- SEARCH INTELLIGENCE PAGE -->
+            <section id="search-intelligence" class="section-block">
+                <h2>Search Intelligence</h2>
+                <p>Executive Search should also provide information about the market. During a search, I can provide relevant observations on:</p>
                 
-                <form action="https://formspree.io/f/mknpqqle" method="POST">
-                    <div class="form-group">
-                        <label>Your Name & Organisation</label>
-                        <input type="text" name="name" required placeholder="e.g., Jane Smith - Investment Bank">
+                <ul style="list-style-type: square; padding-left: 20px; color: var(--text-muted); margin-bottom: 20px;">
+                    <li>Candidate availability</li>
+                    <li>Salary expectations</li>
+                    <li>Talent-market conditions</li>
+                    <li>Common candidate feedback</li>
+                    <li>Competitor talent</li>
+                    <li>Search difficulty</li>
+                    <li>Potential gaps between original requirements and available market</li>
+                </ul>
+
+                <p>Where the market does not support the original search criteria, I believe the recruiter's role is to explain this clearly rather than continue searching against unrealistic expectations.</p>
+
+                <div class="card" style="margin-top:25px;">
+                    <h3>Data-Informed Recruitment</h3>
+                    <p>I also use recruitment data to understand where selection processes can be improved. In a recent Recruitment Analytics case study, I analysed 9,995 ATS records, examining recruitment funnels, candidate dropout, assessment effectiveness, process bottlenecks, data quality and recruitment KPIs.</p>
+                    <p>The objective was not simply to produce numbers, but to understand what the data could reliably show, identify limitations and develop practical recommendations for improving recruitment decisions.</p>
+                </div>
+            </section>
+
+            <!-- ABOUT MARCO PAGE -->
+            <section id="about" class="section-block">
+                <h2>Who You'll Work With</h2>
+                <div class="about-wrapper">
+                    <img src="profile.jpg" alt="Marco Lia" class="profile-photo" onerror="this.style.display='none'">
+                    <div>
+                        <h3 style="color:var(--gold); font-size:1.3rem;">Marco Lia</h3>
+                        <p style="color:var(--gold-light); font-size:0.95rem; font-weight:600; margin-bottom:15px;">Independent Executive Search Consultant | Milan</p>
+                        <p>I am an independent recruiter based in Milan with almost five years of experience in Recruitment and Executive Search. My recruitment career includes full-cycle search assignments, direct sourcing, headhunting, talent mapping, candidate assessment, market intelligence, salary benchmarking and offer negotiation.</p>
+                        <p>Before moving into recruitment, I spent approximately 14 years working within Banking and Financial Services. This gives me first-hand understanding of professional environments where confidentiality, stakeholder management, structured processes and careful assessment are important.</p>
+                        <p>Today, I combine recruitment methodology with commercial and sector understanding to help companies identify professionals who may not be reached through traditional job advertising.</p>
+                        <p>I work professionally in English and Italian and can support both Italian and international searches.</p>
                     </div>
-                    <div class="form-group">
-                        <label>Email Address</label>
-                        <input type="email" name="email" required placeholder="name@company.com">
+                </div>
+            </section>
+
+            <!-- COMMERCIAL MODEL PAGE -->
+            <section id="commercial-model" class="section-block">
+                <h2>A Flexible Commercial Model</h2>
+                <p>As an independent recruiter, I operate with a lean structure and can offer a flexible alternative to traditional recruitment and Executive Search firms.</p>
+
+                <div class="grid-2" style="margin-top:25px;">
+                    <div class="card">
+                        <h3>No Upfront Recruitment Fee</h3>
+                        <p>There is no recruitment fee to begin a search.</p>
                     </div>
-                    <div class="form-group">
-                        <label>Preferred Meeting Type</label>
-                        <select name="meeting_type">
-                            <option value="video">Video Call (Teams / Zoom)</option>
-                            <option value="face-to-face">In-Person Meeting (Milan)</option>
-                            <option value="email">Email Inquiry</option>
-                        </select>
+                    <div class="card">
+                        <h3>Success-Based</h3>
+                        <p>My recruitment fee becomes payable following a successful placement, according to the terms agreed before the search begins.</p>
                     </div>
-                    <div class="form-group">
-                        <label>Message / Search Mandate Details</label>
-                        <textarea name="message" rows="5" required placeholder="Briefly describe your hiring requirements..."></textarea>
+                    <div class="card">
+                        <h3>Clear Terms</h3>
+                        <p>The fee structure, scope of the assignment and relevant conditions are agreed before work starts.</p>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-                <p style="text-align: center; margin-top: 25px; font-size: 0.95rem;">
-                    Direct Email: <strong>marco.talent.26@gmail.com</strong> | Phone: <strong>+39 352 0378 133</strong>
-                </p>
-            </div>
+                    <div class="card">
+                        <h3>Direct Partnership</h3>
+                        <p>You work directly with me throughout the assignment — from the initial briefing to candidate search, assessment and placement.</p>
+                    </div>
+                </div>
+
+                <div style="text-align:center; margin-top:35px;">
+                    <p style="font-weight:600;">Have an important role you're struggling to fill? Let's discuss the search before you commit to anything.</p>
+                    <a href="#contact" class="btn-cta-nav" style="display:inline-block; margin-top:10px;">Discuss a Search</a>
+                </div>
+            </section>
+
+            <!-- CONTACT PAGE -->
+            <section id="contact" class="section-block">
+                <h2>Let's Discuss Your Search</h2>
+                <p>If you're currently hiring a professional, manager or senior specialist and would like to explore whether direct search could help, let's have a short conversation. There is no obligation to start an assignment.</p>
+
+                <div class="grid-2" style="margin-top:25px;">
+                    <div>
+                        <div class="card" style="margin-bottom:20px;">
+                            <h3>Direct Contact</h3>
+                            <p><strong>Marco Lia</strong><br>Independent Executive Search Consultant<br>Milan, Italy</p>
+                            <p style="margin-top:10px;">
+                                <strong>Email:</strong> marco.lia.14@um.edu.mt<br>
+                                <strong>Phone / WhatsApp:</strong> +39 352 0378 133
+                            </p>
+                            <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+                                <a href="mailto:marco.lia.14@um.edu.mt" class="btn-cta-nav" style="padding:8px 14px; font-size:0.75rem;">Email Marco</a>
+                                <a href="https://www.linkedin.com/in/marco-lia-liam0001" target="_blank" class="btn-cta-nav" style="padding:8px 14px; font-size:0.75rem; background:transparent; color:var(--gold-light); border:1px solid var(--gold);">Connect on LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-card">
+                        <form action="https://formspree.io/f/mknpqqle" method="POST">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="name" required placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label>Company</label>
+                                <input type="text" name="company" required placeholder="Company name">
+                            </div>
+                            <div class="form-group">
+                                <label>Work Email</label>
+                                <input type="email" name="email" required placeholder="name@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Telephone (optional)</label>
+                                <input type="tel" name="phone" placeholder="+39 ...">
+                            </div>
+                            <div class="form-group">
+                                <label>Position / Search</label>
+                                <input type="text" name="position" placeholder="e.g. Sales Director, Senior Controller">
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea name="message" rows="4" required placeholder="Briefly describe your recruitment requirement..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Discuss Your Search</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
         </div>
 
-        <!-- ITALIAN CONTENT -->
-        <div id="lang-it" class="lang-content">
-            
-            <div class="header">
-                <img src="profile.jpg" alt="Marco Lia" class="profile-img" onerror="this.style.display='none'">
-                
-                <h1>Marco Lia</h1>
-                
-                <div class="tagline-bar">
-                    Senior Talent Acquisition Consultant | Executive Search | Selezione Profili Chiave e Manageriali | Milano
+
+        <!-- ==================== ITALIAN CONTENT ==================== -->
+        <div id="lang-it" class="lang-block">
+
+            <!-- HOME PAGE HERO (IT) -->
+            <section id="home-it" class="section-block">
+                <div class="hero">
+                    <h1>Trovare le persone che non stanno inviando candidature.</h1>
+                    <p class="hero-sub">Supporto indipendente di Executive Search e Selezione per aziende che cercano professionisti, manager e figure di leadership.</p>
+                    <p class="hero-desc">Aiuto le aziende a individuare, contattare e valutare professionisti qualificati attraverso la ricerca diretta e l'headhunting — inclusi i candidati che non stanno cercando attivamente un nuovo ruolo.</p>
+                    <p class="hero-services">Executive Search | Ricerca Diretta | Headhunting | Talent Mapping & Valutazione</p>
+                    <p class="hero-commercial">Nessun costo anticipato. Modello a sola success fee.</p>
+                    <a href="#contact" class="btn-cta-nav" style="display:inline-block; padding:12px 28px; font-size:0.9rem;">Discuti una Ricerca</a>
                 </div>
 
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/marco-lia-liam0001/" target="_blank" class="social-btn">
-                        Profilo LinkedIn
-                    </a>
-                </div>
-            </div>
-
-            <!-- WHY SECTION -->
-            <div class="section">
-                <h2>Perché Questo Progetto: Un Impegno Personale sulla Qualità</h2>
-                <p>Mi sono trasferito in Italia a febbraio 2026. Entro settembre 2026, avevo inviato oltre 350 candidature personalizzate tramite i canali tradizionali. La maggior parte non ha mai ricevuto risposta, molte hanno generato rifiuti automatici, ma l'aspetto più deludente è stato il silenzio assoluto dei recruiter—coloro che dovrebbero guidare i candidati nel percorso.</p>
-                <div class="quote-box">
-                    "Ho deciso di creare la mia attività indipendente di Executive Search per offrire a clienti e candidati ciò che avrei voluto ricevere io: rispetto autentico, trasparenza e valore alla persona."
-                </div>
-                <p>Per questo motivo, rifiuto un modello basato sui grandi volumi. Scelgo di collaborare con un numero limitato di clienti per garantire la massima qualità. Ogni candidato riceve aggiornamenti chiari, feedback strutturati e rispetto professionale: i candidati sono persone, non codici in un database.</p>
-            </div>
-
-            <!-- PROFESSIONAL BACKGROUND -->
-            <div class="section">
-                <h2>Esperienza Professionale e Percorso</h2>
-                
-                <p>Il mio percorso professionale unisce un solido background nel settore bancario a un'esperienza consolidata nell'Executive Search e Talent Acquisition internazionale. Prima di dedicarmi interamente al recruiting, ho maturato 14 anni di carriera nel settore bancario e dei servizi finanziari, ricoprendo ruoli operativi, di supervisione crediti e gestione della clientela all'interno di primari gruppi bancari europei. Questa esperienza mi ha fornito una conoscenza diretta delle dinamiche aziendali regolamentate, dell'analisi del rischio e delle strutture organizzative complesse.</p>
-
-                <p>Passato al settore del recruitment alla fine del 2021, ho lavorato per diversi anni presso una società specializzata nella selezione finanziaria, raggiungendo il ruolo di Senior Consultant. In questo contesto, ho gestito mandati di ricerca e selezione end-to-end per clienti corporate internazionali, specializzandomi nei settori Servizi Finanziari, Corporate Finance, B2B Sales e funzioni Technology selezionate. Il mio metodo combina la ricerca diretta e l'headhunting con una valutazione approfondita delle competenze trasferibili e del percorso di carriera.</p>
-
-                <p>Oggi opero come consulente indipendente di Talent Acquisition a Milano. Supporto le esigenze del mercato locale—focalizzandomi principalmente su profili di leadership in ambito B2B Sales—mantenendo attiva una collaborazione freelance in Executive Search per ricerche internazionali in ambito finanziario. Il mio approccio garantisce una selezione accurata, una comunicazione fluida e un'ottima candidate experience in ogni fase del processo.</p>
-            </div>
-
-            <!-- BUSINESS TERMS & PHILOSOPHY -->
-            <div class="section">
-                <h2>Condizioni di Collaborazione</h2>
+                <!-- HOMEPAGE CARDS (IT) -->
                 <div class="grid-2">
-                    <div>
-                        <h3 style="color:var(--gold); font-size:1.1rem; font-weight:700;">Zero Costi Anticipati</h3>
-                        <p>I servizi sono offerti esclusivamente su base success-fee. Non ci sono costi iniziali; il compenso è dovuto solo ad assunzione avvenuta dopo l'inserimento del candidato.</p>
+                    <div class="card">
+                        <div>
+                            <h3>Perché Collaborare Con Me?</h3>
+                            <p>Ricerca diretta, valutazione professionale dei candidati e servizio personalizzato. Lavori direttamente con il consulente che gestisce la tua ricerca — dal briefing all'inserimento.</p>
+                        </div>
+                        <a href="#how-i-work" class="card-link">Scopri di Più →</a>
                     </div>
-                    <div>
-                        <h3 style="color:var(--gold); font-size:1.1rem; font-weight:700;">Partnership Dedicata</h3>
-                        <p>Limitando i mandati attivi, garantisco ricerca diretta focalizzata, tempi di risposta rapidi e alta qualità dei candidati, senza le burocrazie delle grandi agenzie.</p>
+
+                    <div class="card">
+                        <div>
+                            <h3>Ricerche Supportate</h3>
+                            <p>Posizioni executive, gestionali, senior, specialistiche e di difficile reperimento in diversi settori e funzioni. Valuto ogni incarico individualmente anziché limitarmi a un solo settore.</p>
+                        </div>
+                        <a href="#services" class="card-link">Supporto di Ricerca →</a>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <h3>Come Opero</h3>
+                            <p>Comprendere i requisiti → Mappare il mercato → Contatto diretto → Valutazione → Presentazione → Supporto al processo.</p>
+                        </div>
+                        <a href="#how-i-work" class="card-link">Come Opero →</a>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <h3>Profilo</h3>
+                            <p>Quasi 5 anni nell'Executive Search e Selezione, supportati da circa 14 anni di precedente esperienza professionale nel settore Bancario e Servizi Finanziari. Con sede a Milano e operativo sul mercato italiano e internazionale.</p>
+                        </div>
+                        <a href="#about" class="card-link">Su di Me →</a>
                     </div>
                 </div>
-            </div>
 
-            <!-- CONTACT FORM SECTION -->
-            <div class="section">
-                <h2>Richiedi un Contatto</h2>
-                <p>Disponibile per <strong>videocall</strong> o <strong>incontri di persona a Milano</strong> per discutere le vostre esigenze di recruiting.</p>
+                <!-- FINAL HOMEPAGE CTA (IT) -->
+                <div class="card" style="margin-top:30px; text-align:center; padding:40px;">
+                    <h3 style="font-size:1.5rem;">Hai una posizione complessa da coprire?</h3>
+                    <p style="margin-bottom:20px;">Organizziamo una breve conversazione per analizzare la ricerca e verificare come posso esserti d'aiuto.</p>
+                    <div>
+                        <a href="#contact" class="btn-cta-nav" style="display:inline-block; padding:12px 28px;">Discuti una Ricerca</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEARCH SERVICES PAGE (IT) -->
+            <section id="services-it" class="section-block">
+                <h2>Ricerche Supportate</h2>
+                <p>Supporto le aziende in mandati di selezione dove trovare la persona giusta richiede più che pubblicare un annuncio di lavoro e attendere le candidature. Il mio approccio si basa sulla comprensione dei requisiti, la mappatura del mercato di riferimento, l'individuazione dei potenziali candidati e il contatto diretto con i professionisti.</p>
+
+                <div class="grid-3" style="margin: 25px 0;">
+                    <div class="card">
+                        <h3>Leadership & Executive</h3>
+                        <p>Ruoli Executive e di Leadership nelle principali funzioni aziendali.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Manager di Talento</h3>
+                        <p>Posizioni gestionali per il raggiungimento degli obiettivi operativi.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Professionisti Senior</h3>
+                        <p>Profili senior ed esperti con competenze specialistiche e consolidate.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Profili Specialistici</h3>
+                        <p>Figure specialistiche e di difficile reperimento su mercati complessi.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Ruoli Commerciali</h3>
+                        <p>Posizioni commerciali e strategiche per lo sviluppo del business.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Ricerche Senza Risposta</h3>
+                        <p>Ruoli in cui la pubblicazione di annunci non ha prodotto i risultati attesi.</p>
+                    </div>
+                </div>
+
+                <p>Non limito il mio lavoro a un singolo settore o funzione. Prima di accettare un mandato, discuto i dettagli con il cliente per comprendere il ruolo, il mercato e le aspettative. Accetto solo ricerche in cui ritengo di poter apportare un valore concreto attraverso la ricerca diretta e la valutazione professionale.</p>
+
+                <div style="text-align:center; margin-top:30px;">
+                    <p style="font-weight:600;">Hai una posizione complessa da coprire? Analizziamo la ricerca.</p>
+                    <a href="#contact" class="btn-cta-nav" style="display:inline-block; margin-top:10px;">Discuti una Ricerca</a>
+                </div>
+            </section>
+
+            <!-- HOW I WORK PAGE (IT) -->
+            <section id="how-i-work-it" class="section-block">
+                <h2>Come Opero</h2>
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">Fase 01</div>
+                        <h3>Comprendere la Ricerca</h3>
+                        <p>Analizziamo la posizione, il contesto aziendale, le esperienze richieste, le priorità e le caratteristiche ideali per coprire il ruolo con successo.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">Fase 02</div>
+                        <h3>Mappare il Mercato</h3>
+                        <p>Identifico le aziende target, i settori rilevanti e i profili idonei anziché affidarmi unicamente ai candidati attivi.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">Fase 03</div>
+                        <h3>Contatto Diretto</h3>
+                        <p>Contatto in modo proattivo i professionisti selezionati, inclusi i candidati passivi che non stanno valutando attivamente nuove opportunità.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">Fase 04</div>
+                        <h3>Valutazione</h3>
+                        <p>Parlo direttamente con i candidati per approfondire esperienze, motivazioni, aspettative e compatibilità. Se un CV presenta un'interruzione, ne approfondisco le ragioni anziché dare per scontata l'assenza di competenze.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">Fase 05</div>
+                        <h3>Presentazione</h3>
+                        <p>Fornisco un quadro chiaro su esperienze rilevanti, competenze trasferibili, motivazioni, eventuali punti di attenzione e i motivi per cui il profilo merita considerazione.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">Fase 06</div>
+                        <h3>Supporto al Processo</h3>
+                        <p>Resto a fianco dell'azienda durante i colloqui, la gestione dei feedback e la fase di offerta, mantenendo costante la comunicazione tra le parti.</p>
+                    </div>
+                </div>
+
+                <div class="featured-box">
+                    <p>Non mi limito a inviare CV.</p>
+                </div>
+            </section>
+
+            <!-- CANDIDATE EXPERIENCE PAGE (IT) -->
+            <section id="candidate-experience-it" class="section-block">
+                <h2>L'Importanza della Candidate Experience</h2>
+                <p>Ogni candidato contattato sviluppa un'impressione diretta dell'azienda che rappresento. Per questo motivo, considero la candidate experience un elemento fondamentale dell'Executive Search.</p>
+                <p>Mi impegno a fornire ai candidati informazioni chiare sull'opportunità, aspettative realistiche sul processo e comunicazioni regolari durante tutte le fasi.</p>
+                <p>Prima dei colloqui, aiuto i candidati a comprendere l'opportunità e le fasi di selezione affinché possano prepararsi al meglio. Inoltre, do priorità al riscontro verso i candidati, evitando di interrompere i contatti una volta inseriti nel processo.</p>
+                <p>Il mio approccio alla comunicazione con i candidati è avvalorato dalle raccomandazioni ricevute direttamente su LinkedIn.</p>
+
+                <div class="featured-box">
+                    <p>Una candidate experience professionale non beneficia solo il candidato: protegge e valorizza l'employer brand del cliente.</p>
+                </div>
+            </section>
+
+            <!-- SEARCH INTELLIGENCE PAGE (IT) -->
+            <section id="search-intelligence-it" class="section-block">
+                <h2>Search Intelligence</h2>
+                <p>Un'attività di Executive Search deve offrire anche visibilità sul mercato. Durante un mandato, fornisco osservazioni rilevanti su:</p>
                 
-                <form action="https://formspree.io/f/mknpqqle" method="POST">
-                    <div class="form-group">
-                        <label>Nome e Azienda</label>
-                        <input type="text" name="name" required placeholder="es. Mario Rossi - Banca">
+                <ul style="list-style-type: square; padding-left: 20px; color: var(--text-muted); margin-bottom: 20px;">
+                    <li>Disponibilità dei candidati sul mercato</li>
+                    <li>Aspettative retributive</li>
+                    <li>Condizioni e dinamiche del mercato del lavoro</li>
+                    <li>Feedback ricorrenti dei candidati</li>
+                    <li>Mappatura dei talenti presso i competitor</li>
+                    <li>Livello di complessità della ricerca</li>
+                    <li>Disallineamenti tra i requisiti iniziali e la disponibilità effettiva del mercato</li>
+                </ul>
+
+                <p>Qualora il mercato non confermi i criteri di ricerca iniziali, ritengo che il ruolo del consulente sia spiegare con chiarezza la situazione, evitando di proseguire la ricerca su presupposti non realistici.</p>
+
+                <div class="card" style="margin-top:25px;">
+                    <h3>Selezione Basata sui Dati</h3>
+                    <p>Utilizzo i dati per comprendere dove e come migliorare i processi di selezione. In un recente case study di Recruitment Analytics, ho analizzato 9.995 record ATS, esaminando i funnel di selezione, l'abbandono dei candidati, l'efficacia delle valutazioni, i colli di bottiglia nei processi, la qualità dei dati e i KPI di ricerca.</p>
+                    <p>L'obiettivo non era produrre semplici numeri, ma comprendere ciò che i dati potevano mostrare con affidabilità, individuare i limiti e sviluppare raccomandazioni pratiche per migliorare le decisioni di selezione.</p>
+                </div>
+            </section>
+
+            <!-- ABOUT MARCO PAGE (IT) -->
+            <section id="about-it" class="section-block">
+                <h2>Chi Gestirà la Tua Ricerca</h2>
+                <div class="about-wrapper">
+                    <img src="profile.jpg" alt="Marco Lia" class="profile-photo" onerror="this.style.display='none'">
+                    <div>
+                        <h3 style="color:var(--gold); font-size:1.3rem;">Marco Lia</h3>
+                        <p style="color:var(--gold-light); font-size:0.95rem; font-weight:600; margin-bottom:15px;">Consulente Executive Search Indipendente | Milano</p>
+                        <p>Sono un consulente di selezione indipendente con sede a Milano e quasi cinque anni di esperienza nell'Executive Search e Recruitment. La mia carriera comprende mandati di ricerca end-to-end, sourcing diretto, headhunting, talent mapping, valutazione dei candidati, market intelligence, benchmarking salariale e negoziazione delle offerte.</p>
+                        <p>Prima di dedicarmi alla selezione, ho lavorato per circa 14 anni nel settore Bancario e dei Servizi Finanziari. Questo mi offre una comprensione diretta dei contesti aziendali in cui riservatezza, gestione degli stakeholder, processi strutturati e valutazioni accurate sono primari.</p>
+                        <p>Oggi unisco la metodologia di ricerca diretta con la comprensione commerciale del business per aiutare le aziende a individuare professionisti non raggiungibili con la tradizionale pubblicazione di annunci.</p>
+                        <p>Lavoro professionalmente in italiano e inglese, supportando ricerche per il mercato locale ed estero.</p>
                     </div>
-                    <div class="form-group">
-                        <label>Indirizzo Email</label>
-                        <input type="email" name="email" required placeholder="nome@azienda.it">
+                </div>
+            </section>
+
+            <!-- COMMERCIAL MODEL PAGE (IT) -->
+            <section id="commercial-model-it" class="section-block">
+                <h2>Un Modello Commerciale Flessibile</h2>
+                <p>Come consulente indipendente, opero con una struttura snella e posso offrire un'alternativa flessibile rispetto alle grandi società di ricerca ed Executive Search.</p>
+
+                <div class="grid-2" style="margin-top:25px;">
+                    <div class="card">
+                        <h3>Nessun Costo Anticipato</h3>
+                        <p>Non è previsto alcun compenso di avvio per iniziare la ricerca.</p>
                     </div>
-                    <div class="form-group">
-                        <label>Modalità di Contatto Preferita</label>
-                        <select name="meeting_type">
-                            <option value="video">Videocall (Teams / Zoom)</option>
-                            <option value="face-to-face">Incontro di persona (Milano)</option>
-                            <option value="email">Richiesta via Email</option>
-                        </select>
+                    <div class="card">
+                        <h3>A Sola Success Fee</h3>
+                        <p>Il compenso di selezione diventa dovuto solo ad assunzione avvenuta del candidato, secondo le condizioni pattuite prima dell'avvio.</p>
                     </div>
-                    <div class="form-group">
-                        <label>Messaggio / Dettagli Ricerca</label>
-                        <textarea name="message" rows="5" required placeholder="Descrivi brevemente la figura ricercata..."></textarea>
+                    <div class="card">
+                        <h3>Condizioni Chiare</h3>
+                        <p>La struttura delle competenze, l'ambito dell'incarico e i termini relativi vengono concordati con trasparenza prima dell'inizio dei lavori.</p>
                     </div>
-                    <button type="submit" class="submit-btn">Invia Richiesta</button>
-                </form>
-                <p style="text-align: center; margin-top: 25px; font-size: 0.95rem;">
-                    Email: <strong>marco.talent.26@gmail.com</strong> | Tel: <strong>+39 352 0378 133</strong>
-                </p>
-            </div>
+                    <div class="card">
+                        <h3>Partnership Diretta</h3>
+                        <p>Interagisci direttamente con me durante l'intero mandato — dal briefing iniziale alla ricerca, valutazione e inserimento del candidato.</p>
+                    </div>
+                </div>
+
+                <div style="text-align:center; margin-top:35px;">
+                    <p style="font-weight:600;">Hai una posizione importante da coprire? Valutiamo la ricerca prima di assumere qualsiasi impegno.</p>
+                    <a href="#contact" class="btn-cta-nav" style="display:inline-block; margin-top:10px;">Discuti una Ricerca</a>
+                </div>
+            </section>
+
+            <!-- CONTACT PAGE (IT) -->
+            <section id="contact-it" class="section-block">
+                <h2>Discutiamo della Tua Ricerca</h2>
+                <p>Se stai cercando un professionista, un manager o uno specialista e desideri verificare se la ricerca diretta può aiutarti, organizziamo una breve conversazione. Non c'è alcun obbligo di avvio del mandato.</p>
+
+                <div class="grid-2" style="margin-top:25px;">
+                    <div>
+                        <div class="card" style="margin-bottom:20px;">
+                            <h3>Contatti Diretti</h3>
+                            <p><strong>Marco Lia</strong><br>Consulente Executive Search Indipendente<br>Milano, Italia</p>
+                            <p style="margin-top:10px;">
+                                <strong>Email:</strong> marco.lia.14@um.edu.mt<br>
+                                <strong>Telefono / WhatsApp:</strong> +39 352 0378 133
+                            </p>
+                            <div style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+                                <a href="mailto:marco.lia.14@um.edu.mt" class="btn-cta-nav" style="padding:8px 14px; font-size:0.75rem;">Invia un'Email</a>
+                                <a href="https://www.linkedin.com/in/marco-lia-liam0001" target="_blank" class="btn-cta-nav" style="padding:8px 14px; font-size:0.75rem; background:transparent; color:var(--gold-light); border:1px solid var(--gold);">Profilo LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-card">
+                        <form action="https://formspree.io/f/mknpqqle" method="POST">
+                            <div class="form-group">
+                                <label>Nome e Cognome</label>
+                                <input type="text" name="name" required placeholder="Il tuo nome">
+                            </div>
+                            <div class="form-group">
+                                <label>Azienda</label>
+                                <input type="text" name="company" required placeholder="Nome azienda">
+                            </div>
+                            <div class="form-group">
+                                <label>Email Aziendale</label>
+                                <input type="email" name="email" required placeholder="nome@azienda.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Telefono (opzionale)</label>
+                                <input type="tel" name="phone" placeholder="+39 ...">
+                            </div>
+                            <div class="form-group">
+                                <label>Posizione / Ricerca</label>
+                                <input type="text" name="position" placeholder="es. Direttore Vendite, Senior Controller">
+                            </div>
+                            <div class="form-group">
+                                <label>Messaggio</label>
+                                <textarea name="message" rows="4" required placeholder="Descrivi brevemente l'esigenza di selezione..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Discuti la Ricerca</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
         </div>
 
-    </div>
+    </main>
 
-    <div class="footer">
-        TALENT TODAY. STRONGER TOMORROW. | Marco Lia Executive Search Advisory | Milano
-    </div>
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>MARCO LIA SEARCH</strong> | Independent Executive Search & Sourcing Advisory | Milan, Italy</p>
+        <p style="font-size:0.75rem; color: #8a99ad; margin-top:5px;">Success-Based Direct Sourcing & Talent Mapping for Domestic & International Mandates</p>
+    </footer>
 
+    <!-- JAVASCRIPT SWITCHING & INTERACTIVITY -->
     <script>
         function switchLang(lang) {
-            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
-            
+            const enBlock = document.getElementById('lang-en');
+            const itBlock = document.getElementById('lang-it');
+            const buttons = document.querySelectorAll('.lang-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+
             if (lang === 'it') {
-                document.getElementById('lang-it').classList.add('active');
-                event.target.classList.add('active');
+                enBlock.classList.remove('active');
+                itBlock.classList.add('active');
+                buttons[1].classList.add('active');
             } else {
-                document.getElementById('lang-en').classList.add('active');
-                event.target.classList.add('active');
+                itBlock.classList.remove('active');
+                enBlock.classList.add('active');
+                buttons[0].classList.add('active');
             }
         }
-    </script>
 
+        function toggleMobileMenu() {
+            const nav = document.getElementById('main-nav');
+            nav.classList.toggle('mobile-open');
+        }
+
+        // Close mobile nav when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('main-nav').classList.remove('mobile-open');
+            });
+        });
+    </script>
 </body>
 </html>

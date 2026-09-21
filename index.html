@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marco Lia | Executive Search & Talent Acquisition Advisory</title>
+    <!-- Geometric Sans-Serif Font: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-blue: #071326;
             --bg-purple: #1f0f33;
-            --card-bg: rgba(11, 25, 48, 0.82);
+            --card-bg: rgba(11, 25, 48, 0.85);
             --gold: #d4af37;
             --gold-light: #f3e5ab;
             --text-light: #ffffff;
             --text-muted: #cbd5e1;
-            --border-color: rgba(212, 175, 55, 0.4);
+            --border-color: rgba(212, 175, 55, 0.38);
         }
 
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             background-color: var(--bg-blue);
             /* Crisp SVG Geometric Gold Line Pattern overlay */
             background-image: 
@@ -29,6 +33,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
         }
 
         .lang-nav {
@@ -47,15 +52,17 @@
             background: rgba(212, 175, 55, 0.05);
             border: 1px solid var(--gold);
             color: var(--gold-light);
-            padding: 6px 16px;
+            padding: 8px 16px;
             margin-left: 10px;
             border-radius: 4px;
             cursor: pointer;
-            font-weight: bold;
+            font-weight: 700;
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
             gap: 6px;
             transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .lang-btn.active, .lang-btn:hover {
@@ -65,7 +72,7 @@
         }
 
         .container {
-            max-width: 950px;
+            max-width: 920px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -77,12 +84,12 @@
         }
 
         .profile-img {
-            width: 140px;
-            height: 140px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid var(--gold);
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
             margin-bottom: 20px;
             background-color: var(--bg-purple);
         }
@@ -93,41 +100,28 @@
             -webkit-text-fill-color: transparent;
             font-size: 2.8rem;
             margin: 0 0 10px 0;
-            font-weight: 700;
-            letter-spacing: 1px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
 
-        .subtitle {
-            font-size: 1.25rem;
+        .tagline-bar {
             color: var(--gold-light);
-            margin-bottom: 15px;
-            letter-spacing: 0.5px;
-        }
-
-        .badge-list {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: 15px;
-        }
-
-        .badge {
-            background: rgba(212, 175, 55, 0.12);
-            border: 1px solid var(--border-color);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: var(--gold-light);
+            font-size: 0.95rem;
+            font-weight: 600;
+            max-width: 800px;
+            margin: 12px auto 0;
+            line-height: 1.6;
+            letter-spacing: 0.2px;
+            opacity: 0.95;
         }
 
         .section {
             margin-top: 40px;
             background: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 10px;
+            border-radius: 8px;
             padding: 35px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
             backdrop-filter: blur(8px);
         }
 
@@ -136,13 +130,15 @@
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 12px;
             margin-top: 0;
-            font-size: 1.6rem;
-            letter-spacing: 0.5px;
+            font-size: 1.45rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
         }
 
         p {
             color: var(--text-muted);
-            font-size: 1.05rem;
+            font-size: 0.98rem;
+            font-weight: 400;
             margin-bottom: 18px;
             text-align: justify;
         }
@@ -155,6 +151,7 @@
             font-style: italic;
             color: #f8fafc;
             border-radius: 0 6px 6px 0;
+            font-weight: 400;
         }
 
         .grid-2 {
@@ -171,7 +168,8 @@
             display: block;
             margin-bottom: 6px;
             color: var(--gold-light);
-            font-size: 0.9rem;
+            font-size: 0.88rem;
+            font-weight: 600;
         }
 
         input, textarea, select {
@@ -181,7 +179,8 @@
             border: 1px solid var(--border-color);
             border-radius: 6px;
             color: #ffffff;
-            font-family: inherit;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
             box-sizing: border-box;
         }
 
@@ -196,17 +195,18 @@
             color: #071326;
             border: none;
             padding: 14px 28px;
-            font-weight: bold;
+            font-weight: 700;
             border-radius: 6px;
             cursor: pointer;
             width: 100%;
-            font-size: 1.05rem;
+            font-size: 1rem;
             transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .submit-btn:hover {
             background: #f5d76e;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
         }
 
         .social-links {
@@ -227,7 +227,8 @@
             padding: 10px 22px;
             border-radius: 6px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 0.9rem;
             transition: all 0.3s ease;
         }
 
@@ -243,6 +244,7 @@
             font-size: 0.85rem;
             border-top: 1px solid var(--border-color);
             margin-top: 50px;
+            font-weight: 400;
         }
 
         .lang-content {
@@ -270,13 +272,9 @@
                 <img src="profile.jpg" alt="Marco Lia" class="profile-img" onerror="this.style.display='none'">
                 
                 <h1>Marco Lia</h1>
-                <div class="subtitle">Talent Acquisition Specialist | Executive Search Consultant</div>
-                <p>Milan, Italy</p>
                 
-                <div class="badge-list">
-                    <span class="badge">Banking & Financial Services Background</span>
-                    <span class="badge">B2B Executive Search Specialist</span>
-                    <span class="badge">Eligible for Regime Impatriati</span>
+                <div class="tagline-bar">
+                    Senior Talent Acquisition Consultant | Executive Search | Financial Services, B2B Sales & Corporate Recruitment | Milano
                 </div>
 
                 <div class="social-links">
@@ -312,11 +310,11 @@
                 <h2>Engagement Model & Terms</h2>
                 <div class="grid-2">
                     <div>
-                        <h3 style="color:var(--gold);">Zero Upfront Fees</h3>
+                        <h3 style="color:var(--gold); font-size:1.1rem; font-weight:700;">Zero Upfront Fees</h3>
                         <p>Services are provided strictly on a success-fee model. You incur no initial costs or setup fees; payment is due only upon successful placement following candidate onboarding.</p>
                     </div>
                     <div>
-                        <h3 style="color:var(--gold);">Dedicated Partnership</h3>
+                        <h3 style="color:var(--gold); font-size:1.1rem; font-weight:700;">Dedicated Partnership</h3>
                         <p>By restricting active client mandates, I deliver direct headhunting focus, rapid turnaround times, and superior candidate quality without corporate bureaucracy.</p>
                     </div>
                 </div>
@@ -364,13 +362,9 @@
                 <img src="profile.jpg" alt="Marco Lia" class="profile-img" onerror="this.style.display='none'">
                 
                 <h1>Marco Lia</h1>
-                <div class="subtitle">Talent Acquisition Specialist | Consulente Executive Search</div>
-                <p>Milano, Italia</p>
                 
-                <div class="badge-list">
-                    <span class="badge">Background Settore Bancario e Finanziario</span>
-                    <span class="badge">Specialista Ricerca B2B ed Executive Search</span>
-                    <span class="badge">Eligibile Regime Impatriati</span>
+                <div class="tagline-bar">
+                    Senior Talent Acquisition Consultant | Executive Search | Financial Services, B2B Sales & Corporate Recruitment | Milano
                 </div>
 
                 <div class="social-links">
@@ -406,11 +400,11 @@
                 <h2>Condizioni di Collaborazione</h2>
                 <div class="grid-2">
                     <div>
-                        <h3 style="color:var(--gold);">Zero Costi Anticipati</h3>
+                        <h3 style="color:var(--gold); font-size:1.1rem; font-weight:700;">Zero Costi Anticipati</h3>
                         <p>I servizi sono offerti esclusivamente su base success-fee. Non ci sono costi iniziali; il compenso è dovuto solo ad assunzione avvenuta dopo l'inserimento del candidato.</p>
                     </div>
                     <div>
-                        <h3 style="color:var(--gold);">Partnership Dedicata</h3>
+                        <h3 style="color:var(--gold); font-size:1.1rem; font-weight:700;">Partnership Dedicata</h3>
                         <p>Limitando i mandati attivi, garantisco ricerca diretta focalizzata, tempi di risposta rapidi e alta qualità dei candidati, senza le burocrazie delle grandi agenzie.</p>
                     </div>
                 </div>

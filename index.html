@@ -17,7 +17,12 @@
 
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, var(--bg-blue), var(--bg-purple));
+            background-color: var(--bg-blue);
+            /* Linear gradient layered with a geometric pattern overlay */
+            background-image: 
+                radial-gradient(rgba(226, 192, 68, 0.12) 1px, transparent 0),
+                linear-gradient(135deg, var(--bg-blue), var(--bg-purple));
+            background-size: 24px 24px, 100% 100%;
             color: var(--text-light);
             margin: 0;
             padding: 0;
@@ -28,11 +33,11 @@
             display: flex;
             justify-content: flex-end;
             padding: 15px 30px;
-            background: rgba(0, 0, 0, 0.2);
+            background: rgba(11, 29, 58, 0.85);
             border-bottom: 1px solid var(--border-color);
             position: sticky;
             top: 0;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(8px);
             z-index: 1000;
         }
 
@@ -63,6 +68,17 @@
             text-align: center;
             padding-bottom: 40px;
             border-bottom: 1px solid var(--border-color);
+        }
+
+        /* Profile Image Styling */
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--gold);
+            box-shadow: 0 0 20px rgba(226, 192, 68, 0.3);
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -100,6 +116,7 @@
             border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: 30px;
+            backdrop-filter: blur(4px);
         }
 
         h2 {
@@ -168,7 +185,7 @@
         input, textarea {
             width: 100%;
             padding: 10px;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.4);
             border: 1px solid var(--border-color);
             border-radius: 4px;
             color: #ffffff;
@@ -196,6 +213,33 @@
 
         .submit-btn:hover {
             background: #f5d76e;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(226, 192, 68, 0.1);
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            background: var(--gold);
+            color: var(--bg-blue);
         }
 
         .footer {
@@ -229,24 +273,34 @@
         <div id="lang-en" class="lang-content active">
             
             <div class="header">
+                <!-- Profile Image Display -->
+                <img src="profile.jpg" alt="Marco Lia" class="profile-img" onerror="this.style.display='none'">
+                
                 <h1>Marco Lia</h1>
                 <div class="subtitle">Talent Acquisition Specialist | Executive Search Consultant</div>
                 <p>Milan, Italy | EU Citizen | Full Right to Work in Italy</p>
+                
                 <div class="badge-list">
                     <span class="badge">Banking & Financial Services Background</span>
                     <span class="badge">B2B & Executive Search</span>
                     <span class="badge">Regime Impatriati Eligible</span>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/marco-lia-liam0001/" target="_blank" class="social-btn">
+                        LinkedIn Profile
+                    </a>
                 </div>
             </div>
 
             <!-- WHY SECTION -->
             <div class="section">
                 <h2>Why I Am Doing This: A Different Approach to Recruitment</h2>
-                <p>I moved to Italy in February 2026. By September 2026, I had sent over 350 tailored job applications. The vast majority of companies never replied, many sent automated rejections, but the most frustrating part was that recruitment agencies—who are supposed to guide and engage with candidates—ignored me completely[cite: 10].</p>
+                <p>I moved to Italy in February 2026. By September 2026, I had sent over 350 tailored job applications. The vast majority of companies never replied, many sent automated rejections, but the most frustrating part was that recruitment agencies—who are supposed to guide and engage with candidates—ignored me completely.</p>
                 <div class="quote-box">
                     "I decided to build my own executive search practice to be for candidates and clients what I wanted for myself: respectful, transparent, and focused on genuine communication."
                 </div>
-                <p>Because of this experience, I refuse to run a recruitment business based on volume. I work with a small, selective number of clients to ensure quality over quantity[cite: 10]. Every candidate I contact receives clear updates, feedback, and respect. Candidates are human professionals, not numbers in a database[cite: 10].</p>
+                <p>Because of this experience, I refuse to run a recruitment business based on volume. I work with a small, selective number of clients to ensure quality over quantity. Every candidate I contact receives clear updates, feedback, and respect. Candidates are human professionals, not numbers in a database.</p>
             </div>
 
             <!-- TERMS SECTION -->
@@ -255,11 +309,11 @@
                 <div class="grid-2">
                     <div>
                         <h3 style="color:var(--gold);">Zero Upfront Cost</h3>
-                        <p>Services are offered purely on a success-fee basis. You pay nothing upfront, and payment is due only upon successful placement after the onboarding phase[cite: 10].</p>
+                        <p>Services are offered purely on a success-fee basis. You pay nothing upfront, and payment is due only upon successful placement after the onboarding phase.</p>
                     </div>
                     <div>
                         <h3 style="color:var(--gold);">Selective Partnership</h3>
-                        <p>By limiting the number of active client mandates, I deliver dedicated headhunting focus, faster communication, and higher candidate quality[cite: 10].</p>
+                        <p>By limiting the number of active client mandates, I deliver dedicated headhunting focus, faster communication, and higher candidate quality.</p>
                     </div>
                 </div>
             </div>
@@ -272,9 +326,9 @@
                     <div class="exp-title">Talent Acquisition Consultant - Freelance | Adventura SRL (Milan, Italy)</div>
                     <div class="exp-date">July 2026 – Present</div>
                     <ul>
-                        <li>Managing full recruitment cycles for the Italian market, focused on B2B Sales profiles[cite: 10].</li>
-                        <li>Direct sourcing and headhunting passive candidates using LinkedIn Recruiter[cite: 10].</li>
-                        <li>Candidate screening, structured interviewing, and pipeline management[cite: 10].</li>
+                        <li>Managing full recruitment cycles for the Italian market, focused on B2B Sales profiles.</li>
+                        <li>Direct sourcing and headhunting passive candidates using LinkedIn Recruiter.</li>
+                        <li>Candidate screening, structured interviewing, and pipeline management.</li>
                     </ul>
                 </div>
 
@@ -282,9 +336,9 @@
                     <div class="exp-title">Senior Search Consultant - Finance | Castille Resources (Remote from Milan)</div>
                     <div class="exp-date">Nov 2022 – Present (Freelance from July 2026)</div>
                     <ul>
-                        <li>Managing end-to-end Executive Search assignments for international clients in Financial Services, Corporate, and Sales[cite: 10].</li>
-                        <li>Evaluating transferable skills, addressing CV gaps directly, and conducting candidate preparation[cite: 10].</li>
-                        <li>Coordinating client interviews and leading offer negotiations[cite: 10].</li>
+                        <li>Managing end-to-end Executive Search assignments for international clients in Financial Services, Corporate, and Sales.</li>
+                        <li>Evaluating transferable skills, addressing CV gaps directly, and conducting candidate preparation.</li>
+                        <li>Coordinating client interviews and leading offer negotiations.</li>
                     </ul>
                 </div>
 
@@ -292,7 +346,7 @@
                     <div class="exp-title">Banking & Financial Services Background | APS Bank & Financial Sector</div>
                     <div class="exp-date">2007 – 2021</div>
                     <ul>
-                        <li>14 years of progressive experience across lending operations, credit analysis, relationship management, and regulatory compliance[cite: 10].</li>
+                        <li>14 years of progressive experience across lending operations, credit analysis, relationship management, and regulatory compliance.</li>
                     </ul>
                 </div>
             </div>
@@ -302,7 +356,6 @@
                 <h2>Get in Touch</h2>
                 <p>Have a recruitment need or want to discuss a search mandate? Fill out the form below to connect directly.</p>
                 
-                <!-- Updated Formspree Endpoint -->
                 <form action="https://formspree.io/f/mknpqqle" method="POST">
                     <div class="form-group">
                         <label>Your Name / Organization</label>
@@ -329,24 +382,33 @@
         <div id="lang-it" class="lang-content">
             
             <div class="header">
+                <img src="profile.jpg" alt="Marco Lia" class="profile-img" onerror="this.style.display='none'">
+                
                 <h1>Marco Lia</h1>
                 <div class="subtitle">Talent Acquisition Specialist | Consulente Executive Search</div>
                 <p>Milano, Italia | Cittadino UE | Diritto di lavoro in Italia</p>
+                
                 <div class="badge-list">
                     <span class="badge">Background Settore Bancario e Finanziario</span>
                     <span class="badge">Ricerca B2B ed Executive Search</span>
                     <span class="badge">Eligibile Regime Impatriati</span>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/marco-lia-liam0001/" target="_blank" class="social-btn">
+                        Profilo LinkedIn
+                    </a>
                 </div>
             </div>
 
             <!-- WHY SECTION -->
             <div class="section">
                 <h2>Perché Questo Progetto: Un Nuovo Approccio al Recruiting</h2>
-                <p>Mi sono trasferito in Italia a febbraio 2026. Entro settembre 2026, avevo inviato oltre 350 candidature personalizzate. La maggior parte delle aziende non ha mai risposto, molte hanno inviato rifiuti automatici, ma la cosa più frustrante è stata il silenzio dei recruiter, le persone che dovrebbero guidare i candidati nel percorso[cite: 9].</p>
+                <p>Mi sono trasferito in Italia a febbraio 2026. Entro settembre 2026, avevo inviato oltre 350 candidature personalizzate. La maggior parte delle aziende non ha mai risposto, molte hanno inviato rifiuti automatici, ma la cosa più frustrante è stata il silenzio dei recruiter, le persone che dovrebbero guidare i candidati nel percorso.</p>
                 <div class="quote-box">
                     "Ho deciso di creare la mia attività di Executive Search per offrire a clienti e candidati ciò che avrei voluto ricevere io: rispetto, trasparenza e comunicazione diretta."
                 </div>
-                <p>Per questo motivo, rifiuto il modello basato solo sui grandi volumi. Lavoro con un numero selezionato di clienti per garantire la massima qualità[cite: 9]. Ogni candidato riceve aggiornamenti chiari e rispetto: i candidati sono professionisti, non numeri all'interno di un database[cite: 9].</p>
+                <p>Per questo motivo, rifiuto il modello basato solo sui grandi volumi. Lavoro con un numero selezionato di clienti per garantire la massima qualità. Ogni candidato riceve aggiornamenti chiari e rispetto: i candidati sono professionisti, non numeri all'interno di un database.</p>
             </div>
 
             <!-- TERMS SECTION -->
@@ -355,11 +417,11 @@
                 <div class="grid-2">
                     <div>
                         <h3 style="color:var(--gold);">Zero Costi Anticipati</h3>
-                        <p>Il servizio si basa esclusivamente sul risultato (success fee). Non ci sono costi iniziali o di apertura pratica: il compenso è dovuto solo ad assunzione completata[cite: 9].</p>
+                        <p>Il servizio si basa esclusivamente sul risultato (success fee). Non ci sono costi iniziali o di apertura pratica: il compenso è dovuto solo ad assunzione completata.</p>
                     </div>
                     <div>
                         <h3 style="color:var(--gold);">Partnership Selezionata</h3>
-                        <p>Mantenere un numero limitato di mandati attivi mi permette di garantire una ricerca diretta approfondita, tempi rapidi e candidati altamente qualificati[cite: 9].</p>
+                        <p>Mantenere un numero limitato di mandati attivi mi permette di garantire una ricerca diretta approfondita, tempi rapidi e candidati altamente qualificati.</p>
                     </div>
                 </div>
             </div>
@@ -372,9 +434,9 @@
                     <div class="exp-title">Talent Acquisition Consultant - Freelance | Adventura SRL (Milano, Italia)</div>
                     <div class="exp-date">Luglio 2026 – Presente</div>
                     <ul>
-                        <li>Gestione completa dei processi di selezione sul mercato italiano, con focus su profili B2B Sales[cite: 9].</li>
-                        <li>Ricerca diretta e headhunting di candidati passivi tramite LinkedIn Recruiter[cite: 9].</li>
-                        <li>Screening dei CV, colloqui di valutazione e gestione della pipeline[cite: 9].</li>
+                        <li>Gestione completa dei processi di selezione sul mercato italiano, con focus su profili B2B Sales.</li>
+                        <li>Ricerca diretta e headhunting di candidati passivi tramite LinkedIn Recruiter.</li>
+                        <li>Screening dei CV, colloqui di valutazione e gestione della pipeline.</li>
                     </ul>
                 </div>
 
@@ -382,8 +444,8 @@
                     <div class="exp-title">Senior Search Consultant - Finance | Castille Resources (Remote da Milano)</div>
                     <div class="exp-date">Nov 2022 – Presente (Freelance da Luglio 2026)</div>
                     <ul>
-                        <li>Gestione di mandati di Executive Search e selezione per clienti internazionali nei settori Financial Services, Corporate e Sales[cite: 9].</li>
-                        <li>Valutazione delle competenze trasferibili, analisi approfondita dei percorsi professionali e supporto nelle negoziazioni[cite: 9].</li>
+                        <li>Gestione di mandati di Executive Search e selezione per clienti internazionali nei settori Financial Services, Corporate e Sales.</li>
+                        <li>Valutazione delle competenze trasferibili, analisi approfondita dei percorsi professionali e supporto nelle negoziazioni.</li>
                     </ul>
                 </div>
 
@@ -391,7 +453,7 @@
                     <div class="exp-title">Background Bancario e Finanziario | APS Bank e Settore Bancario</div>
                     <div class="exp-date">2007 – 2021</div>
                     <ul>
-                        <li>14 anni di esperienza progressiva in ambito crediti, analisi finanziaria, customer relationship e conformità normativa[cite: 9].</li>
+                        <li>14 anni di esperienza progressiva in ambito crediti, analisi finanziaria, customer relationship e conformità normativa.</li>
                     </ul>
                 </div>
             </div>

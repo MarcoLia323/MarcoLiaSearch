@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary Meta Tags & SEO -->
-    <title>Marco Lia Search | Executive Search & Direct Sourcing | Milan & Italy</title>
-    <meta name="description" content="Independent Executive Search & Direct Sourcing consultant in Milan, Italy. Dedicated recruitment capacity when you need it — without permanent recruitment headcount.">
-    <meta name="keywords" content="Executive Search Milan, Recruitment Capacity Milan, Headhunter Milan, Direct Search Italy, Independent Recruiter Milan, Talent Acquisition Advisory">
+    <title>Marco Lia Search | Executive Search & Direct Sourcing | Milano</title>
+    <meta name="description" content="Consulente indipendente di Executive Search e Direct Sourcing a Milano. Supporto di recruiting quando ti serve, senza inserire un altro recruiter nella tua struttura.">
+    <meta name="keywords" content="Executive Search Milano, Headhunting Milano, Direct Sourcing Italia, Ricerca e Selezione Milano, Talent Acquisition Advisory">
 
     <!-- Open Graph Meta Tags for Link Preview -->
     <meta property="og:title" content="Marco Lia Search | Executive Search Advisory">
-    <meta property="og:description" content="Need to hire, but don't have the time to search? Dedicated recruitment support when you need it, without adding permanent headcount.">
+    <meta property="og:description" content="Devi assumere, ma non hai il tempo per cercare? Supporto di recruiting flessibile senza aumentare l'organico.">
     <meta property="og:image" content="https://marcolia323.github.io/MarcoLiaSearch/Business_Card.jpeg">
     <meta property="og:url" content="https://marcolia323.github.io/MarcoLiaSearch/">
     <meta property="og:type" content="website">
@@ -19,7 +19,7 @@
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Marco Lia Search | Executive Search Advisory">
-    <meta name="twitter:description" content="Need to hire, but don't have the time to search? Dedicated recruitment support when you need it, without adding permanent headcount.">
+    <meta name="twitter:description" content="Devi assumere, ma non hai il tempo per cercare? Supporto di recruiting flessibile senza aumentare l'organico.">
     <meta name="twitter:image" content="https://marcolia323.github.io/MarcoLiaSearch/Business_Card.jpeg">
 
     <!-- Fonts -->
@@ -299,6 +299,12 @@
             gap: 20px;
         }
 
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
         .card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -394,6 +400,15 @@
             border: 2px solid var(--gold);
             box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
             flex-shrink: 0;
+        }
+
+        .motto-tag {
+            font-style: italic;
+            font-weight: 700;
+            color: var(--gold-light);
+            margin-top: 20px;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
         }
 
         /* COMMERCIAL ADVANTAGE DISPLAY */
@@ -496,6 +511,14 @@
             margin-bottom: 0;
         }
 
+        .footer-motto {
+            font-style: italic;
+            color: var(--gold-light);
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-top: 8px !important;
+        }
+
         .lang-block {
             display: none;
         }
@@ -549,35 +572,35 @@
 
     <!-- MOBILE HEADER -->
     <div class="mobile-header">
-        <a href="#home" class="brand-logo" style="margin-bottom: 0;">MARCO LIA SEARCH</a>
+        <a href="#home-it" class="brand-logo" style="margin-bottom: 0;">MARCO LIA SEARCH</a>
         <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">☰</button>
     </div>
 
     <!-- LEFT SIDEBAR -->
     <aside class="sidebar" id="sidebar">
         <div>
-            <a href="#home" class="brand-logo">
+            <a href="#home-it" class="brand-logo">
                 MARCO LIA SEARCH
-                <span>Milan</span>
+                <span>Milano</span>
             </a>
 
             <nav>
                 <ul>
-                    <li><a href="#home" class="nav-link" data-en="Home" data-it="Home">Home</a></li>
-                    <li><a href="#how-it-works" class="nav-link" data-en="How It Works" data-it="Come Funziona">How It Works</a></li>
-                    <li><a href="#candidate-experience" class="nav-link" data-en="Candidate Experience" data-it="Candidate Experience">Candidate Experience</a></li>
-                    <li><a href="#why-this-model" class="nav-link" data-en="Why This Model?" data-it="Perché Questo Modello?">Why This Model?</a></li>
-                    <li><a href="#about" class="nav-link" data-en="About" data-it="Chi Sono">About</a></li>
-                    <li><a href="#contact" class="nav-link" data-en="Contact" data-it="Contatti">Contact</a></li>
+                    <li><a href="#home-it" class="nav-link" data-en="Home" data-it="Home">Home</a></li>
+                    <li><a href="#how-it-works-it" class="nav-link" data-en="How It Works" data-it="Come Funziona">Come Funziona</a></li>
+                    <li><a href="#candidate-experience-it" class="nav-link" data-en="Candidate Experience" data-it="Candidate Experience">Candidate Experience</a></li>
+                    <li><a href="#why-this-model-it" class="nav-link" data-en="Why This Model?" data-it="Perché Questo Modello?">Perché Questo Modello?</a></li>
+                    <li><a href="#about-it" class="nav-link" data-en="About" data-it="Chi Sono">Chi Sono</a></li>
+                    <li><a href="#contact-it" class="nav-link" data-en="Contact" data-it="Contatti">Contatti</a></li>
                 </ul>
             </nav>
         </div>
 
         <div class="sidebar-footer">
-            <a href="#contact" class="btn-cta-nav btn-main-cta">Let's Discuss Your Search</a>
+            <a href="#contact-it" class="btn-cta-nav btn-main-cta">PARLIAMO DELLA TUA RICERCA</a>
             <div class="lang-toggle">
-                <button class="lang-btn active" onclick="switchLang('en')">EN</button>
-                <button class="lang-btn" onclick="switchLang('it')">IT</button>
+                <button class="lang-btn active" onclick="switchLang('it')">IT</button>
+                <button class="lang-btn" onclick="switchLang('en')">EN</button>
             </div>
         </div>
     </aside>
@@ -586,187 +609,421 @@
     <div class="main-wrapper">
         <main class="container">
 
-            <!-- ==================== ENGLISH CONTENT ==================== -->
-            <div id="lang-en" class="lang-block active">
+            <!-- ==================== ITALIAN CONTENT (DEFAULT) ==================== -->
+            <div id="lang-it" class="lang-block active">
 
-                <!-- 1. HOME — STRICTLY PITCH & NAVIGATION ONLY -->
-                <section id="home" class="section-block">
+                <!-- 1. HOME — HERO & NAVIGATION CARDS (IT) -->
+                <section id="home-it" class="section-block">
                     <div class="hero">
-                        <h1>Need to hire, but don't have the time to search?</h1>
-                        <p class="hero-sub">Finding the right person takes time — especially when the strongest candidates aren't actively applying.</p>
+                        <h1>Devi assumere, ma non hai il tempo per cercare?</h1>
+                        <p class="hero-sub">Trovare la persona giusta richiede tempo, soprattutto quando i profili migliori non stanno cercando attivamente.</p>
                         
                         <div class="hero-highlight">
-                            That's where I come in.
+                            È qui che posso aiutarti.
                         </div>
 
-                        <p class="hero-desc">You tell me who you need. I search the market, approach potential candidates directly, assess their suitability and present you with people worth meeting.</p>
+                        <p class="hero-desc">Spiegami chi stai cercando. Mappo il mercato, contatto direttamente i potenziali candidati, li valuto e ti presento i profili che vale la pena incontrare.</p>
                         
-                        <p style="font-weight: 700; color: var(--gold-light); margin-bottom: 25px; font-size: 1.05rem;">Recruitment support when you need it — without adding permanent recruitment headcount.</p>
+                        <p style="font-weight: 700; color: var(--gold-light); margin-bottom: 25px; font-size: 1.05rem;">Supporto di recruiting quando ti serve, senza inserire un altro recruiter nella tua struttura.</p>
 
-                        <a href="#contact" class="btn-cta-nav btn-main-cta" style="display:inline-block; padding:13px 30px; font-size:0.85rem;">Let's Discuss Your Search</a>
+                        <a href="#contact-it" class="btn-cta-nav btn-main-cta" style="display:inline-block; padding:13px 30px; font-size:0.85rem;">PARLIAMO DELLA TUA RICERCA</a>
                     </div>
 
-                    <!-- THREE SHORT NAVIGATION CARDS ONLY -->
+                    <!-- THREE SHORT NAVIGATION CARDS ONLY (IT) -->
                     <div class="grid-3">
                         <div class="card">
                             <div>
-                                <h3>How It Works</h3>
-                                <p>See how I identify, approach, assess and present potential candidates.</p>
+                                <h3>Come funziona</h3>
+                                <p>Ricerca diretta, valutazione e presentazione dei candidati.</p>
                             </div>
-                            <a href="#how-it-works" class="card-link">Discover My Approach →</a>
+                            <a href="#how-it-works-it" class="card-link">SCOPRI IL MIO METODO →</a>
                         </div>
 
                         <div class="card">
                             <div>
-                                <h3>Why This Model?</h3>
-                                <p>Flexible recruitment support for companies that don't need another permanent recruiter.</p>
+                                <h3>Perché questo modello?</h3>
+                                <p>Supporto flessibile senza la necessità di un altro recruiter full-time.</p>
                             </div>
-                            <a href="#why-this-model" class="card-link">See Why →</a>
+                            <a href="#why-this-model-it" class="card-link">SCOPRI I VANTAGGI →</a>
                         </div>
 
                         <div class="card">
                             <div>
                                 <h3>Candidate Experience</h3>
-                                <p>Professional candidate communication throughout the search.</p>
+                                <p>Comunicazione chiara e professionale durante tutto il processo.</p>
                             </div>
-                            <a href="#candidate-experience" class="card-link">How I Support Candidates →</a>
+                            <a href="#candidate-experience-it" class="card-link">COME SEGUO I CANDIDATI →</a>
                         </div>
                     </div>
 
-                    <!-- FINAL HOMEPAGE CTA -->
+                    <!-- FINAL HOMEPAGE CTA (IT) -->
                     <div class="card" style="margin-top:30px; text-align:center; padding:40px;">
-                        <h2 class="end-cta-heading" style="font-size:1.5rem; border-bottom:none; padding-bottom:0;">Have a position that's taking too much of your team's time?</h2>
-                        <p style="margin-bottom:20px;">Tell me what you're looking for and I'll tell you whether I can help.</p>
+                        <h2 class="end-cta-heading" style="font-size:1.5rem; border-bottom:none; padding-bottom:0;">Una posizione sta richiedendo troppo tempo al tuo team?</h2>
+                        <p style="margin-bottom:20px;">Raccontami chi stai cercando. Ti dirò se posso aiutarti.</p>
                         <div>
-                            <a href="#contact" class="btn-cta-nav btn-main-cta" style="display:inline-block; padding:13px 30px;">Let's Discuss Your Search</a>
+                            <a href="#contact-it" class="btn-cta-nav btn-main-cta" style="display:inline-block; padding:13px 30px;">PARLIAMO DELLA TUA RICERCA</a>
                         </div>
                     </div>
                 </section>
 
 
-                <!-- 2. HOW IT WORKS — PROCESS ONLY -->
+                <!-- 2. COME FUNZIONA (IT) -->
+                <section id="how-it-works-it" class="section-block">
+                    <h2>Come funziona</h2>
+
+                    <div class="process-grid">
+                        <div class="process-step">
+                            <div class="step-number">Fase 01</div>
+                            <h3>Analisi</h3>
+                            <p>Definiamo la posizione, il contesto, le priorità e il profilo ideale.</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">Fase 02</div>
+                            <h3>Mappatura</h3>
+                            <p>Identifico aziende e profili rilevanti, senza affidarmi solo alle candidature agli annunci.</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">Fase 03</div>
+                            <h3>Contatto</h3>
+                            <p>Contatto direttamente i professionisti individuati, compresi quelli che non stanno cercando attivamente.</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">Fase 04</div>
+                            <h3>Valutazione</h3>
+                            <p>Approfondisco esperienza, motivazioni, aspettative e compatibilità con la posizione. Se qualcosa nel CV non è chiaro, lo verifico direttamente con il candidato.</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">Fase 05</div>
+                            <h3>Presentazione</h3>
+                            <div class="featured-box" style="margin: 10px 0 15px 0; padding: 12px 18px;">
+                                <p style="font-size:0.95rem;">Non mi limito a inviare CV.</p>
+                            </div>
+                            <p>Per ogni candidato che consiglio, evidenzio esperienza rilevante, competenze trasferibili, motivazioni ed eventuali aspetti da approfondire.</p>
+                            <div class="featured-box" style="margin: 15px 0 0 0; padding: 12px 18px;">
+                                <p style="font-size:0.95rem;">Ti presento persone che ritengo valga la pena incontrare.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">Fase 06</div>
+                            <h3>Supporto</h3>
+                            <p>Rimango coinvolto durante colloqui, feedback e offerta, mantenendo la comunicazione tra azienda e candidato.</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- 3. CANDIDATE EXPERIENCE (IT) -->
+                <section id="candidate-experience-it" class="section-block">
+                    <h2>Il tuo team è occupato. I tuoi candidati non dovrebbero risentirne.</h2>
+                    <p>Quando seguo una ricerca, rimango in contatto con i candidati: spiego l'opportunità, gestisco le aspettative e li tengo aggiornati.</p>
+                    <p>Il tuo team può concentrarsi sulle proprie priorità, mentre i candidati ricevono una comunicazione chiara e professionale.</p>
+                    <p>Il mio approccio è stato riconosciuto anche attraverso raccomandazioni ricevute su LinkedIn.</p>
+
+                    <div class="featured-box" style="margin-top:20px;">
+                        <p>Una buona Candidate Experience contribuisce a tutelare il tuo employer brand.</p>
+                    </div>
+                </section>
+
+
+                <!-- 4. PERCHÉ QUESTO MODELLO? (IT) -->
+                <section id="why-this-model-it" class="section-block">
+                    <h2>Ti serve supporto nel recruiting, ma non un recruiter full-time?</h2>
+                    <p>Le esigenze di recruiting cambiano.</p>
+                    <p>Potresti aver bisogno di supporto oggi senza dover assumere un altro recruiter per tutto l'anno. Oppure il tuo team HR o Talent Acquisition potrebbe aver bisogno di supporto per una ricerca specifica.</p>
+                    <p>È qui che il mio modello può essere utile.</p>
+
+                    <div class="card" style="margin:25px 0; padding:30px;">
+                        <h3 style="font-size:1.2rem; margin-bottom:15px;">Supporto di recruiting senza aumentare l'organico.</h3>
+                        <p>Posso affiancare il tuo team HR/Talent Acquisition o supportare un'azienda senza recruiter interno. Mi coinvolgi quando serve un supporto dedicato.</p>
+
+                        <div class="commercial-highlights">
+                            <div class="commercial-card">
+                                <h4>NESSUN COSTO INIZIALE</h4>
+                            </div>
+                            <div class="commercial-card">
+                                <h4>NESSUN RETAINER PER AVVIARE LA RICERCA</h4>
+                            </div>
+                            <div class="commercial-card">
+                                <h4>NESSUN COMPENSO SE NON ASSUMI UN CANDIDATO CHE TI HO PRESENTATO</h4>
+                            </div>
+                        </div>
+
+                        <p style="margin-top:15px; font-size:0.95rem;">Il compenso è dovuto solo in caso di assunzione di un candidato da me presentato, con pagamento entro 30 giorni di calendario dalla data di inizio, secondo i termini concordati.</p>
+
+                        <div class="featured-box" style="margin:15px 0 0 0;">
+                            <p>Tu paghi solo se assumi un candidato che ti ho presentato.</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding:25px;">
+                        <h3 style="font-size:1.1rem; margin-bottom:15px;">Quando può essere utile?</h3>
+                        <ul style="list-style-type: square; padding-left: 20px; color: var(--text-muted); line-height: 1.8;">
+                            <li>Il tuo team HR/TA ha bisogno di supporto.</li>
+                            <li>Non hai un recruiter interno.</li>
+                            <li>Una ricerca sta richiedendo troppo tempo.</li>
+                            <li>Non hai volumi sufficienti per un altro recruiter full-time.</li>
+                        </ul>
+                    </div>
+                </section>
+
+
+                <!-- 5. CHI SONO (IT) -->
+                <section id="about-it" class="section-block">
+                    <h2>Chi sono</h2>
+                    <div class="about-wrapper">
+                        <img src="profile.jpg" alt="Marco Lia" class="profile-photo" onerror="this.style.display='none'">
+                        <div>
+                            <h3 style="color:var(--gold); font-size:1.3rem;">Marco Lia</h3>
+                            <p style="color:var(--gold-light); font-size:0.95rem; font-weight:600; margin-bottom:15px;">Consulente indipendente di Executive Search & Recruitment | Milano</p>
+                            <p>Sono un recruiter indipendente con sede a Milano e quasi cinque anni di esperienza nel Recruitment e nell'Executive Search.</p>
+                            <p>Mi occupo di ricerca diretta, headhunting, talent mapping, valutazione dei candidati, analisi di mercato, benchmarking retributivo e gestione delle offerte.</p>
+                            <p>Prima del recruiting, ho lavorato per circa 14 anni nel settore bancario e dei servizi finanziari, sviluppando esperienza in contesti dove riservatezza, gestione degli stakeholder e processi strutturati sono fondamentali.</p>
+                            <p>Oggi unisco questa esperienza alla metodologia di ricerca e selezione per aiutare le aziende a raggiungere anche professionisti che difficilmente risponderebbero a un annuncio.</p>
+                            <p>Lavoro professionalmente in italiano e inglese, su ricerche in Italia e internazionali.</p>
+                            <p class="motto-tag">Let's Do Better.</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- 6. CONTATTI (IT) -->
+                <section id="contact-it" class="section-block">
+                    <h2>Parliamo della tua ricerca</h2>
+                    <p>Stai assumendo e vuoi capire se posso aiutarti? Raccontami la posizione. Senza alcun impegno ad avviare una ricerca.</p>
+
+                    <div class="grid-2" style="margin-top:25px;">
+                        <div>
+                            <div class="card" style="margin-bottom:20px;">
+                                <h3>Contatti diretti</h3>
+                                <p><strong>Marco Lia</strong><br>Consulente indipendente di Executive Search<br>Milano, Italia</p>
+                                <p style="margin-top:12px;">
+                                    <strong>Email:</strong> marco.talent.26@gmail.com<br>
+                                    <strong>Telefono / WhatsApp:</strong> +39 352 0378 133
+                                </p>
+                                <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
+                                    <a href="mailto:marco.talent.26@gmail.com" class="btn-cta-nav" style="padding:9px 16px; font-size:0.75rem;">EMAIL</a>
+                                    <a href="https://wa.me/393520378133" target="_blank" class="btn-cta-nav" style="padding:9px 16px; font-size:0.75rem;">WHATSAPP</a>
+                                    <a href="https://www.linkedin.com/in/marco-lia-liam0001" target="_blank" class="btn-cta-nav" style="padding:9px 16px; font-size:0.75rem; background:transparent; color:var(--gold-light); border:1px solid var(--gold);">LINKEDIN</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-card">
+                            <form action="https://formspree.io/f/mknpqqle" method="POST">
+                                <div class="form-group">
+                                    <label>Nome e cognome</label>
+                                    <input type="text" name="name" required placeholder="Il tuo nome">
+                                </div>
+                                <div class="form-group">
+                                    <label>Azienda</label>
+                                    <input type="text" name="company" required placeholder="Nome azienda">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email aziendale</label>
+                                    <input type="email" name="email" required placeholder="nome@azienda.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefono (opzionale)</label>
+                                    <input type="tel" name="phone" placeholder="+39 ...">
+                                </div>
+                                <div class="form-group">
+                                    <label>Posizione / esigenza di recruiting</label>
+                                    <input type="text" name="position" placeholder="es. Direttore Vendite, Senior Specialist">
+                                </div>
+                                <div class="form-group">
+                                    <label>Messaggio</label>
+                                    <textarea name="message" rows="4" required placeholder="Descrivi brevemente la figura ricercata..."></textarea>
+                                </div>
+                                <button type="submit" class="btn-submit btn-form-submit">PARLIAMO DELLA TUA RICERCA</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+
+            <!-- ==================== ENGLISH CONTENT ==================== -->
+            <div id="lang-en" class="lang-block">
+
+                <!-- 1. HOME — HERO & NAVIGATION CARDS (EN) -->
+                <section id="home" class="section-block">
+                    <div class="hero">
+                        <h1>Need to hire, but don't have the time to search?</h1>
+                        <p class="hero-sub">Finding the right person takes time, especially when the strongest candidates aren't actively looking.</p>
+                        
+                        <div class="hero-highlight">
+                            That's where I can help.
+                        </div>
+
+                        <p class="hero-desc">Tell me who you need. I map the market, approach potential candidates directly, assess them and present the people worth meeting.</p>
+                        
+                        <p style="font-weight: 700; color: var(--gold-light); margin-bottom: 25px; font-size: 1.05rem;">Recruitment support when you need it, without adding another permanent recruiter.</p>
+
+                        <a href="#contact" class="btn-cta-nav btn-main-cta" style="display:inline-block; padding:13px 30px; font-size:0.85rem;">LET'S DISCUSS YOUR SEARCH</a>
+                    </div>
+
+                    <!-- THREE SHORT NAVIGATION CARDS ONLY (EN) -->
+                    <div class="grid-3">
+                        <div class="card">
+                            <div>
+                                <h3>How It Works</h3>
+                                <p>Direct search, assessment and candidate presentation.</p>
+                            </div>
+                            <a href="#how-it-works" class="card-link">DISCOVER MY APPROACH →</a>
+                        </div>
+
+                        <div class="card">
+                            <div>
+                                <h3>Why This Model?</h3>
+                                <p>Flexible recruitment support without another permanent recruiter.</p>
+                            </div>
+                            <a href="#why-this-model" class="card-link">SEE THE BENEFITS →</a>
+                        </div>
+
+                        <div class="card">
+                            <div>
+                                <h3>Candidate Experience</h3>
+                                <p>Clear, professional candidate communication throughout the process.</p>
+                            </div>
+                            <a href="#candidate-experience" class="card-link">HOW I SUPPORT CANDIDATES →</a>
+                        </div>
+                    </div>
+
+                    <!-- FINAL HOMEPAGE CTA (EN) -->
+                    <div class="card" style="margin-top:30px; text-align:center; padding:40px;">
+                        <h2 class="end-cta-heading" style="font-size:1.5rem; border-bottom:none; padding-bottom:0;">Is a vacancy taking too much of your team's time?</h2>
+                        <p style="margin-bottom:20px;">Tell me who you're looking for. I'll tell you whether I can help.</p>
+                        <div>
+                            <a href="#contact" class="btn-cta-nav btn-main-cta" style="display:inline-block; padding:13px 30px;">LET'S DISCUSS YOUR SEARCH</a>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- 2. HOW IT WORKS (EN) -->
                 <section id="how-it-works" class="section-block">
                     <h2>How It Works</h2>
 
                     <div class="process-grid">
                         <div class="process-step">
-                            <div class="step-number">Step 01</div>
+                            <div class="step-number">01</div>
                             <h3>Understand</h3>
-                            <p>We discuss the position, business context, required experience, priorities and the type of person who is likely to succeed in the role.</p>
+                            <p>We define the role, context, priorities and the type of person you're looking for.</p>
                         </div>
                         <div class="process-step">
-                            <div class="step-number">Step 02</div>
+                            <div class="step-number">02</div>
                             <h3>Map</h3>
-                            <p>I identify the relevant market, companies and potential candidate profiles rather than relying only on active applicants.</p>
+                            <p>I identify relevant companies and potential candidates rather than relying only on applications.</p>
                         </div>
                         <div class="process-step">
-                            <div class="step-number">Step 03</div>
+                            <div class="step-number">03</div>
                             <h3>Approach</h3>
-                            <p>I proactively contact potentially suitable professionals, including passive candidates who may not currently be searching for a new opportunity.</p>
+                            <p>I contact potential candidates directly, including professionals who aren't actively looking.</p>
                         </div>
                         <div class="process-step">
-                            <div class="step-number">Step 04</div>
+                            <div class="step-number">04</div>
                             <h3>Assess</h3>
-                            <p>I speak directly with candidates to understand their experience, motivations, expectations and potential fit. Where something appears to be missing from a CV, I investigate it rather than automatically assuming the experience does not exist.</p>
+                            <p>I explore their experience, motivations, expectations and potential fit. If something isn't clear from the CV, I ask rather than assume.</p>
                         </div>
                         <div class="process-step">
-                            <div class="step-number">Step 05</div>
+                            <div class="step-number">05</div>
                             <h3>Present</h3>
                             <div class="featured-box" style="margin: 10px 0 15px 0; padding: 12px 18px;">
                                 <p style="font-size:0.95rem;">I don't simply send CVs.</p>
                             </div>
-                            <p>For candidates I recommend, I provide context on their relevant experience, transferable skills, motivations, potential gaps and reasons for recommending them.</p>
+                            <p>For each candidate I recommend, I highlight relevant experience, transferable skills, motivations and any points worth exploring.</p>
                             <div class="featured-box" style="margin: 15px 0 0 0; padding: 12px 18px;">
-                                <p style="font-size:0.95rem;">My role isn't to fill your inbox with CVs. It's to help you identify people worth meeting.</p>
+                                <p style="font-size:0.95rem;">I present people I believe are worth meeting.</p>
                             </div>
                         </div>
                         <div class="process-step">
-                            <div class="step-number">Step 06</div>
+                            <div class="step-number">06</div>
                             <h3>Support</h3>
-                            <p>I remain involved through interviews, feedback and offer discussions, maintaining communication with both the client and candidate throughout the process.</p>
+                            <p>I remain involved through interviews, feedback and offer discussions, maintaining communication between client and candidate.</p>
                         </div>
                     </div>
                 </section>
 
 
-                <!-- 3. CANDIDATE EXPERIENCE — CONSOLIDATED -->
+                <!-- 3. CANDIDATE EXPERIENCE (EN) -->
                 <section id="candidate-experience" class="section-block">
                     <h2>Your team is busy. Your candidates shouldn't feel it.</h2>
-                    <p>When internal teams are managing multiple priorities, candidate communication can easily become another task competing for attention.</p>
-                    <p>When I manage a search, I stay in contact with the candidates I introduce — explaining the opportunity, managing expectations, following up and helping them understand what happens next.</p>
-                    <p>This allows your team to remain focused while candidates continue to receive clear and professional communication.</p>
-                    <p>My approach to candidate communication has also been recognised through recommendations received from candidates on LinkedIn.</p>
-                    
+                    <p>When I manage a search, I stay in contact with candidates, explain the opportunity, manage expectations and keep them updated.</p>
+                    <p>Your team can focus on its priorities while candidates receive clear, professional communication.</p>
+                    <p>My approach has also been recognised through recommendations from candidates on LinkedIn.</p>
+
                     <div class="featured-box" style="margin-top:20px;">
-                        <p>A professional candidate experience protects your employer brand.</p>
+                        <p>A professional Candidate Experience helps protect your employer brand.</p>
                     </div>
                 </section>
 
 
-                <!-- 4. WHY THIS MODEL? — OWNS ECONOMIC ARGUMENT -->
+                <!-- 4. WHY THIS MODEL? (EN) -->
                 <section id="why-this-model" class="section-block">
-                    <h2>Need a recruiter — but not a full-time recruiter?</h2>
-                    <p>Recruitment demand isn't always constant.</p>
-                    <p>You may need intensive hiring support today without needing another permanent recruiter throughout the year. Or your existing HR/TA team may simply need additional capacity for a particular search.</p>
-                    <p>That's the gap my model is designed to fill.</p>
+                    <h2>Need recruitment support, but not a full-time recruiter?</h2>
+                    <p>Recruitment needs change.</p>
+                    <p>You may need support today without needing another recruiter all year. Or your HR/Talent Acquisition team may need extra support for a specific search.</p>
+                    <p>That's where my model can help.</p>
 
                     <div class="card" style="margin:25px 0; padding:30px;">
-                        <h3 style="font-size:1.2rem; margin-bottom:15px;">Recruitment capacity without permanent recruitment headcount.</h3>
-                        <p>I can support an existing HR/TA team or work with companies that don't have a dedicated internal recruiter. You bring me in for the search where you need support.</p>
+                        <h3 style="font-size:1.2rem; margin-bottom:15px;">Recruitment support without increasing permanent headcount.</h3>
+                        <p>I can work alongside your HR/Talent Acquisition team or support a company without an internal recruiter. Bring me in when you need dedicated search support.</p>
 
                         <div class="commercial-highlights">
                             <div class="commercial-card">
                                 <h4>NO UPFRONT RECRUITMENT FEE</h4>
                             </div>
                             <div class="commercial-card">
-                                <h4>NO RETAINER</h4>
+                                <h4>NO RETAINER TO START THE SEARCH</h4>
                             </div>
                             <div class="commercial-card">
                                 <h4>NO FEE UNLESS YOU HIRE A CANDIDATE I INTRODUCE</h4>
                             </div>
                         </div>
 
-                        <p style="margin-top:15px; font-size:0.95rem;">Payment is due within 30 calendar days of the candidate's start date, according to the agreed terms.</p>
+                        <p style="margin-top:15px; font-size:0.95rem;">My fee is payable only if you hire a candidate I introduce, with payment due within 30 calendar days of their start date, according to the agreed terms.</p>
 
                         <div class="featured-box" style="margin:15px 0 0 0;">
-                            <p>I take on the search risk. You pay for a successful result.</p>
+                            <p>You pay only if you hire a candidate I introduce.</p>
                         </div>
                     </div>
 
-                    <!-- 4 BULLETS ONLY -->
                     <div class="card" style="padding:25px;">
-                        <h3 style="font-size:1.1rem; margin-bottom:15px;">When could this approach make sense?</h3>
+                        <h3 style="font-size:1.1rem; margin-bottom:15px;">When can it help?</h3>
                         <ul style="list-style-type: square; padding-left: 20px; color: var(--text-muted); line-height: 1.8;">
-                            <li>Your HR/TA team needs additional recruitment capacity.</li>
-                            <li>You don't have a dedicated internal recruiter.</li>
-                            <li>A difficult vacancy is consuming too much internal time.</li>
-                            <li>Your recruitment needs don't justify another permanent full-time hire.</li>
+                            <li>Your HR/TA team needs extra support.</li>
+                            <li>You don't have an internal recruiter.</li>
+                            <li>A search is taking too much internal time.</li>
+                            <li>Your hiring volume doesn't justify another full-time recruiter.</li>
                         </ul>
                     </div>
                 </section>
 
 
-                <!-- 5. ABOUT — MARCO ONLY -->
+                <!-- 5. ABOUT (EN) -->
                 <section id="about" class="section-block">
-                    <h2>Who You'll Work With</h2>
+                    <h2>About</h2>
                     <div class="about-wrapper">
                         <img src="profile.jpg" alt="Marco Lia" class="profile-photo" onerror="this.style.display='none'">
                         <div>
                             <h3 style="color:var(--gold); font-size:1.3rem;">Marco Lia</h3>
-                            <p style="color:var(--gold-light); font-size:0.95rem; font-weight:600; margin-bottom:15px;">Independent Executive Search Consultant | Milan</p>
-                            <p>I am an independent recruiter based in Milan with almost five years of experience in Recruitment and Executive Search.</p>
-                            <p>My recruitment experience includes full-cycle search assignments, direct sourcing, headhunting, talent mapping, candidate assessment, market intelligence, salary benchmarking and offer negotiation.</p>
-                            <p>Before moving into recruitment, I spent approximately 14 years working within Banking and Financial Services. That background provided me with a firsthand understanding of professional corporate environments where structured processes, confidentiality, and thorough evaluation are essential.</p>
-                            <p>Operating in English and Italian, I support both domestic and international searches from Milan.</p>
+                            <p style="color:var(--gold-light); font-size:0.95rem; font-weight:600; margin-bottom:15px;">Independent Executive Search & Recruitment Consultant | Milan</p>
+                            <p>I'm an independent recruiter based in Milan with almost five years of Recruitment and Executive Search experience.</p>
+                            <p>My work includes direct search, headhunting, talent mapping, candidate assessment, market intelligence, salary benchmarking and offer management.</p>
+                            <p>Before recruitment, I spent approximately 14 years in Banking and Financial Services, working in environments where confidentiality, stakeholder management and structured processes matter.</p>
+                            <p>Today, I combine that experience with search methodology to help companies reach professionals who may not respond to traditional job advertising.</p>
+                            <p>I work professionally in English and Italian, supporting searches in Italy and internationally.</p>
+                            <p class="motto-tag">Let's Do Better.</p>
                         </div>
                     </div>
                 </section>
 
 
-                <!-- 6. CONTACT — CONTACT ONLY -->
+                <!-- 6. CONTACT (EN) -->
                 <section id="contact" class="section-block">
                     <h2>Let's Discuss Your Search</h2>
-                    <p>If you're currently hiring and would like to explore whether I can help, tell me about the position. There is no obligation to begin an assignment.</p>
+                    <p>Hiring and want to see whether I can help? Tell me about the role. There's no obligation to start a search.</p>
 
                     <div class="grid-2" style="margin-top:25px;">
                         <div>
@@ -811,241 +1068,7 @@
                                     <label>Message</label>
                                     <textarea name="message" rows="4" required placeholder="Briefly describe the role or recruitment need..."></textarea>
                                 </div>
-                                <button type="submit" class="btn-submit btn-form-submit">Let's Discuss Your Search</button>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-
-
-            <!-- ==================== ITALIAN CONTENT ==================== -->
-            <div id="lang-it" class="lang-block">
-
-                <!-- 1. HOME — STRICTLY PITCH & NAVIGATION ONLY (IT) -->
-                <section id="home-it" class="section-block">
-                    <div class="hero">
-                        <h1>Devi assumere, ma non hai il tempo per cercare?</h1>
-                        <p class="hero-sub">Trovare la persona giusta richiede tempo — specialmente quando i candidati migliori non stanno applicando agli annunci.</p>
-                        
-                        <div class="hero-highlight">
-                            È qui che intervengo io.
-                        </div>
-
-                        <p class="hero-desc">Spiegami chi stai cercando. Mappo il mercato, contatto direttamente i candidati potenziali, ne valuto l'idoneità e ti presento solo le persone che vale la pena incontrare.</p>
-                        
-                        <p style="font-weight: 700; color: var(--gold-light); margin-bottom: 25px; font-size: 1.05rem;">Supporto di recruiting quando ti serve — senza aggiungere costi fissi di personale.</p>
-
-                        <a href="#contact-it" class="btn-cta-nav btn-main-cta" style="display:inline-block; padding:13px 30px; font-size:0.85rem;">Parliamo della tua ricerca</a>
-                    </div>
-
-                    <!-- THREE SHORT NAVIGATION CARDS ONLY (IT) -->
-                    <div class="grid-3">
-                        <div class="card">
-                            <div>
-                                <h3>Come Funziona</h3>
-                                <p>Scopri come identifico, contatto, valuto e presento i candidati potenziali.</p>
-                            </div>
-                            <a href="#how-it-works-it" class="card-link">Scopri il Metodo →</a>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3>Perché Questo Modello?</h3>
-                                <p>Supporto di ricerca flessibile per le aziende che non necessitano di un altro recruiter fisso.</p>
-                            </div>
-                            <a href="#why-this-model-it" class="card-link">Scopri i Vantaggi →</a>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3>Candidate Experience</h3>
-                                <p>Una gestione professionale e costante dei candidati durante l'intera ricerca.</p>
-                            </div>
-                            <a href="#candidate-experience-it" class="card-link">Come Gestisco i Candidati →</a>
-                        </div>
-                    </div>
-
-                    <!-- FINAL HOMEPAGE CTA (IT) -->
-                    <div class="card" style="margin-top:30px; text-align:center; padding:40px;">
-                        <h2 class="end-cta-heading" style="font-size:1.5rem; border-bottom:none; padding-bottom:0;">Hai una posizione che sta assorbendo troppo tempo al tuo team?</h2>
-                        <p style="margin-bottom:20px;">Spiegami chi stai cercando. Ti dirò con trasparenza se posso aiutarti.</p>
-                        <div>
-                            <a href="#contact-it" class="btn-cta-nav btn-main-cta" style="display:inline-block; padding:13px 30px;">Parliamo della tua ricerca</a>
-                        </div>
-                    </div>
-                </section>
-
-
-                <!-- 2. HOW IT WORKS — PROCESS ONLY (IT) -->
-                <section id="how-it-works-it" class="section-block">
-                    <h2>Come Funziona</h2>
-
-                    <div class="process-grid">
-                        <div class="process-step">
-                            <div class="step-number">Fase 01</div>
-                            <h3>Analisi</h3>
-                            <p>Analizziamo la posizione, il contesto aziendale, le esperienze richieste, le priorità e le caratteristiche ideali per coprire il ruolo con successo.</p>
-                        </div>
-                        <div class="process-step">
-                            <div class="step-number">Fase 02</div>
-                            <h3>Mappatura</h3>
-                            <p>Identifico le aziende target, i settori affini e i profili idonei anziché affidarmi unicamente alle candidature attive.</p>
-                        </div>
-                        <div class="process-step">
-                            <div class="step-number">Fase 03</div>
-                            <h3>Contatto</h3>
-                            <p>Contatto in modo proattivo i professionisti individuati, ingaggiando anche candidati passivi che non stanno cercando attivamente un nuovo ruolo.</p>
-                        </div>
-                        <div class="process-step">
-                            <div class="step-number">Fase 04</div>
-                            <h3>Valutazione</h3>
-                            <p>Svolgo colloqui diretti per approfondire competenze, motivazioni, aspettative e reale compatibilità. Se un CV presenta punti da chiarire, li approfondisco senza dare nulla per scontato.</p>
-                        </div>
-                        <div class="process-step">
-                            <div class="step-number">Fase 05</div>
-                            <h3>Presentazione</h3>
-                            <div class="featured-box" style="margin: 10px 0 15px 0; padding: 12px 18px;">
-                                <p style="font-size:0.95rem;">Non mi limito a inviare CV.</p>
-                            </div>
-                            <p>Per ogni candidato raccomandato fornisco un quadro sintetico su esperienze rilevanti, competenze trasferibili, motivazioni ed eventuali punti di attenzione.</p>
-                            <div class="featured-box" style="margin: 15px 0 0 0; padding: 12px 18px;">
-                                <p style="font-size:0.95rem;">Il mio obiettivo non è riempire la tua casella di posta di CV, ma aiutarti a individuare i profili che vale la pena incontrare.</p>
-                            </div>
-                        </div>
-                        <div class="process-step">
-                            <div class="step-number">Fase 06</div>
-                            <h3>Supporto</h3>
-                            <p>Resto a fianco dell'azienda durante i colloqui, nella gestione dei feedback e nella fase di offerta, mantenendo costante la comunicazione tra le parti.</p>
-                        </div>
-                    </div>
-                </section>
-
-
-                <!-- 3. CANDIDATE EXPERIENCE — CONSOLIDATED (IT) -->
-                <section id="candidate-experience-it" class="section-block">
-                    <h2>Il tuo team è occupato. I tuoi candidati non dovrebbero risentirne.</h2>
-                    <p>Quando un team interno gestisce molte priorità, la comunicazione con i candidati può facilmente diventare un'altra attività da gestire.</p>
-                    <p>Quando seguo una ricerca, rimango in contatto con i candidati che presento: spiego l'opportunità, gestisco le aspettative, faccio follow-up e li tengo informati sui passaggi successivi.</p>
-                    <p>In questo modo il tuo team può concentrarsi sulle proprie priorità, mentre i candidati continuano a ricevere una comunicazione chiara e professionale.</p>
-                    <p>Il mio approccio alla comunicazione con i candidati è stato riconosciuto anche attraverso raccomandazioni ricevute su LinkedIn.</p>
-
-                    <div class="featured-box" style="margin-top:20px;">
-                        <p>Un'esperienza professionale per il candidato tutela anche il tuo employer brand.</p>
-                    </div>
-                </section>
-
-
-                <!-- 4. WHY THIS MODEL? — OWNS ECONOMIC ARGUMENT (IT) -->
-                <section id="why-this-model-it" class="section-block">
-                    <h2>Serve supporto di recruiting — ma non un recruiter full-time?</h2>
-                    <p>I fabbisogni di selezione non sono sempre costanti.</p>
-                    <p>Potresti necessitare di un forte supporto di ricerca oggi, senza aver bisogno di un altro recruiter fisso per tutto l'anno. Oppure il tuo team HR/TA ha semplicemente bisogno di capacità operativa aggiuntiva per una ricerca specifica.</p>
-                    <p>Questo è esattamente il vuoto che il mio modello intende colmare.</p>
-
-                    <div class="card" style="margin:25px 0; padding:30px;">
-                        <h3 style="font-size:1.2rem; margin-bottom:15px;">Capacità di recruiting senza aggiungere costi fissi di personale.</h3>
-                        <p>Posso affiancare un team HR/TA esistente o lavorare direttamente con aziende prive di una funzione di selezione interna. Mi coinvolgi sul singolo mandato in cui necessiti di supporto.</p>
-
-                        <div class="commercial-highlights">
-                            <div class="commercial-card">
-                                <h4>NESSUN COSTO ANTICIPATO</h4>
-                            </div>
-                            <div class="commercial-card">
-                                <h4>NESSUN FEE D'INGAGGIO</h4>
-                            </div>
-                            <div class="commercial-card">
-                                <h4>NESSUN COMPENSO SE NON ASSUMI UN CANDIDATO PRESENTATO</h4>
-                            </div>
-                        </div>
-
-                        <p style="margin-top:15px; font-size:0.95rem;">Il pagamento è previsto entro 30 giorni di calendario dalla data di assunzione del candidato, secondo i termini concordati.</p>
-
-                        <div class="featured-box" style="margin:15px 0 0 0;">
-                            <p>Io mi assumo il rischio della ricerca. Tu paghi solo per un risultato positivo.</p>
-                        </div>
-                    </div>
-
-                    <!-- 4 BULLETS ONLY (IT) -->
-                    <div class="card" style="padding:25px;">
-                        <h3 style="font-size:1.1rem; margin-bottom:15px;">Quando ha senso questo approccio?</h3>
-                        <ul style="list-style-type: square; padding-left: 20px; color: var(--text-muted); line-height: 1.8;">
-                            <li>Il tuo team HR/TA necessita di capacità operativa aggiuntiva.</li>
-                            <li>Non disponi di un recruiter interno dedicato.</li>
-                            <li>Una posizione aperta sta assorbendo troppo tempo interno.</li>
-                            <li>I volumi di ricerca non giustificano l'inserimento fisso di un recruiter full-time.</li>
-                        </ul>
-                    </div>
-                </section>
-
-
-                <!-- 5. ABOUT — MARCO ONLY (IT) -->
-                <section id="about-it" class="section-block">
-                    <h2>Chi Sono</h2>
-                    <div class="about-wrapper">
-                        <img src="profile.jpg" alt="Marco Lia" class="profile-photo" onerror="this.style.display='none'">
-                        <div>
-                            <h3 style="color:var(--gold); font-size:1.3rem;">Marco Lia</h3>
-                            <p style="color:var(--gold-light); font-size:0.95rem; font-weight:600; margin-bottom:15px;">Consulente di Ricerca & Selezione Indipendente | Milano</p>
-                            <p>Sono un consulente di selezione indipendente con sede a Milano e quasi cinque anni di esperienza nell'Executive Search e Headhunting.</p>
-                            <p>La mia esperienza comprende mandati di ricerca end-to-end, sourcing diretto, mappatura dei talenti, valutazione dei candidati, analisi di mercato, benchmarking salariale e gestione delle offerte.</p>
-                            <p>Prima di dedicarmi al recruiting, ho lavorato per circa 14 anni nel settore Bancario e dei Servizi Finanziari. Questo background mi garantisce una conoscenza diretta dei contesti aziendali complessi, dove la riservatezza, il rigore procedurale e l'accuratezza nelle valutazioni sono primari.</p>
-                            <p>Opero correntemente in lingua italiana e inglese, gestendo ricerche sul mercato locale ed estero da Milano.</p>
-                        </div>
-                    </div>
-                </section>
-
-
-                <!-- 6. CONTACT — CONTACT ONLY (IT) -->
-                <section id="contact-it" class="section-block">
-                    <h2>Parliamo della tua ricerca</h2>
-                    <p>Se stai cercando una figura professionale e desideri verificare se posso esserti d'aiuto, raccontami la posizione aperta. Senza alcun impegno di avvio mandato.</p>
-
-                    <div class="grid-2" style="margin-top:25px;">
-                        <div>
-                            <div class="card" style="margin-bottom:20px;">
-                                <h3>Contatti Diretti</h3>
-                                <p><strong>Marco Lia</strong><br>Consulente Executive Search Indipendente<br>Milano, Italia</p>
-                                <p style="margin-top:12px;">
-                                    <strong>Email:</strong> marco.talent.26@gmail.com<br>
-                                    <strong>Telefono / WhatsApp:</strong> +39 352 0378 133
-                                </p>
-                                <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
-                                    <a href="mailto:marco.talent.26@gmail.com" class="btn-cta-nav" style="padding:9px 16px; font-size:0.75rem;">EMAIL</a>
-                                    <a href="https://wa.me/393520378133" target="_blank" class="btn-cta-nav" style="padding:9px 16px; font-size:0.75rem;">WHATSAPP</a>
-                                    <a href="https://www.linkedin.com/in/marco-lia-liam0001" target="_blank" class="btn-cta-nav" style="padding:9px 16px; font-size:0.75rem; background:transparent; color:var(--gold-light); border:1px solid var(--gold);">LINKEDIN</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-card">
-                            <form action="https://formspree.io/f/mknpqqle" method="POST">
-                                <div class="form-group">
-                                    <label>Nome e Cognome</label>
-                                    <input type="text" name="name" required placeholder="Il tuo nome">
-                                </div>
-                                <div class="form-group">
-                                    <label>Azienda</label>
-                                    <input type="text" name="company" required placeholder="Nome azienda">
-                                </div>
-                                <div class="form-group">
-                                    <label>Email Aziendale</label>
-                                    <input type="email" name="email" required placeholder="nome@azienda.com">
-                                </div>
-                                <div class="form-group">
-                                    <label>Telefono (opzionale)</label>
-                                    <input type="tel" name="phone" placeholder="+39 ...">
-                                </div>
-                                <div class="form-group">
-                                    <label>Posizione / Fabbisogno</label>
-                                    <input type="text" name="position" placeholder="es. Direttore Vendite, Senior Specialist">
-                                </div>
-                                <div class="form-group">
-                                    <label>Messaggio</label>
-                                    <textarea name="message" rows="4" required placeholder="Descrivi brevemente la figura ricercata..."></textarea>
-                                </div>
-                                <button type="submit" class="btn-submit btn-form-submit">Parliamo della tua ricerca</button>
+                                <button type="submit" class="btn-submit btn-form-submit">LET'S DISCUSS YOUR SEARCH</button>
                             </form>
                         </div>
                     </div>
@@ -1055,9 +1078,10 @@
 
         </main>
 
-        <!-- FOOTER — CLEAN & DIRECT -->
+        <!-- FOOTER -->
         <footer>
             <p><strong>MARCO LIA SEARCH</strong> | Independent Executive Search & Recruitment Consultant | Milan, Italy</p>
+            <p class="footer-motto">Let's Do Better.</p>
         </footer>
     </div>
 
@@ -1065,14 +1089,14 @@
     <script>
         const translations = {
             en: {
-                mainCta: "Let's Discuss Your Search",
-                endCtaHeading: "Have a position that's taking too much of your team's time?",
-                formSubmit: "Let's Discuss Your Search"
+                mainCta: "LET'S DISCUSS YOUR SEARCH",
+                endCtaHeading: "Is a vacancy taking too much of your team's time?",
+                formSubmit: "LET'S DISCUSS YOUR SEARCH"
             },
             it: {
-                mainCta: "Parliamo della tua ricerca",
-                endCtaHeading: "Hai una posizione che sta assorbendo troppo tempo al tuo team?",
-                formSubmit: "Parliamo della tua ricerca"
+                mainCta: "PARLIAMO DELLA TUA RICERCA",
+                endCtaHeading: "Una posizione sta richiedendo troppo tempo al tuo team?",
+                formSubmit: "PARLIAMO DELLA TUA RICERCA"
             }
         };
 
@@ -1086,34 +1110,10 @@
 
             buttons.forEach(btn => btn.classList.remove('active'));
 
-            if (lang === 'it') {
-                enBlock.classList.remove('active');
-                itBlock.classList.add('active');
-                buttons[1].classList.add('active');
-                
-                // Update sidebar navigation links & smooth scroll target anchors
-                document.querySelectorAll('.nav-link').forEach(link => {
-                    link.textContent = link.getAttribute('data-it');
-                    let target = link.getAttribute('href').replace('-it', '');
-                    link.setAttribute('href', target === '#home' ? '#home-it' : target + '-it');
-                });
-
-                // Dynamic CTA Text Replacements
-                mainCtaButtons.forEach(btn => {
-                    btn.textContent = translations.it.mainCta;
-                    btn.setAttribute('href', '#contact-it');
-                });
-                endCtaHeadings.forEach(h => {
-                    h.textContent = translations.it.endCtaHeading;
-                });
-                formSubmitButtons.forEach(btn => {
-                    btn.textContent = translations.it.formSubmit;
-                });
-
-            } else {
+            if (lang === 'en') {
                 itBlock.classList.remove('active');
                 enBlock.classList.add('active');
-                buttons[0].classList.add('active');
+                buttons[1].classList.add('active');
                 
                 // Update sidebar navigation links & smooth scroll target anchors
                 document.querySelectorAll('.nav-link').forEach(link => {
@@ -1132,6 +1132,30 @@
                 });
                 formSubmitButtons.forEach(btn => {
                     btn.textContent = translations.en.formSubmit;
+                });
+
+            } else {
+                enBlock.classList.remove('active');
+                itBlock.classList.add('active');
+                buttons[0].classList.add('active');
+                
+                // Update sidebar navigation links & smooth scroll target anchors
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.textContent = link.getAttribute('data-it');
+                    let target = link.getAttribute('href').replace('-it', '');
+                    link.setAttribute('href', target === '#home' ? '#home-it' : target + '-it');
+                });
+
+                // Dynamic CTA Text Replacements
+                mainCtaButtons.forEach(btn => {
+                    btn.textContent = translations.it.mainCta;
+                    btn.setAttribute('href', '#contact-it');
+                });
+                endCtaHeadings.forEach(h => {
+                    h.textContent = translations.it.endCtaHeading;
+                });
+                formSubmitButtons.forEach(btn => {
+                    btn.textContent = translations.it.formSubmit;
                 });
             }
         }

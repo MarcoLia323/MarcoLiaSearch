@@ -3,62 +3,446 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marco Lia | Executive Search Consultant</title>
+    <title>Marco Lia | Executive Search & Talent Acquisition Advisory</title>
     <style>
+        :root {
+            --bg-blue: #0b1d3a;
+            --bg-purple: #1a103c;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --gold: #e2c044;
+            --text-light: #ffffff;
+            --text-muted: #d1d5db;
+            --border-color: rgba(226, 192, 68, 0.3);
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0b1d3a, #1a103c);
-            color: #ffffff;
-            text-align: center;
-            padding: 60px 20px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--bg-blue), var(--bg-purple));
+            color: var(--text-light);
             margin: 0;
-            min-height: 100vh;
-            box-sizing: border-box;
+            padding: 0;
+            line-height: 1.6;
         }
+
+        .lang-nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 6px 14px;
+            margin-left: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active, .lang-btn:hover {
+            background: var(--gold);
+            color: var(--bg-blue);
+        }
+
         .container {
-            max-width: 650px;
+            max-width: 950px;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.05);
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid rgba(226, 192, 68, 0.3);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            padding: 40px 20px;
         }
+
+        .header {
+            text-align: center;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
         h1 {
-            color: #e2c044;
-            font-size: 2.2rem;
-            margin-bottom: 5px;
+            color: var(--gold);
+            font-size: 2.6rem;
+            margin: 0 0 10px 0;
         }
-        h2 {
+
+        .subtitle {
             font-size: 1.2rem;
-            font-weight: normal;
-            color: #d1d5db;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .badge-list {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .badge {
+            background: rgba(226, 192, 68, 0.15);
+            border: 1px solid var(--border-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--gold);
+        }
+
+        .section {
+            margin-top: 40px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        h2 {
+            color: var(--gold);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
             margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        .exp-item {
             margin-bottom: 25px;
         }
-        p {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: #e5e7eb;
+
+        .exp-item:last-child {
+            margin-bottom: 0;
         }
-        .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 28px;
-            background-color: #e2c044;
-            color: #0b1d3a;
-            text-decoration: none;
+
+        .exp-title {
+            font-size: 1.15rem;
             font-weight: bold;
-            border-radius: 6px;
+            color: #ffffff;
+        }
+
+        .exp-date {
+            font-size: 0.9rem;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        li {
+            margin-bottom: 6px;
+            color: var(--text-muted);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .quote-box {
+            background: rgba(226, 192, 68, 0.08);
+            border-left: 4px solid var(--gold);
+            padding: 15px 20px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--gold);
+            font-size: 0.9rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: #ffffff;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        .submit-btn {
+            background: var(--gold);
+            color: var(--bg-blue);
+            border: none;
+            padding: 12px 25px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #f5d76e;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 50px;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Marco Lia</h1>
-        <h2>Senior Executive Search Consultant</h2>
-        <p>Specialized in Banking, Risk & Corporate Finance Leadership Sourcing in Milan, Italy.</p>
-        <a class="btn" href="https://www.linkedin.com/in/marco-lia-liam0001/" target="_blank">Connect on LinkedIn</a>
+
+    <div class="lang-nav">
+        <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+        <button class="lang-btn" onclick="switchLang('it')">IT</button>
     </div>
+
+    <div class="container">
+
+        <!-- ENGLISH CONTENT -->
+        <div id="lang-en" class="lang-content active">
+            
+            <div class="header">
+                <h1>Marco Lia</h1>
+                <div class="subtitle">Talent Acquisition Specialist | Executive Search Consultant</div>
+                <p>Milan, Italy | EU Citizen | Full Right to Work in Italy</p>
+                <div class="badge-list">
+                    <span class="badge">Banking & Financial Services Background</span>
+                    <span class="badge">B2B & Executive Search</span>
+                    <span class="badge">Regime Impatriati Eligible</span>
+                </div>
+            </div>
+
+            <!-- WHY SECTION -->
+            <div class="section">
+                <h2>Why I Am Doing This: A Different Approach to Recruitment</h2>
+                <p>I moved to Italy in February 2026. By September 2026, I had sent over 350 tailored job applications. The vast majority of companies never replied, many sent automated rejections, but the most frustrating part was that recruitment agencies—who are supposed to guide and engage with candidates—ignored me completely[cite: 10].</p>
+                <div class="quote-box">
+                    "I decided to build my own executive search practice to be for candidates and clients what I wanted for myself: respectful, transparent, and focused on genuine communication."
+                </div>
+                <p>Because of this experience, I refuse to run a recruitment business based on volume. I work with a small, selective number of clients to ensure quality over quantity[cite: 10]. Every candidate I contact receives clear updates, feedback, and respect. Candidates are human professionals, not numbers in a database[cite: 10].</p>
+            </div>
+
+            <!-- TERMS SECTION -->
+            <div class="section">
+                <h2>Business Philosophy & Engagement Terms</h2>
+                <div class="grid-2">
+                    <div>
+                        <h3 style="color:var(--gold);">Zero Upfront Cost</h3>
+                        <p>Services are offered purely on a success-fee basis. You pay nothing upfront, and payment is due only upon successful placement after the onboarding phase[cite: 10].</p>
+                    </div>
+                    <div>
+                        <h3 style="color:var(--gold);">Selective Partnership</h3>
+                        <p>By limiting the number of active client mandates, I deliver dedicated headhunting focus, faster communication, and higher candidate quality[cite: 10].</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CV SUMMARY SECTION -->
+            <div class="section">
+                <h2>Professional Background & Experience</h2>
+                
+                <div class="exp-item">
+                    <div class="exp-title">Talent Acquisition Consultant - Freelance | Adventura SRL (Milan, Italy)</div>
+                    <div class="exp-date">July 2026 – Present</div>
+                    <ul>
+                        <li>Managing full recruitment cycles for the Italian market, focused on B2B Sales profiles[cite: 10].</li>
+                        <li>Direct sourcing and headhunting passive candidates using LinkedIn Recruiter[cite: 10].</li>
+                        <li>Candidate screening, structured interviewing, and pipeline management[cite: 10].</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-title">Senior Search Consultant - Finance | Castille Resources (Remote from Milan)</div>
+                    <div class="exp-date">Nov 2022 – Present (Freelance from July 2026)</div>
+                    <ul>
+                        <li>Managing end-to-end Executive Search assignments for international clients in Financial Services, Corporate, and Sales[cite: 10].</li>
+                        <li>Evaluating transferable skills, addressing CV gaps directly, and conducting candidate preparation[cite: 10].</li>
+                        <li>Coordinating client interviews and leading offer negotiations[cite: 10].</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-title">Banking & Financial Services Background | APS Bank & Financial Sector</div>
+                    <div class="exp-date">2007 – 2021</div>
+                    <ul>
+                        <li>14 years of progressive experience across lending operations, credit analysis, relationship management, and regulatory compliance[cite: 10].</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CONTACT FORM SECTION -->
+            <div class="section">
+                <h2>Get in Touch</h2>
+                <p>Have a recruitment need or want to discuss a search mandate? Fill out the form below to connect directly.</p>
+                
+                <!-- Updated Formspree Endpoint -->
+                <form action="https://formspree.io/f/mknpqqle" method="POST">
+                    <div class="form-group">
+                        <label>Your Name / Organization</label>
+                        <input type="text" name="name" required placeholder="e.g., Mario Rossi - Bank Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email Address</label>
+                        <input type="email" name="email" required placeholder="name@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Message / Search Mandate Details</label>
+                        <textarea name="message" rows="5" required placeholder="Describe the role or request a call..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <p style="text-align: center; margin-top: 20px; font-size: 0.9rem;">
+                    Direct Email: <strong>marco.talent.26@gmail.com</strong> | Phone: <strong>+39 352 0378 133</strong>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- ITALIAN CONTENT -->
+        <div id="lang-it" class="lang-content">
+            
+            <div class="header">
+                <h1>Marco Lia</h1>
+                <div class="subtitle">Talent Acquisition Specialist | Consulente Executive Search</div>
+                <p>Milano, Italia | Cittadino UE | Diritto di lavoro in Italia</p>
+                <div class="badge-list">
+                    <span class="badge">Background Settore Bancario e Finanziario</span>
+                    <span class="badge">Ricerca B2B ed Executive Search</span>
+                    <span class="badge">Eligibile Regime Impatriati</span>
+                </div>
+            </div>
+
+            <!-- WHY SECTION -->
+            <div class="section">
+                <h2>Perché Questo Progetto: Un Nuovo Approccio al Recruiting</h2>
+                <p>Mi sono trasferito in Italia a febbraio 2026. Entro settembre 2026, avevo inviato oltre 350 candidature personalizzate. La maggior parte delle aziende non ha mai risposto, molte hanno inviato rifiuti automatici, ma la cosa più frustrante è stata il silenzio dei recruiter, le persone che dovrebbero guidare i candidati nel percorso[cite: 9].</p>
+                <div class="quote-box">
+                    "Ho deciso di creare la mia attività di Executive Search per offrire a clienti e candidati ciò che avrei voluto ricevere io: rispetto, trasparenza e comunicazione diretta."
+                </div>
+                <p>Per questo motivo, rifiuto il modello basato solo sui grandi volumi. Lavoro con un numero selezionato di clienti per garantire la massima qualità[cite: 9]. Ogni candidato riceve aggiornamenti chiari e rispetto: i candidati sono professionisti, non numeri all'interno di un database[cite: 9].</p>
+            </div>
+
+            <!-- TERMS SECTION -->
+            <div class="section">
+                <h2>Filosofia Operativa e Condizioni di Collaborazione</h2>
+                <div class="grid-2">
+                    <div>
+                        <h3 style="color:var(--gold);">Zero Costi Anticipati</h3>
+                        <p>Il servizio si basa esclusivamente sul risultato (success fee). Non ci sono costi iniziali o di apertura pratica: il compenso è dovuto solo ad assunzione completata[cite: 9].</p>
+                    </div>
+                    <div>
+                        <h3 style="color:var(--gold);">Partnership Selezionata</h3>
+                        <p>Mantenere un numero limitato di mandati attivi mi permette di garantire una ricerca diretta approfondita, tempi rapidi e candidati altamente qualificati[cite: 9].</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CV SUMMARY SECTION -->
+            <div class="section">
+                <h2>Esperienza Professionale e Curriculum</h2>
+                
+                <div class="exp-item">
+                    <div class="exp-title">Talent Acquisition Consultant - Freelance | Adventura SRL (Milano, Italia)</div>
+                    <div class="exp-date">Luglio 2026 – Presente</div>
+                    <ul>
+                        <li>Gestione completa dei processi di selezione sul mercato italiano, con focus su profili B2B Sales[cite: 9].</li>
+                        <li>Ricerca diretta e headhunting di candidati passivi tramite LinkedIn Recruiter[cite: 9].</li>
+                        <li>Screening dei CV, colloqui di valutazione e gestione della pipeline[cite: 9].</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-title">Senior Search Consultant - Finance | Castille Resources (Remote da Milano)</div>
+                    <div class="exp-date">Nov 2022 – Presente (Freelance da Luglio 2026)</div>
+                    <ul>
+                        <li>Gestione di mandati di Executive Search e selezione per clienti internazionali nei settori Financial Services, Corporate e Sales[cite: 9].</li>
+                        <li>Valutazione delle competenze trasferibili, analisi approfondita dei percorsi professionali e supporto nelle negoziazioni[cite: 9].</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-title">Background Bancario e Finanziario | APS Bank e Settore Bancario</div>
+                    <div class="exp-date">2007 – 2021</div>
+                    <ul>
+                        <li>14 anni di esperienza progressiva in ambito crediti, analisi finanziaria, customer relationship e conformità normativa[cite: 9].</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CONTACT FORM SECTION -->
+            <div class="section">
+                <h2>Contatti</h2>
+                <p>Vuoi valutare una collaborazione o attivare un mandato di ricerca? Compila il modulo sottostante per un contatto diretto.</p>
+                
+                <form action="https://formspree.io/f/mknpqqle" method="POST">
+                    <div class="form-group">
+                        <label>Nome / Azienda</label>
+                        <input type="text" name="name" required placeholder="es. Mario Rossi - Banca">
+                    </div>
+                    <div class="form-group">
+                        <label>Indirizzo Email</label>
+                        <input type="email" name="email" required placeholder="nome@azienda.it">
+                    </div>
+                    <div class="form-group">
+                        <label>Messaggio / Dettagli Ricerca</label>
+                        <textarea name="message" rows="5" required placeholder="Descrivi il profilo ricercato o richiedi un contatto..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Invia Messaggio</button>
+                </form>
+                <p style="text-align: center; margin-top: 20px; font-size: 0.9rem;">
+                    Email: <strong>marco.talent.26@gmail.com</strong> | Tel: <strong>+39 352 0378 133</strong>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        TALENT TODAY. STRONGER TOMORROW. | Marco Lia Executive Search Advisory | Milano
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            
+            if (lang === 'it') {
+                document.getElementById('lang-it').classList.add('active');
+                event.target.classList.add('active');
+            } else {
+                document.getElementById('lang-en').classList.add('active');
+                event.target.classList.add('active');
+            }
+        }
+    </script>
+
 </body>
 </html>

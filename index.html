@@ -65,7 +65,7 @@
             overflow-x: hidden;
         }
 
-        /* LEFT SIDEBAR NAVIGATION */
+        /* LEFT SIDEBAR NAVIGATION (DESKTOP) */
         .sidebar {
             width: var(--sidebar-width);
             height: 100vh;
@@ -130,6 +130,11 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
+        }
+
+        /* DRAG HANDLE FOR MOBILE MENU (HIDDEN ON DESKTOP) */
+        .drag-handle-container {
+            display: none;
         }
 
         .btn-cta-nav {
@@ -622,14 +627,34 @@
                 position: fixed;
                 top: 60px;
                 left: -100%;
-                transition: left 0.3s ease-in-out;
+                transition: transform 0.3s ease-in-out, left 0.3s ease-in-out;
                 box-shadow: 0 10px 30px rgba(0,0,0,0.5);
                 max-height: calc(100vh - 60px);
                 overflow-y: auto;
+                touch-action: pan-y;
             }
 
             .sidebar.mobile-open {
                 left: 0;
+            }
+
+            /* ORANGE/GOLD SWIPE HANDLE AT BOTTOM OF MOBILE MENU */
+            .drag-handle-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 16px 0 10px 0;
+                width: 100%;
+                cursor: grab;
+                touch-action: none;
+            }
+
+            .drag-handle {
+                width: 60px;
+                height: 5px;
+                background-color: var(--gold);
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
             }
 
             .main-wrapper {
@@ -639,7 +664,7 @@
 
             /* Extra padding at page bottom so sticky CTA never covers content */
             .container {
-                padding: 25px 16px 90px 16px;
+                padding: 25px 16px 95px 16px;
             }
 
             .section-block {
@@ -779,11 +804,12 @@
                 display: block;
                 width: 100%;
                 border: none;
+                cursor: pointer;
             }
 
             footer {
                 margin-top: 40px;
-                padding: 25px 16px 100px 16px;
+                padding: 25px 16px 110px 16px;
             }
         }
     </style>
@@ -823,12 +849,16 @@
                 <button class="lang-btn active" onclick="switchLang('it')">IT</button>
                 <button class="lang-btn" onclick="switchLang('en')">EN</button>
             </div>
+            <!-- ORANGE/GOLD DRAG HANDLE FOR MOBILE SWIPE UP -->
+            <div class="drag-handle-container" id="drag-handle-area">
+                <div class="drag-handle"></div>
+            </div>
         </div>
     </aside>
 
     <!-- MOBILE-ONLY STICKY BOTTOM CTA -->
     <div class="mobile-sticky-cta">
-        <a href="#contact-it" class="mobile-sticky-btn btn-main-cta" id="mobile-sticky-link">PARLIAMO DELLA SUA RICERCA</a>
+        <button type="button" class="mobile-sticky-btn" id="mobile-sticky-link" onclick="discoverMoreNextSection()">SCOPRI DI PIÙ</button>
     </div>
 
     <!-- MAIN CONTENT WRAPPER -->
@@ -1436,6 +1466,13 @@
 
     <!-- JAVASCRIPT SWITCHING & INTERACTIVITY -->
     <script>
+        let currentLang = 'it';
+
+        const stickyCtaTranslations = {
+            en: "DISCOVER MORE",
+            it: "SCOPRI DI PIÙ"
+        };
+
         const translations = {
             en: {
                 mainCta: "LET'S DISCUSS YOUR SEARCH",
@@ -1450,6 +1487,7 @@
         };
 
         function switchLang(lang) {
+            currentLang = lang;
             const enBlock = document.getElementById('lang-en');
             const itBlock = document.getElementById('lang-it');
             const buttons = document.querySelectorAll('.lang-btn');
@@ -1458,7 +1496,7 @@
             const formSubmitButtons = document.querySelectorAll('.btn-form-submit');
             const mobileBrandLogo = document.getElementById('mobile-brand-logo');
             const sidebarBrandLogo = document.getElementById('sidebar-brand-logo');
-            const mobileStickyLink = document.getElementById('mobile-sticky-link');
+            const mobileStickyBtn = document.getElementById('mobile-sticky-link');
 
             buttons.forEach(btn => btn.classList.remove('active'));
 
@@ -1477,15 +1515,17 @@
                 if (mobileBrandLogo) mobileBrandLogo.setAttribute('href', '#home');
                 if (sidebarBrandLogo) sidebarBrandLogo.setAttribute('href', '#home');
 
-                // Dynamic CTA Text Replacements
+                // Dynamic CTA Text Replacements for Standard Buttons
                 mainCtaButtons.forEach(btn => {
                     btn.textContent = translations.en.mainCta;
                     btn.setAttribute('href', '#contact');
                 });
-                if (mobileStickyLink) {
-                    mobileStickyLink.textContent = translations.en.mainCta;
-                    mobileStickyLink.setAttribute('href', '#contact');
+                
+                // Update Sticky Mobile Bottom CTA Text ONLY
+                if (mobileStickyBtn) {
+                    mobileStickyBtn.textContent = stickyCtaTranslations.en;
                 }
+
                 endCtaHeadings.forEach(h => {
                     h.textContent = translations.en.endCtaHeading;
                 });
@@ -1508,15 +1548,17 @@
                 if (mobileBrandLogo) mobileBrandLogo.setAttribute('href', '#home-it');
                 if (sidebarBrandLogo) sidebarBrandLogo.setAttribute('href', '#home-it');
 
-                // Dynamic CTA Text Replacements
+                // Dynamic CTA Text Replacements for Standard Buttons
                 mainCtaButtons.forEach(btn => {
                     btn.textContent = translations.it.mainCta;
                     btn.setAttribute('href', '#contact-it');
                 });
-                if (mobileStickyLink) {
-                    mobileStickyLink.textContent = translations.it.mainCta;
-                    mobileStickyLink.setAttribute('href', '#contact-it');
+
+                // Update Sticky Mobile Bottom CTA Text ONLY
+                if (mobileStickyBtn) {
+                    mobileStickyBtn.textContent = stickyCtaTranslations.it;
                 }
+
                 endCtaHeadings.forEach(h => {
                     h.textContent = translations.it.endCtaHeading;
                 });
@@ -1531,12 +1573,82 @@
             sidebar.classList.toggle('mobile-open');
         }
 
+        function closeMobileMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.remove('mobile-open');
+        }
+
+        // Context-sensitive scroll behavior for "SCOPRI DI PIÙ" / "DISCOVER MORE"
+        function discoverMoreNextSection() {
+            const activeBlockId = currentLang === 'it' ? 'lang-it' : 'lang-en';
+            const activeBlock = document.getElementById(activeBlockId);
+            if (!activeBlock) return;
+
+            const sections = Array.from(activeBlock.querySelectorAll('.section-block'));
+            const scrollPosition = window.scrollY + 120; // Offset for mobile header
+
+            let nextSection = null;
+            for (let section of sections) {
+                if (section.offsetTop > scrollPosition) {
+                    nextSection = section;
+                    break;
+                }
+            }
+
+            // If user is at or past the last content section, scroll to contact
+            if (!nextSection) {
+                const contactId = currentLang === 'it' ? 'contact-it' : 'contact';
+                nextSection = document.getElementById(contactId);
+            }
+
+            if (nextSection) {
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
         // Auto-close mobile sidebar when clicking any navigation link
-        document.querySelectorAll('.nav-link').forEach(link => {
+        document.querySelectorAll('.nav-link, .btn-main-cta').forEach(link => {
             link.addEventListener('click', () => {
-                document.getElementById('sidebar').classList.remove('mobile-open');
+                closeMobileMenu();
             });
         });
+
+        // Touch/Pointer Swipe-Up Logic for Mobile Drag Handle
+        const sidebarEl = document.getElementById('sidebar');
+        const dragArea = document.getElementById('drag-handle-area');
+
+        let startY = 0;
+        let currentY = 0;
+        let isDragging = false;
+
+        if (dragArea && sidebarEl) {
+            dragArea.addEventListener('pointerdown', (e) => {
+                isDragging = true;
+                startY = e.clientY;
+                dragArea.setPointerCapture(e.pointerId);
+            });
+
+            dragArea.addEventListener('pointermove', (e) => {
+                if (!isDragging) return;
+                currentY = e.clientY;
+            });
+
+            dragArea.addEventListener('pointerup', (e) => {
+                if (!isDragging) return;
+                isDragging = false;
+                dragArea.releasePointerCapture(e.pointerId);
+
+                const deltaY = currentY - startY;
+                // Minimum swipe up threshold: 40px
+                if (deltaY < -40) {
+                    closeMobileMenu();
+                }
+            });
+
+            dragArea.addEventListener('pointercancel', () => {
+                isDragging = false;
+            });
+        }
     </script>
 </body>
 </html>

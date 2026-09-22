@@ -101,6 +101,18 @@
             margin-top: 4px;
         }
 
+        /* DESKTOP SIDEBAR AVATAR */
+        .sidebar-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold);
+            margin-bottom: 15px;
+            display: block;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+
         nav ul {
             list-style: none;
             display: flex;
@@ -477,21 +489,16 @@
             margin-bottom: 12px;
         }
 
-        /* ABOUT SECTION SPECIFICS */
+        /* ABOUT / WHO I AM SECTION SPECIFICS */
         .about-wrapper {
             display: flex;
             gap: 35px;
             align-items: flex-start;
         }
 
-        .profile-photo {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--gold);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-            flex-shrink: 0;
+        /* MOBILE PORTRAIT AVATAR INSIDE SECTION (HIDDEN ON DESKTOP) */
+        .section-mobile-avatar {
+            display: none;
         }
 
         .motto-tag {
@@ -615,6 +622,10 @@
         @media (max-width: 900px) {
             body {
                 flex-direction: column;
+            }
+
+            .sidebar-avatar {
+                display: none; /* Hide sidebar portrait on mobile */
             }
 
             .mobile-header {
@@ -755,12 +766,19 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                gap: 20px;
+                gap: 15px;
             }
 
-            .profile-photo {
-                width: 130px;
-                height: 130px;
+            /* DISPLAY MOBILE PORTRAIT INSIDE WHO I AM / CHI SONO */
+            .section-mobile-avatar {
+                display: block;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 2px solid var(--gold);
+                box-shadow: 0 0 18px rgba(212, 175, 55, 0.35);
+                margin: 0 auto 15px auto;
             }
 
             .form-card {
@@ -816,7 +834,7 @@
 </head>
 <body>
 
-    <!-- MOBILE HEADER -->
+    <!-- MOBILE HEADER (NO PORTRAIT HERE) -->
     <div class="mobile-header">
         <a href="#home-it" class="brand-logo" id="mobile-brand-logo" style="margin-bottom: 0;">MARCO LIA SEARCH</a>
         <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">☰</button>
@@ -825,6 +843,8 @@
     <!-- LEFT SIDEBAR -->
     <aside class="sidebar" id="sidebar">
         <div>
+            <!-- DESKTOP PORTRAIT AVATAR (ABOVE MARCO LIA SEARCH & MILANO) -->
+            <img src="logo-avatar.jpg" alt="Marco Lia" class="sidebar-avatar" onerror="this.style.display='none'">
             <a href="#home-it" class="brand-logo" id="sidebar-brand-logo">
                 MARCO LIA SEARCH
                 <span>Milano</span>
@@ -837,7 +857,7 @@
                     <li><a href="#candidate-experience-it" class="nav-link" data-href-it="#candidate-experience-it" data-href-en="#candidate-experience" data-en="Candidate Experience" data-it="Candidate Experience">Candidate Experience</a></li>
                     <li><a href="#recommendations-it" class="nav-link" data-href-it="#recommendations-it" data-href-en="#recommendations" data-en="What People Say" data-it="Dicono di me">Dicono di me</a></li>
                     <li><a href="#why-this-model-it" class="nav-link" data-href-it="#why-this-model-it" data-href-en="#why-this-model" data-en="Why This Model?" data-it="Perché Questo Modello?">Perché Questo Modello?</a></li>
-                    <li><a href="#about-it" class="nav-link" data-href-it="#about-it" data-href-en="#about" data-en="About" data-it="Chi Sono">Chi Sono</a></li>
+                    <li><a href="#about-it" class="nav-link" data-href-it="#about-it" data-href-en="#about" data-en="Who I Am" data-it="Chi Sono">Chi Sono</a></li>
                     <li><a href="#contact-it" class="nav-link" data-href-it="#contact-it" data-href-en="#contact" data-en="Contact" data-it="Contatti">Contatti</a></li>
                 </ul>
             </nav>
@@ -1071,7 +1091,8 @@
                 <section id="about-it" class="section-block">
                     <h2>Chi sono</h2>
                     <div class="about-wrapper">
-                        <img src="profile.jpg" alt="Marco Lia" class="profile-photo" onerror="this.style.display='none'">
+                        <!-- MOBILE AVATAR (CENTERED ABOVE NAME ON MOBILE ONLY) -->
+                        <img src="logo-avatar.jpg" alt="Marco Lia" class="section-mobile-avatar" onerror="this.style.display='none'">
                         <div>
                             <h3 style="color:var(--gold); font-size:1.3rem;">Marco Lia</h3>
                             <p style="color:var(--gold-light); font-size:0.95rem; font-weight:600; margin-bottom:15px;">Consulente indipendente di Executive Search & Recruitment | Milano</p>
@@ -1368,11 +1389,12 @@
                 </section>
 
 
-                <!-- 6. ABOUT (EN - INCLUDES RECOGNITION & MEDIA) -->
+                <!-- 6. WHO I AM (EN - INCLUDES RECOGNITION & MEDIA) -->
                 <section id="about" class="section-block">
-                    <h2>About</h2>
+                    <h2>Who I Am</h2>
                     <div class="about-wrapper">
-                        <img src="profile.jpg" alt="Marco Lia" class="profile-photo" onerror="this.style.display='none'">
+                        <!-- MOBILE AVATAR (CENTERED ABOVE NAME ON MOBILE ONLY) -->
+                        <img src="logo-avatar.jpg" alt="Marco Lia" class="section-mobile-avatar" onerror="this.style.display='none'">
                         <div>
                             <h3 style="color:var(--gold); font-size:1.3rem;">Marco Lia</h3>
                             <p style="color:var(--gold-light); font-size:0.95rem; font-weight:600; margin-bottom:15px;">Independent Executive Search & Recruitment Consultant | Milan</p>

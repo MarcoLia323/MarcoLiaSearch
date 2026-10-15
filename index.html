@@ -1,2022 +1,795 @@
+
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags & SEO -->
-    <title>Marco Lia Search | Executive Search & Specialist Recruitment Europe | Milano</title>
-    <meta name="description" content="Independent Executive Search & Specialist Recruitment consultancy based in Milan, supporting businesses across the European Union (Italy, Luxembourg, Netherlands) in Financial Services, Fintech, Risk & Compliance, Audit, and B2B Sales. Success-fee model.">
-    <meta name="keywords" content="Executive Search Europe, Specialist Recruitment Europe, Executive Search Milano, Financial Services Recruitment Luxembourg, Fintech Recruitment Netherlands, Risk and Compliance Recruitment, Audit Recruitment, B2B Sales Recruitment, Cross-Border Recruitment EU, Success Fee Recruitment, Headhunter Milano, Ricerca e Selezione del Personale">
-    <link rel="canonical" href="https://marcolia323.github.io/MarcoLiaSearch/">
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Marco Lia Search | Executive Search & Specialist Recruitment Europe">
-    <meta property="og:description" content="Independent recruitment consultancy based in Milan, supporting businesses across the European Union with specialist and senior-level talent acquisition.">
-    <meta property="og:image" content="https://marcolia323.github.io/MarcoLiaSearch/Business_Card.jpeg">
-    <meta property="og:url" content="https://marcolia323.github.io/MarcoLiaSearch/">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Marco Lia Search | Executive Search & Specialist Recruitment Europe">
-    <meta name="twitter:description" content="Independent recruitment consultancy based in Milan, supporting businesses across the European Union with specialist and senior-level talent acquisition.">
-    <meta name="twitter:image" content="https://marcolia323.github.io/MarcoLiaSearch/Business_Card.jpeg">
-
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Marco Lia Search",
-      "url": "https://marcolia323.github.io/MarcoLiaSearch/",
-      "logo": "https://marcolia323.github.io/MarcoLiaSearch/logo-avatar.jpg",
-      "image": "https://marcolia323.github.io/MarcoLiaSearch/Business_Card.jpeg",
-      "description": "Independent Executive Search and Specialist Recruitment consultancy based in Milan, serving clients across Italy, Luxembourg, the Netherlands, and the European Union.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Milano",
-        "addressCountry": "IT"
-      },
-      "areaServed": [
-        { "@type": "Country", "name": "Italy" },
-        { "@type": "Country", "name": "Luxembourg" },
-        { "@type": "Country", "name": "Netherlands" },
-        { "@type": "AdministrativeArea", "name": "European Union" }
-      ],
-      "knowsAbout": [
-        "Executive Search",
-        "Specialist Recruitment",
-        "Financial Services Recruitment",
-        "Fintech Recruitment",
-        "Risk & Compliance Recruitment",
-        "External Audit Recruitment",
-        "B2B Sales Recruitment",
-        "Cross-Border Talent Acquisition"
-      ],
-      "telephone": "+393520378133",
-      "email": "marco.talent.26@gmail.com",
-      "vatID": "14682580965"
-    }
-    </script>
-
-    <!-- Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --bg-blue: #071326;
-            --bg-purple: #1f0f33;
-            --card-bg: rgba(11, 25, 48, 0.75);
-            --card-bg-solid: #0b1930;
-            --gold: #d4af37;
-            --gold-light: #f3e5ab;
-            --gold-glow: rgba(212, 175, 55, 0.15);
-            --text-light: #ffffff;
-            --text-muted: #cbd5e1;
-            --border-color: rgba(212, 175, 55, 0.25);
-            --border-light: rgba(255, 255, 255, 0.08);
-            --sidebar-width: 280px;
-            --font-main: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-serif: 'Cormorant Garamond', Georgia, serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: var(--font-main);
-            background-color: var(--bg-blue);
-            background-image: 
-                radial-gradient(circle at 15% 15%, rgba(31, 15, 51, 0.8) 0%, transparent 40%),
-                radial-gradient(circle at 85% 85%, rgba(11, 25, 48, 0.9) 0%, transparent 50%),
-                linear-gradient(180deg, #071326 0%, #040a14 100%);
-            background-attachment: fixed;
-            color: var(--text-light);
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-            display: flex;
-            overflow-x: hidden;
-        }
-
-        /* TYPOGRAPHY */
-        h1, h2, h3, h4, .serif-heading {
-            font-family: var(--font-serif);
-            font-weight: 600;
-            color: var(--text-light);
-            line-height: 1.25;
-            letter-spacing: -0.01em;
-        }
-
-        h2.section-title {
-            font-size: 2.2rem;
-            color: var(--gold);
-            margin-bottom: 25px;
-            position: relative;
-            padding-bottom: 15px;
-        }
-
-        h2.section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 1px;
-            background: var(--gold);
-        }
-
-        p {
-            color: var(--text-muted);
-            font-size: 0.98rem;
-            font-weight: 300;
-            margin-bottom: 18px;
-            line-height: 1.75;
-        }
-
-        p strong, span strong, li strong {
-            color: var(--text-light);
-            font-weight: 600;
-        }
-
-        /* SIDEBAR (DESKTOP) */
-        .sidebar {
-            width: var(--sidebar-width);
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: rgba(5, 13, 26, 0.96);
-            border-right: 1px solid var(--border-color);
-            padding: 40px 28px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            z-index: 1000;
-            backdrop-filter: blur(15px);
-        }
-
-        .brand-header {
-            text-align: left;
-            margin-bottom: 35px;
-        }
-
-        .sidebar-avatar {
-            width: 76px;
-            height: 76px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 1px solid var(--gold);
-            margin-bottom: 16px;
-            display: block;
-            box-shadow: 0 0 20px var(--gold-glow);
-        }
-
-        .brand-logo {
-            font-family: var(--font-serif);
-            font-size: 1.35rem;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            color: var(--gold);
-            text-decoration: none;
-            display: block;
-            line-height: 1.15;
-            text-transform: uppercase;
-        }
-
-        .brand-logo span {
-            display: block;
-            font-family: var(--font-main);
-            color: var(--text-muted);
-            font-weight: 400;
-            font-size: 0.72rem;
-            letter-spacing: 0.2em;
-            margin-top: 6px;
-            text-transform: uppercase;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        nav a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-
-        nav a::before {
-            content: '';
-            width: 0;
-            height: 1px;
-            background: var(--gold);
-            margin-right: 0;
-            transition: all 0.3s ease;
-        }
-
-        nav a:hover, nav a.active {
-            color: var(--gold-light);
-            padding-left: 5px;
-        }
-
-        nav a:hover::before, nav a.active::before {
-            width: 12px;
-            margin-right: 8px;
-        }
-
-        .sidebar-footer {
-            margin-top: auto;
-            padding-top: 25px;
-            border-top: 1px solid var(--border-light);
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .btn-cta-nav {
-            background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 100%);
-            color: #071326;
-            padding: 12px 16px;
-            border-radius: 2px;
-            font-weight: 700;
-            font-size: 0.72rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            text-align: center;
-            transition: all 0.3s ease;
-            display: block;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-
-        .btn-cta-nav:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
-            background: linear-gradient(135deg, #ffffff 0%, #d4af37 100%);
-        }
-
-        .lang-toggle {
-            display: flex;
-            border: 1px solid var(--border-color);
-            border-radius: 2px;
-            overflow: hidden;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        .lang-btn {
-            background: transparent;
-            border: none;
-            color: var(--text-muted);
-            padding: 6px 0;
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-family: inherit;
-            flex: 1;
-            text-align: center;
-        }
-
-        .lang-btn.active {
-            background: var(--gold);
-            color: #071326;
-        }
-
-        .drag-handle-container {
-            display: none;
-        }
-
-        /* MOBILE HEADER */
-        .mobile-header {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(7, 19, 38, 0.96);
-            border-bottom: 1px solid var(--border-color);
-            padding: 16px 20px;
-            z-index: 1001;
-            justify-content: space-between;
-            align-items: center;
-            backdrop-filter: blur(10px);
-        }
-
-        .mobile-menu-btn {
-            background: none;
-            border: none;
-            color: var(--gold);
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        .mobile-sticky-cta {
-            display: none;
-        }
-
-        /* MAIN WRAPPER */
-        .main-wrapper {
-            margin-left: var(--sidebar-width);
-            flex: 1;
-            min-width: 0;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 60px 40px 80px 40px;
-        }
-
-        /* SECTION DISPLAY FIX */
-        .section-block {
-            margin-bottom: 90px;
-            scroll-margin-top: 50px;
-            opacity: 1;
-            transform: none;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            padding: 65px 45px;
-            background: linear-gradient(145deg, rgba(11, 25, 48, 0.85) 0%, rgba(31, 15, 51, 0.6) 100%);
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            position: relative;
-            margin-bottom: 45px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--gold), transparent);
-        }
-
-        .hero h1 {
-            font-size: 2.7rem;
-            color: var(--text-light);
-            margin-bottom: 20px;
-            line-height: 1.18;
-            max-width: 880px;
-        }
-
-        .hero .hero-sub {
-            font-family: var(--font-main);
-            font-size: 1.05rem;
-            color: var(--gold-light);
-            font-weight: 500;
-            margin-bottom: 22px;
-            max-width: 820px;
-            line-height: 1.6;
-        }
-
-        .hero .hero-desc {
-            max-width: 800px;
-            margin-bottom: 25px;
-            font-size: 0.98rem;
-        }
-
-        .hero .hero-highlight {
-            font-size: 1rem;
-            color: #ffffff;
-            font-weight: 600;
-            margin-bottom: 30px;
-            padding: 16px 24px;
-            background: rgba(212, 175, 55, 0.08);
-            border-left: 3px solid var(--gold);
-            border-radius: 0 2px 2px 0;
-            letter-spacing: 0.02em;
-        }
-
-        .hero-action {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .hero-statement {
-            font-weight: 600;
-            color: var(--gold-light);
-            font-size: 0.92rem;
-            letter-spacing: 0.02em;
-        }
-
-        /* GRID SYSTEM */
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-        }
-
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 28px;
-        }
-
-        /* EDITORIAL & CARDS */
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-light);
-            border-radius: 3px;
-            padding: 32px;
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            position: relative;
-        }
-
-        .card:hover {
-            border-color: var(--border-color);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-
-        .card h3 {
-            font-size: 1.4rem;
-            color: var(--gold-light);
-            margin-bottom: 12px;
-        }
-
-        .card p {
-            font-size: 0.92rem;
-            flex-grow: 1;
-            margin-bottom: 20px;
-        }
-
-        .card-link {
-            display: inline-flex;
-            align-items: center;
-            color: var(--gold);
-            font-weight: 600;
-            font-size: 0.78rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            transition: all 0.2s ease;
-        }
-
-        .card-link:hover {
-            color: var(--gold-light);
-            padding-left: 4px;
-        }
-
-        /* FEATURED BOXES */
-        .featured-box {
-            background: rgba(212, 175, 55, 0.05);
-            border-left: 2px solid var(--gold);
-            padding: 20px 24px;
-            margin: 25px 0;
-        }
-
-        .featured-box p {
-            margin: 0;
-            font-size: 1.02rem;
-            color: #ffffff;
-            font-weight: 600;
-            line-height: 1.6;
-            font-family: var(--font-serif);
-        }
-
-        /* PROCESS TIMELINE */
-        .process-timeline {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-top: 35px;
-            position: relative;
-        }
-
-        .process-node {
-            display: grid;
-            grid-template-columns: 80px 1fr;
-            background: var(--card-bg);
-            border: 1px solid var(--border-light);
-            border-radius: 3px;
-            padding: 28px;
-            transition: border-color 0.3s ease;
-        }
-
-        .process-node:hover {
-            border-color: var(--border-color);
-        }
-
-        .process-number {
-            font-family: var(--font-serif);
-            font-size: 2.2rem;
-            color: var(--gold);
-            font-weight: 700;
-            line-height: 1;
-        }
-
-        .process-content h3 {
-            font-size: 1.35rem;
-            color: var(--text-light);
-            margin-bottom: 8px;
-        }
-
-        .process-content p {
-            margin-bottom: 0;
-        }
-
-        /* EUROPEAN COVERAGE CARDS */
-        .coverage-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-top: 25px;
-            margin-bottom: 20px;
-        }
-
-        .coverage-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-light);
-            border-radius: 3px;
-            padding: 25px;
-            transition: border-color 0.3s ease;
-        }
-
-        .coverage-card:hover {
-            border-color: var(--border-color);
-        }
-
-        .coverage-badge {
-            font-size: 0.7rem;
-            font-weight: 700;
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            margin-bottom: 8px;
-            display: block;
-        }
-
-        .coverage-card h3 {
-            font-size: 1.25rem;
-            color: var(--text-light);
-            margin-bottom: 10px;
-        }
-
-        .coverage-card p {
-            font-size: 0.88rem;
-            margin-bottom: 0;
-            line-height: 1.6;
-        }
-
-        .coverage-disclaimer {
-            font-size: 0.82rem;
-            font-style: italic;
-            color: var(--text-muted);
-            margin-top: 15px;
-            opacity: 0.85;
-        }
-
-        /* COMMERCIAL SECTION */
-        .commercial-highlights {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            margin: 28px 0;
-        }
-
-        .commercial-card {
-            background: rgba(7, 19, 38, 0.8);
-            border: 1px solid var(--border-color);
-            border-radius: 2px;
-            padding: 20px 15px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .commercial-card h4 {
-            font-family: var(--font-main);
-            color: var(--gold-light);
-            font-size: 0.78rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin: 0;
-            line-height: 1.4;
-        }
-
-        /* RECOMMENDATIONS */
-        .recommendation-featured {
-            background: linear-gradient(135deg, rgba(15, 32, 61, 0.9) 0%, rgba(31, 15, 51, 0.8) 100%);
-            border: 1px solid var(--gold);
-            padding: 40px;
-            border-radius: 3px;
-            margin-bottom: 30px;
-            position: relative;
-            box-shadow: 0 10px 30px var(--gold-glow);
-        }
-
-        .recommendation-featured::before {
-            content: '“';
-            font-family: var(--font-serif);
-            font-size: 6rem;
-            color: var(--gold);
-            opacity: 0.2;
-            position: absolute;
-            top: 10px;
-            right: 25px;
-            line-height: 1;
-        }
-
-        .recommendation-category {
-            font-size: 0.7rem;
-            font-weight: 800;
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .recommendation-quote {
-            font-family: var(--font-serif);
-            font-style: italic;
-            color: var(--text-light);
-            font-size: 1.25rem;
-            line-height: 1.6;
-            margin-bottom: 22px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .recommendation-author {
-            color: var(--gold-light);
-            font-weight: 700;
-            font-size: 0.95rem;
-            margin-bottom: 2px;
-        }
-
-        .recommendation-role {
-            color: var(--text-muted);
-            font-size: 0.82rem;
-            margin-bottom: 10px;
-        }
-
-        .recommendation-source {
-            font-size: 0.7rem;
-            color: rgba(203, 213, 225, 0.5);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .recommendation-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-light);
-            border-radius: 3px;
-            padding: 28px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        /* MEDIA & RECOGNITION */
-        .media-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            margin-top: 20px;
-            margin-bottom: 25px;
-        }
-
-        .media-item {
-            background: rgba(7, 19, 38, 0.6);
-            border: 1px solid var(--border-light);
-            border-radius: 2px;
-            padding: 22px;
-            transition: border-color 0.3s ease;
-        }
-
-        .media-item:hover {
-            border-color: var(--border-color);
-        }
-
-        .media-item h4 {
-            font-family: var(--font-serif);
-            color: var(--gold-light);
-            font-size: 1.15rem;
-            margin-bottom: 6px;
-        }
-
-        .media-item p {
-            font-size: 0.88rem;
-            margin-bottom: 12px;
-        }
-
-        .media-meta {
-            font-size: 0.72rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-
-        /* ABOUT SECTION */
-        .about-wrapper {
-            display: flex;
-            gap: 40px;
-            align-items: flex-start;
-        }
-
-        .section-mobile-avatar {
-            display: none;
-        }
-
-        .motto-tag {
-            font-family: var(--font-serif);
-            font-style: italic;
-            font-weight: 600;
-            color: var(--gold-light);
-            margin-top: 25px;
-            font-size: 1.3rem;
-            letter-spacing: 0.05em;
-        }
-
-        /* FORM & CONTACT */
-        .form-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 3px;
-            padding: 40px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            color: var(--gold-light);
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-bottom: 8px;
-        }
-
-        .form-group input, 
-        .form-group textarea {
-            width: 100%;
-            padding: 14px 16px;
-            background: rgba(5, 13, 26, 0.8);
-            border: 1px solid var(--border-light);
-            border-radius: 2px;
-            color: #ffffff;
-            font-family: inherit;
-            font-size: 0.92rem;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus, 
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--gold);
-            box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
-            background: rgba(5, 13, 26, 0.95);
-        }
-
-        .btn-submit {
-            background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 100%);
-            color: #071326;
-            border: none;
-            padding: 16px 28px;
-            font-weight: 700;
-            font-size: 0.82rem;
-            border-radius: 2px;
-            cursor: pointer;
-            width: 100%;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            transition: all 0.3s ease;
-        }
-
-        .btn-submit:hover {
-            background: linear-gradient(135deg, #ffffff 0%, #d4af37 100%);
-            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
-        }
-
-        /* FOOTER */
-        footer {
-            border-top: 1px solid var(--border-color);
-            padding: 40px 20px 50px 20px;
-            text-align: center;
-            background: rgba(4, 10, 20, 0.98);
-            margin-top: 80px;
-        }
-
-        footer p {
-            font-size: 0.82rem;
-            color: var(--text-muted);
-            margin-bottom: 6px;
-            letter-spacing: 0.02em;
-        }
-
-        .footer-vat {
-            color: var(--gold);
-            font-weight: 600;
-            font-size: 0.82rem;
-            letter-spacing: 0.05em;
-        }
-
-        /* LANGUAGE BLOCK DISPLAY */
-        .lang-block {
-            display: block !important;
-        }
-
-        .lang-block.active {
-            display: block !important;
-        }
-
-        /* RESPONSIVE DESIGN */
-        @media (max-width: 1024px) {
-            .grid-3, .coverage-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 900px) {
-            body {
-                flex-direction: column;
-            }
-
-            .sidebar-avatar {
-                display: none;
-            }
-
-            .mobile-header {
-                display: flex;
-            }
-
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: fixed;
-                top: 61px;
-                left: -100%;
-                transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-                box-shadow: 0 20px 40px rgba(0,0,0,0.8);
-                max-height: calc(100vh - 61px);
-                overflow-y: auto;
-                padding: 30px 24px;
-            }
-
-            .sidebar.mobile-open {
-                left: 0;
-            }
-
-            .drag-handle-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 16px 0 6px 0;
-                width: 100%;
-                cursor: grab;
-                touch-action: none;
-            }
-
-            .drag-handle {
-                width: 50px;
-                height: 4px;
-                background-color: var(--gold);
-                border-radius: 4px;
-                box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
-            }
-
-            .main-wrapper {
-                margin-left: 0;
-                padding-top: 61px;
-            }
-
-            .container {
-                padding: 35px 20px 100px 20px;
-            }
-
-            .section-block {
-                margin-bottom: 60px;
-                scroll-margin-top: 80px;
-            }
-
-            h2.section-title {
-                font-size: 1.8rem;
-            }
-
-            .hero {
-                padding: 35px 22px;
-            }
-
-            .hero h1 {
-                font-size: 1.9rem;
-            }
-
-            .hero .hero-sub {
-                font-size: 0.98rem;
-            }
-
-            .grid-3, .grid-2, .coverage-grid, .commercial-highlights {
-                grid-template-columns: 1fr;
-                gap: 18px;
-            }
-
-            .process-node {
-                grid-template-columns: 1fr;
-                gap: 10px;
-                padding: 22px;
-            }
-
-            .process-number {
-                font-size: 1.6rem;
-            }
-
-            .about-wrapper {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .section-mobile-avatar {
-                display: block;
-                width: 110px;
-                height: 110px;
-                border-radius: 50%;
-                object-fit: cover;
-                border: 1px solid var(--gold);
-                box-shadow: 0 0 20px var(--gold-glow);
-                margin: 0 auto 20px auto;
-            }
-
-            .form-card {
-                padding: 28px 20px;
-            }
-
-            .btn-cta-nav, .btn-submit, .card-link {
-                min-height: 44px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .mobile-sticky-cta {
-                display: block;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background: rgba(5, 13, 26, 0.98);
-                border-top: 1px solid var(--border-color);
-                padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
-                z-index: 999;
-                backdrop-filter: blur(12px);
-            }
-
-            .mobile-sticky-btn {
-                background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 100%);
-                color: #071326;
-                padding: 12px 20px;
-                border-radius: 2px;
-                font-weight: 700;
-                font-size: 0.78rem;
-                text-decoration: none;
-                text-transform: uppercase;
-                letter-spacing: 0.1em;
-                text-align: center;
-                display: block;
-                width: 100%;
-                border: none;
-                cursor: pointer;
-            }
-
-            footer {
-                padding-bottom: 120px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marco Lia Search | Executive Search & Specialist Recruitment Europe</title>
+<meta name="description" content="Independent executive search and specialist recruitment consultancy based in Milan, supporting businesses across Europe.">
+<link rel="canonical" href="https://marcolia323.github.io/MarcoLiaSearch/">
+
+<style>
+:root {
+  --navy:#071326;
+  --deep:#040a14;
+  --gold:#d4af37;
+  --pale:#f3e5ab;
+  --text:#cbd5e1;
+  --panel:rgba(11,25,48,.88);
+  --border:rgba(212,175,55,.26);
+  --sidebar:280px;
+  --font:Calibri,Carlito,Arial,sans-serif;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  background:var(--deep);
+  color:white;
+  font-family:var(--font);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+button,input,textarea { font-family:var(--font); }
+a { color:inherit; }
+p { color:var(--text); margin:0 0 18px; }
+h1,h2,h3,h4 { line-height:1.25; margin:0 0 18px; }
+h1 { font-size:clamp(2rem,4vw,3.3rem); }
+h2 { font-size:clamp(1.65rem,3vw,2.25rem); color:var(--gold); }
+h3 { font-size:1.35rem; color:var(--pale); }
+strong { color:white; }
+section { scroll-margin-top:85px; margin-bottom:85px; }
+.lang-block { display:none; }
+.lang-block.active { display:block; }
+
+/* GEOMETRIC BOTANICAL BACKGROUND */
+.background {
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  pointer-events:none;
+  background:
+    radial-gradient(ellipse at 80% 15%,rgba(80,55,20,.20),transparent 48%),
+    radial-gradient(ellipse at 20% 85%,rgba(35,22,65,.45),transparent 55%),
+    linear-gradient(145deg,#071326,#090e1c 55%,#040a14);
+}
+.botanical {
+  position:absolute;
+  width:min(75vw,850px);
+  height:auto;
+  right:-15%;
+  top:2%;
+  opacity:.31;
+  filter:drop-shadow(0 0 20px rgba(212,175,55,.18));
+}
+.botanical.second {
+  top:auto;
+  bottom:-20%;
+  right:auto;
+  left:5%;
+  width:min(65vw,700px);
+  opacity:.17;
+  transform:rotate(170deg);
+}
+.background::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(212,175,55,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(212,175,55,.025) 1px,transparent 1px);
+  background-size:65px 65px;
+  mask-image:linear-gradient(90deg,transparent,#000);
+}
+
+/* SIDEBAR */
+.sidebar {
+  position:fixed;
+  inset:0 auto 0 0;
+  width:var(--sidebar);
+  padding:32px 25px;
+  background:rgba(5,13,26,.97);
+  border-right:1px solid var(--border);
+  display:flex;
+  flex-direction:column;
+  z-index:20;
+  overflow-y:auto;
+}
+.avatar {
+  width:78px;
+  height:78px;
+  border-radius:50%;
+  object-fit:cover;
+  border:1px solid var(--gold);
+  margin-bottom:15px;
+}
+.brand {
+  display:block;
+  color:var(--gold);
+  font-size:1.48rem;
+  font-weight:700;
+  letter-spacing:1.2px;
+  line-height:1.12;
+  text-decoration:none;
+}
+.brand span {
+  display:block;
+  color:var(--text);
+  font-size:.75rem;
+  letter-spacing:3px;
+  margin-top:9px;
+  font-weight:400;
+}
+.lang-toggle {
+  display:flex;
+  width:100%;
+  margin:22px 0 30px;
+  border:1px solid var(--border);
+  border-radius:3px;
+  overflow:hidden;
+}
+.lang-btn {
+  flex:1;
+  padding:8px;
+  background:transparent;
+  border:0;
+  color:var(--text);
+  cursor:pointer;
+  font-weight:700;
+}
+.lang-btn.active { background:var(--gold); color:var(--navy); }
+nav { display:flex; flex-direction:column; gap:4px; }
+nav a {
+  text-decoration:none;
+  color:var(--text);
+  font-size:.82rem;
+  font-weight:700;
+  letter-spacing:.8px;
+  text-transform:uppercase;
+  padding:9px 0;
+}
+nav a:hover,nav a.active { color:var(--gold); }
+.sidebar-footer { margin-top:auto; padding-top:25px; }
+.mobile-header { display:none; }
+
+/* MAIN */
+.main-wrapper { margin-left:var(--sidebar); }
+.container { max-width:1120px; margin:auto; padding:60px 42px; }
+.hero {
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(125deg,rgba(11,25,48,.96),rgba(31,15,51,.82));
+  border:1px solid var(--border);
+  padding:65px 45px;
+  margin-bottom:30px;
+  box-shadow:0 25px 65px rgba(0,0,0,.35);
+}
+.hero::before {
+  content:"";
+  position:absolute;
+  height:2px;
+  inset:0 0 auto;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.hero h1 { max-width:850px; }
+.hero-sub { color:var(--pale); font-size:1.12rem; font-weight:600; }
+.highlight {
+  border-left:3px solid var(--gold);
+  background:rgba(212,175,55,.09);
+  padding:15px 20px;
+  margin:25px 0;
+  font-weight:700;
+}
+.btn {
+  display:inline-block;
+  background:linear-gradient(135deg,var(--pale),var(--gold));
+  color:var(--navy);
+  padding:13px 20px;
+  text-decoration:none;
+  text-align:center;
+  font-size:.82rem;
+  font-weight:700;
+  letter-spacing:.5px;
+  border:0;
+  cursor:pointer;
+  border-radius:3px;
+}
+.btn:hover { filter:brightness(1.12); }
+.btn-outline {
+  background:transparent;
+  color:var(--pale);
+  border:1px solid var(--gold);
+}
+.grid { display:grid; gap:22px; }
+.grid-3 { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.grid-2 { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.card {
+  background:var(--panel);
+  border:1px solid rgba(255,255,255,.09);
+  padding:28px;
+  border-radius:4px;
+  transition:transform .25s,border-color .25s;
+}
+.card:hover { transform:translateY(-3px); border-color:var(--gold); }
+.card p:last-child { margin-bottom:0; }
+.section-title { padding-bottom:15px; border-bottom:1px solid var(--border); }
+.small-label {
+  display:block;
+  color:var(--gold);
+  font-size:.76rem;
+  font-weight:700;
+  letter-spacing:1.2px;
+  margin-bottom:8px;
+}
+.process {
+  display:grid;
+  grid-template-columns:60px 1fr;
+  gap:15px;
+  align-items:start;
+  margin-bottom:15px;
+}
+.process-number { color:var(--gold); font-size:2rem; font-weight:700; }
+.quote { font-style:italic; color:white; font-size:1.05rem; }
+.author { color:var(--pale); font-weight:700; }
+.featured { border:1px solid var(--gold); background:var(--panel); padding:35px; }
+.media-item { border-bottom:1px solid var(--border); padding:20px 0; }
+.media-item a { color:var(--gold); }
+.form-card { background:var(--panel); padding:30px; border:1px solid var(--border); }
+.form-group { margin-bottom:18px; }
+.form-group label { display:block; color:var(--pale); font-weight:700; margin-bottom:7px; }
+.form-group input,.form-group textarea {
+  width:100%;
+  background:#050d1a;
+  color:white;
+  padding:13px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:3px;
+}
+.form-group input:focus,.form-group textarea:focus { outline:1px solid var(--gold); }
+footer {
+  border-top:1px solid var(--border);
+  background:rgba(4,10,20,.9);
+  text-align:center;
+  padding:35px 20px;
+  color:var(--text);
+  font-size:.85rem;
+}
+footer p { margin:5px; }
+.mobile-cta { display:none; }
+
+@media(max-width:1000px) {
+  .grid-3 { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:900px) {
+  .sidebar {
+    width:100%;
+    top:62px;
+    bottom:auto;
+    max-height:calc(100dvh - 62px);
+    transform:translateX(-105%);
+    transition:transform .3s;
+    border-right:0;
+    border-bottom:1px solid var(--border);
+  }
+  .sidebar.mobile-open { transform:translateX(0); }
+  .mobile-header {
+    display:flex;
+    position:fixed;
+    inset:0 0 auto;
+    height:62px;
+    z-index:30;
+    background:#050d1a;
+    border-bottom:1px solid var(--border);
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+  }
+  .mobile-header a { color:var(--gold); text-decoration:none; font-weight:700; }
+  .menu-button { background:none; border:0; color:var(--gold); font-size:1.7rem; }
+  .main-wrapper { margin-left:0; padding-top:62px; }
+  .container { padding:28px 18px 110px; }
+  .hero { padding:36px 23px; }
+  .grid-2,.grid-3 { grid-template-columns:1fr; }
+  section { margin-bottom:60px; }
+  .botanical { width:100vw; right:-40%; }
+  .mobile-cta {
+    display:block;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:15;
+    background:#050d1a;
+    border-top:1px solid var(--border);
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  }
+  .mobile-cta .btn { display:block; }
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; }
+}
+</style>
 </head>
+
 <body>
 
-    <!-- MOBILE HEADER -->
-    <div class="mobile-header">
-        <a href="#home-it" class="brand-logo" id="mobile-brand-logo">MARCO LIA SEARCH</a>
-        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">☰</button>
-    </div>
-
-    <!-- LEFT NAVIGATION SIDEBAR -->
-    <aside class="sidebar" id="sidebar">
-        <div>
- <div class="brand-header">
-    <img src="logo-avatar.jpg" alt="Marco Lia"
-         class="sidebar-avatar"
-         onerror="this.style.display='none'">
-
-    <a href="#home" class="brand-logo"
-       id="sidebar-brand-logo">
-        MARCO LIA SEARCH
-        <span>Milano</span>
-    </a>
-
-    <!-- LANGUAGE SELECTOR BELOW MILANO -->
-    <div class="lang-toggle" style="margin-top:20px;">
-        <button class="lang-btn"
-                onclick="switchLang('it')">IT</button>
-
-        <button class="lang-btn active"
-                onclick="switchLang('en')">EN</button>
-    </div>
+<!-- Decorative geometry: branching tree and flower rosettes -->
+<div class="background" aria-hidden="true">
+  <svg class="botanical" viewBox="0 0 700 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="goldLine" x1="0" y1="0" x2="700" y2="900">
+        <stop stop-color="#f3e5ab"/>
+        <stop offset=".5" stop-color="#d4af37"/>
+        <stop offset="1" stop-color="#73551a"/>
+      </linearGradient>
+      <g id="flower">
+        <polygon points="0,-52 17,-20 0,0 -17,-20" />
+        <polygon points="52,0 20,17 0,0 20,-17" />
+        <polygon points="0,52 -17,20 0,0 17,20" />
+        <polygon points="-52,0 -20,-17 0,0 -20,17" />
+        <polygon points="37,-37 13,-15 0,0 15,-13" />
+        <polygon points="37,37 15,13 0,0 13,15" />
+        <polygon points="-37,37 -13,15 0,0 -15,13" />
+        <polygon points="-37,-37 -15,-13 0,0 -13,-15" />
+        <circle r="11"/>
+        <circle r="24" stroke-dasharray="3 7"/>
+      </g>
+      <g id="leaf">
+        <path d="M0 0 Q35 -55 65 -70 Q65 -15 0 0Z"/>
+        <path d="M0 0L65 -70"/>
+      </g>
+    </defs>
+    <g stroke="url(#goldLine)" stroke-width="1.5">
+      <path d="M345 900L345 450L245 310L195 140"/>
+      <path d="M345 650L490 470L545 275"/>
+      <path d="M345 530L195 450L95 315"/>
+      <path d="M345 450L420 280L430 100"/>
+      <path d="M245 310L315 180L300 45"/>
+      <path d="M490 470L610 390L665 235"/>
+      <path d="M195 450L170 285L80 195"/>
+      <path d="M345 750L220 650L95 610"/>
+      <path d="M345 750L470 700L595 610"/>
+      <path d="M345 530L440 575L520 550"/>
+      <use href="#leaf" transform="translate(345 650) rotate(155)"/>
+      <use href="#leaf" transform="translate(345 530) rotate(-35)"/>
+      <use href="#leaf" transform="translate(490 470) rotate(15)"/>
+      <use href="#leaf" transform="translate(245 310) rotate(120)"/>
+      <use href="#leaf" transform="translate(195 450) rotate(180)"/>
+      <use href="#leaf" transform="translate(345 750) rotate(210)"/>
+      <use href="#leaf" transform="translate(420 280) rotate(55)"/>
+      <use href="#flower" transform="translate(195 140) scale(.85)"/>
+      <use href="#flower" transform="translate(545 275) scale(1.2)"/>
+      <use href="#flower" transform="translate(95 315) scale(.65)"/>
+      <use href="#flower" transform="translate(430 100) scale(.85)"/>
+      <use href="#flower" transform="translate(300 45) scale(.65)"/>
+      <use href="#flower" transform="translate(665 235) scale(.7)"/>
+      <use href="#flower" transform="translate(80 195) scale(.75)"/>
+      <use href="#flower" transform="translate(95 610) scale(.65)"/>
+      <use href="#flower" transform="translate(595 610) scale(.9)"/>
+      <use href="#flower" transform="translate(520 550) scale(.55)"/>
+      <circle cx="345" cy="530" r="125" stroke-dasharray="2 12" opacity=".45"/>
+      <circle cx="345" cy="530" r="205" opacity=".2"/>
+    </g>
+  </svg>
+  <svg class="botanical second" viewBox="0 0 700 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#d4af37" stroke-width="1.5">
+      <path d="M350 900L350 400L170 200M350 650L540 350L600 100M350 400L450 150"/>
+      <circle cx="170" cy="200" r="60"/>
+      <circle cx="540" cy="350" r="85"/>
+      <circle cx="450" cy="150" r="55"/>
+      <circle cx="600" cy="100" r="35"/>
+      <path d="M170 140L230 200L170 260L110 200Z"/>
+      <path d="M540 265L625 350L540 435L455 350Z"/>
+      <path d="M450 95L505 150L450 205L395 150Z"/>
+    </g>
+  </svg>
 </div>
 
-            <nav>
-                <ul>
-                    <li><a href="#home-it" class="nav-link" data-href-it="#home-it" data-href-en="#home" data-en="Home" data-it="Home">Home</a></li>
-                    <li><a href="#services-it" class="nav-link" data-href-it="#services-it" data-href-en="#services" data-en="Services" data-it="Servizi">Servizi</a></li>
-                    <li><a href="#coverage-it" class="nav-link" data-href-it="#coverage-it" data-href-en="#coverage" data-en="European Coverage" data-it="Copertura Europea">Copertura Europea</a></li>
-                    <li><a href="#how-it-works-it" class="nav-link" data-href-it="#how-it-works-it" data-href-en="#how-it-works" data-en="How It Works" data-it="Come Funziona">Come Funziona</a></li>
-                    <li><a href="#recommendations-it" class="nav-link" data-href-it="#recommendations-it" data-href-en="#recommendations" data-en="What People Say" data-it="Dicono di me">Dicono di me</a></li>
-                    <li><a href="#why-this-model-it" class="nav-link" data-href-it="#why-this-model-it" data-href-en="#why-this-model" data-en="Why Work With Me" data-it="Perché Lavorare Con Me">Perché Lavorare Con Me</a></li>
-                    <li><a href="#about-it" class="nav-link" data-href-it="#about-it" data-href-en="#about" data-en="Who I Am" data-it="Chi Sono">Chi Sono</a></li>
-                    <li><a href="#contact-it" class="nav-link" data-href-it="#contact-it" data-href-en="#contact" data-en="Contact" data-it="Contatti">Contatti</a></li>
-                </ul>
-            </nav>
-        </div>
+<header class="mobile-header">
+  <a href="#home" id="mobile-brand-logo">MARCO LIA SEARCH</a>
+  <button class="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMobileMenu()">☰</button>
+</header>
 
-        <div class="sidebar-footer">
-            <a href="#contact-it" class="btn-cta-nav btn-main-cta">PARLIAMO DELLA SUA RICERCA</a>
-            <div class="drag-handle-container" id="drag-handle-area">
-                <div class="drag-handle"></div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- MOBILE STICKY BOTTOM CTA -->
-    <div class="mobile-sticky-cta">
-        <button type="button" class="mobile-sticky-btn" id="mobile-sticky-link" onclick="discoverMoreNextSection()">SCOPRI DI PIÙ</button>
+<aside class="sidebar" id="sidebar">
+  <div>
+    <img src="logo-avatar.jpg" alt="Marco Lia" class="avatar" onerror="this.style.display='none'">
+    <a href="#home" class="brand" id="sidebar-brand-logo">
+      MARCO LIA SEARCH
+      <span>MILANO</span>
+    </a>
+    <div class="lang-toggle" aria-label="Website language">
+      <button type="button" class="lang-btn" data-lang="it" onclick="switchLang('it')">IT</button>
+      <button type="button" class="lang-btn active" data-lang="en" onclick="switchLang('en')">EN</button>
     </div>
-
-    <!-- MAIN CONTENT WRAPPER -->
-    <div class="main-wrapper">
-        <main class="container">
-
-            <!-- ==================== ITALIAN CONTENT ==================== -->
-            <div id="lang-it" class="lang-block">
-
-                <!-- 1. HOME — HERO & NAVIGATION -->
-                <section id="home-it" class="section-block">
-                    <div class="hero">
-                        <h1>Executive Search & Ricerca Specialistica in Europa</h1>
-                        <p class="hero-sub">Società di consulenza e selezione indipendente con sede a Milano, al servizio delle aziende nell'Unione Europea per l'acquisizione di talenti specializzati e di livello senior nei settori Servizi Finanziari, Fintech, Risk & Compliance, Audit e Vendite B2B.</p>
-                        
-                        <div class="hero-highlight">
-                            Selezione a Success-Fee | Nessun Costo Iniziale | Ricerca Talent Transfrontaliera
-                        </div>
-
-                        <p class="hero-desc">Trovare la persona giusta richiede tempo, soprattutto quando i profili migliori non stanno cercando attivamente. Mappiamo il mercato, contattiamo direttamente i potenziali candidati, li valutiamo e Le presentiamo i profili che vale davvero la pena incontrare.</p>
-                        
-                        <div class="hero-action">
-                            <a href="#contact-it" class="btn-cta-nav btn-main-cta" style="display:inline-block; padding:14px 32px;">PARLIAMO DELLA SUA RICERCA</a>
-                            <span class="hero-statement">Supporto di recruiting quando serve, senza inserire un altro recruiter nella Sua struttura.</span>
-                        </div>
-                    </div>
-
-                    <div class="grid-3">
-                        <div class="card">
-                            <div>
-                                <h3>I Nostri Servizi</h3>
-                                <p>Executive Search, Ricerca Specialistica e Selezione Transfrontaliera.</p>
-                            </div>
-                            <a href="#services-it" class="card-link">SCOPRI I SERVIZI →</a>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3>Copertura Europea</h3>
-                                <p>Supporto mirato per aziende in Italia, Lussemburgo e Paesi Bassi.</p>
-                            </div>
-                            <a href="#coverage-it" class="card-link">COPERTURA UE →</a>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3>Perché Scegliermi</h3>
-                                <p>14 anni nei Servizi Finanziari, 5 anni nel recruiting ed approccio consulenziale diretto.</p>
-                            </div>
-                            <a href="#why-this-model-it" class="card-link">I VANTAGGI →</a>
-                        </div>
-                    </div>
-
-                    <div class="card" style="margin-top:30px; text-align:center; padding:45px 30px;">
-                        <h2 class="end-cta-heading" style="font-size:1.8rem; margin-bottom:15px;">Cerca Talent Specialist o di Livello Senior?</h2>
-                        <p style="margin-bottom:25px; max-width:680px; margin-left:auto; margin-right:auto;">Che stia assumendo a livello locale o valutando profili sui mercati europei, parliamo di come Marco Lia Search può supportare la Sua ricerca.</p>
-                        <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-                            <a href="#contact-it" class="btn-cta-nav btn-main-cta" style="display:inline-block; padding:14px 32px;">VALUTIAMO UNA RICERCA</a>
-                            <a href="#contact-it" class="btn-cta-nav" style="display:inline-block; padding:14px 32px; background:transparent; color:var(--gold-light); border:1px solid var(--gold);">CONTATTA MARCO LIA</a>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 2. SERVIZI -->
-                <section id="services-it" class="section-block">
-                    <h2 class="section-title">I Nostri Servizi</h2>
-                    <p style="margin-bottom:30px;">Offriamo soluzioni di recruiting flessibili e orientate ai risultati, strutturate per identificare e valutare professionisti qualificati.</p>
-
-                    <div class="grid-3">
-                        <div class="card">
-                            <div>
-                                <h3>Executive Search</h3>
-                                <p>Ricerca e selezione di figure dirigenziali, senior management e ruoli executive attraverso attività mirate di headhunting e direct sourcing sul mercato.</p>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3>Ricerca Specialistica</h3>
-                                <p>Identificazione e valutazione di professionisti qualificati nei settori Servizi Finanziari, Fintech, Banking, Risk & Compliance, Audit, Funzioni Aziendali e Vendite B2B.</p>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3>Ricerca Transfrontaliera</h3>
-                                <p>Supporto alle aziende europee nella ricerca di profili specialistici oltre i confini nazionali, combinando direct sourcing, talent mapping e valutazione strutturata dei candidati.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 3. COPERTURA EUROPEA -->
-                <section id="coverage-it" class="section-block">
-                    <h2 class="section-title">A Supporto delle Aziende nell'Unione Europea</h2>
-                    <p>Con sede a Milano, Marco Lia Search affianca le aziende nell'Unione Europea con servizi di ricerca specialistica ed executive search. Il nostro approccio unisce ricerca mirata, direct sourcing e valutazione personalizzata per individuare i professionisti più idonei alle esigenze di ciascuna organizzazione.</p>
-
-                    <div class="coverage-grid">
-                        <div class="coverage-card">
-                            <span class="coverage-badge">MERCATO DI RIFERIMENTO</span>
-                            <h3>Italia</h3>
-                            <p>Supporto di recruiting per aziende operanti in Italia, con focus su Vendite B2B, funzioni aziendali e posizioni specialistiche.</p>
-                        </div>
-
-                        <div class="coverage-card">
-                            <span class="coverage-badge">BANCA, COMPLIANCE & AUDIT</span>
-                            <h3>Lussemburgo</h3>
-                            <p>Supporto di ricerca specialistica per istituzioni finanziarie, società di servizi professionali ed imprese alla ricerca di profili esperti in finanza, compliance ed audit.</p>
-                        </div>
-
-                        <div class="coverage-card">
-                            <span class="coverage-badge">FINTECH, PAGAMENTI & VENDITE B2B</span>
-                            <h3>Paesi Bassi</h3>
-                            <p>Affiancamento alle aziende internazionali alla ricerca di talenti commerciali, specialisti del settore finanziario e profili tecnici altamente qualificati.</p>
-                        </div>
-                    </div>
-
-                    <p class="coverage-disclaimer">Le opzioni di ricerca vengono valutate singolarmente in base ai requisiti del ruolo, alla localizzazione e alle competenze di mercato richieste.</p>
-                </section>
-
-                <!-- 4. COME FUNZIONA -->
-                <section id="how-it-works-it" class="section-block">
-                    <h2 class="section-title">Come funziona</h2>
-
-                    <div class="process-timeline">
-                        <div class="process-node">
-                            <div class="process-number">01</div>
-                            <div class="process-content">
-                                <h3>Analisi</h3>
-                                <p>Definiamo la posizione, il contesto, le priorità e il profilo ideale.</p>
-                            </div>
-                        </div>
-
-                        <div class="process-node">
-                            <div class="process-number">02</div>
-                            <div class="process-content">
-                                <h3>Mappatura</h3>
-                                <p>Identifico aziende e profili rilevanti, senza affidarmi solo alle candidature agli annunci.</p>
-                            </div>
-                        </div>
-
-                        <div class="process-node">
-                            <div class="process-number">03</div>
-                            <div class="process-content">
-                                <h3>Contatto</h3>
-                                <p>Contatto direttamente i professionisti individuati, compresi quelli che non stanno cercando attivamente.</p>
-                            </div>
-                        </div>
-
-                        <div class="process-node">
-                            <div class="process-number">04</div>
-                            <div class="process-content">
-                                <h3>Valutazione</h3>
-                                <p>Approfondisco esperienza, motivazioni, aspettative e compatibilità con la posizione. Se qualcosa nel CV non è chiaro, lo verifico direttamente con il candidato.</p>
-                            </div>
-                        </div>
-
-                        <div class="process-node">
-                            <div class="process-number">05</div>
-                            <div class="process-content">
-                                <h3>Presentazione</h3>
-                                <div class="featured-box" style="margin: 10px 0 12px 0;">
-                                    <p>Non mi limito a inviare CV.</p>
-                                </div>
-                                <p>Per ogni candidato che consiglio, evidenzio esperienza rilevante, competenze trasferibili, motivazioni ed eventuali aspetti da approfondire.</p>
-                                <div class="featured-box" style="margin: 12px 0 0 0;">
-                                    <p>Le presento persone che ritengo valga la pena incontrare.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="process-node">
-                            <div class="process-number">06</div>
-                            <div class="process-content">
-                                <h3>Supporto</h3>
-                                <p>Rimango coinvolto durante colloqui, feedback e offerta, mantenendo la comunicazione tra azienda e candidato.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 5. DICONO DI ME -->
-                <section id="recommendations-it" class="section-block">
-                    <h2 class="section-title">Dicono di me</h2>
-                    <p style="margin-bottom:25px;">Alcune raccomandazioni ricevute da manager e professionisti con cui ho collaborato.</p>
-
-                    <div class="recommendation-featured">
-                        <span class="recommendation-category">CLIENT PARTNERSHIP</span>
-                        <p class="recommendation-quote">“Marco stands out for his excellent communication and collaboration skills. Over the years, he has consistently demonstrated the ability to align stakeholders, manage expectations, and keep complex recruitment processes running smoothly.”</p>
-                        <p class="recommendation-author">Dimitrios Panagiotopoulos</p>
-                        <p class="recommendation-role">Business Continuity Manager at MITA (Malta Information Technology Agency)</p>
-                        <span class="recommendation-source">LinkedIn Recommendation</span>
-                    </div>
-
-                    <div class="grid-3">
-                        <div class="recommendation-card">
-                            <div>
-                                <span class="recommendation-category">RICERCA DIRETTA</span>
-                                <p class="recommendation-quote" style="font-size:0.95rem;">“A few months ago Marco approached me regarding a position that could interest me, and while I was not actively seeking to change jobs, I am very thankful I gave him a chance and now working at a new workplace.”</p>
-                            </div>
-                            <div>
-                                <p class="recommendation-author">Kirsten Abela</p>
-                                <p class="recommendation-role">Financial Risk Manager at Izola Bank plc</p>
-                                <span class="recommendation-source">LinkedIn Recommendation</span>
-                            </div>
-                        </div>
-
-                        <div class="recommendation-card">
-                            <div>
-                                <span class="recommendation-category">PROCESSO DI SELEZIONE</span>
-                                <p class="recommendation-quote" style="font-size:0.95rem;">“Marco has been instrumental in helping me secure the opportunity with the largest bank in Valletta. In fact, he was the one who reached out to me regarding the opening and managed the entire hiring process with the highest level of professionalism.”</p>
-                            </div>
-                            <div>
-                                <p class="recommendation-author">Somdeep Sen</p>
-                                <p class="recommendation-role">Senior Manager, Model Validation Unit</p>
-                                <span class="recommendation-source">LinkedIn Recommendation</span>
-                            </div>
-                        </div>
-
-                        <div class="recommendation-card">
-                            <div>
-                                <span class="recommendation-category">PROFESSIONALITÀ</span>
-                                <p class="recommendation-quote" style="font-size:0.95rem;">“I can highly recommend Marco for his professionalism, reliability, and consistently high standards. I have had the pleasure of knowing him as part of a placement, during which he demonstrated clear communication, constant availability, and unwavering support.”</p>
-                            </div>
-                            <div>
-                                <p class="recommendation-author">Pierluigi De Lillo</p>
-                                <p class="recommendation-role">Head of Legal at Stellantis Insurance</p>
-                                <span class="recommendation-source">LinkedIn Recommendation</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="text-align:center; margin-top:30px;">
-                        <a href="https://www.linkedin.com/in/marco-lia-liam0001/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noopener noreferrer" class="card-link">VEDI TUTTE LE RACCOMANDAZIONI SU LINKEDIN →</a>
-                    </div>
-                </section>
-
-                <!-- 6. PERCHÉ LAVORARE CON ME -->
-                <section id="why-this-model-it" class="section-block">
-                    <h2 class="section-title">Perché Lavorare Con Marco Lia Search</h2>
-                    <p>Le esigenze di recruiting cambiano e l'accesso ai talenti giusti richiede un approccio flessibile e focalizzato.</p>
-                    <p>Potrebbe avere bisogno di supporto per una ricerca complessa oggi senza dover assumere un altro recruiter interno per tutto l'anno. È qui che il mio modello indipendente offre valore concreto.</p>
-
-                    <div class="card" style="margin:30px 0; padding:35px;">
-                        <h3 style="font-size:1.3rem; margin-bottom:12px;">Supporto di recruiting flessibile a Success-Fee</h3>
-                        <p>Posso affiancare il Suo team HR/Talent Acquisition o supportare direttamente la direzione aziendale. Un unico interlocutore dedicato dall'analisi iniziale fino alla presentazione del candidato.</p>
-
-                        <div class="commercial-highlights">
-                            <div class="commercial-card">
-                                <h4>NESSUN COSTO INIZIALE</h4>
-                            </div>
-                            <div class="commercial-card">
-                                <h4>NESSUN RETAINER PER AVVIARE LA RICERCA</h4>
-                            </div>
-                            <div class="commercial-card">
-                                <h4>PAGAMENTO SOLO A SUCCESSIVA ASSUNZIONE</h4>
-                            </div>
-                        </div>
-
-                        <p style="margin-top:15px; font-size:0.92rem; margin-bottom:0;">Il compenso è dovuto solo in caso di assunzione di un candidato da me presentato, con pagamento entro 30 giorni di calendario dalla data di inizio, secondo i termini concordati.</p>
-                    </div>
-
-                    <div class="card" style="padding:30px;">
-                        <h3 style="font-size:1.2rem; margin-bottom:15px;">I Vantaggi Chiave</h3>
-                        <ul style="list-style-type: none; color: var(--text-muted); line-height: 2;">
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> <strong>14 anni di esperienza</strong> nel settore Bancario e dei Servizi Finanziari.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> <strong>5 anni di attività</strong> specializzata in Recruitment ed Executive Search.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> Metodologia di <strong>Direct Sourcing ed Headhunting</strong> proattivo sui mercati.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> Esperienza diretta nella valutazione di <strong>profili senior ed executive</strong>.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> Valutazione personalizzata e report dettagliati sui candidati.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> Esperienza in ricerche internazionali e transfrontaliere nell'UE.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> Modello d'affari a success-fee senza rischi finanziari iniziali.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> Comunicazione diretta senza filtri con un consulente senior dedicato.</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <!-- 7. CHI SONO -->
-                <section id="about-it" class="section-block">
-                    <h2 class="section-title">Chi sono</h2>
-                    <div class="about-wrapper">
-                        <img src="logo-avatar.jpg" alt="Marco Lia" class="section-mobile-avatar" onerror="this.style.display='none'">
-                        <div>
-                            <h3 style="color:var(--gold); font-size:1.6rem; margin-bottom:4px;">Marco Lia</h3>
-                            <p style="color:var(--gold-light); font-size:0.92rem; font-weight:600; margin-bottom:20px; text-transform:uppercase; letter-spacing:0.05em;">Consulente indipendente di Executive Search & Recruitment | Milano</p>
-                            <p>Sono un recruiter indipendente con sede a Milano e 5 anni di esperienza nel Recruitment e nell'Executive Search.</p>
-                            <p>Mi occupo di ricerca diretta, headhunting, talent mapping, valutazione dei candidati, analisi di mercato, benchmarking retributivo e gestione delle offerte per posizioni dirigenziali e specialistiche.</p>
-                            <p>Prima del recruiting, ho lavorato per 14 anni nel settore bancario e dei servizi finanziari, sviluppando una solida competenza in contesti complessi dove riservatezza, gestione degli stakeholder e processi strutturati sono fondamentali.</p>
-                            <p>Oggi unisco questa esperienza di settore alle metodologie di executive search per aiutare le aziende a raggiungere professionisti altamente qualificati nell'Unione Europea che difficilmente rispondono a tradizionali annunci di lavoro.</p>
-                            <p>Lavoro professionalmente in italiano e inglese su ricerche in Italia e transfrontaliere.</p>
-
-                            <!-- RECOGNITION & MEDIA -->
-                            <div style="margin-top: 35px; border-top: 1px solid var(--border-light); padding-top: 25px;">
-                                <h4 style="color: var(--gold); font-size: 1.25rem; margin-bottom: 18px;">Riconoscimenti e Media</h4>
-                                <div class="media-list">
-                                    <div class="media-item">
-                                        <div class="media-meta">WhosWho.mt | 15 Ottobre 2026 | Tim Diacono</div>
-                                        <h4>Traffic Driving More Jobseekers Away from Office-Based Roles – Maltese Recruiter</h4>
-                                        <p>Featured in WhosWho.mt discussing how commuting challenges and workplace flexibility influence recruitment, candidate decisions and talent retention in Malta.</p>
-                                        <a href="https://whoswho.mt/en/traffic-driving-more-jobseekers-away-from-office-based-roles-maltese-recruiter" target="_blank" rel="noopener noreferrer" class="card-link">READ ARTICLE →</a>
-                                    </div>
-                                    <div class="media-item">
-                                        <div class="media-meta">FreeMalta | Maggio 2026</div>
-                                        <h4>The People Who Move Malta — BOARDROOM, FreeMalta</h4>
-                                        <p>Presente nell'edizione di maggio 2026 di BOARDROOM di FreeMalta, dedicata a dieci professionisti del recruitment a Malta.</p>
-                                        <a href="https://freemalta.com/news/boardroom/top-10-recruiters-malta-2026" target="_blank" rel="noopener noreferrer" class="card-link">LEGGI L'ARTICOLO →</a>
-                                    </div>
-                                    <div class="media-item">
-                                        <div class="media-meta">Malta Insider | 2025</div>
-                                        <h4>Malta Insider, 2025</h4>
-                                        <p>Riconosciuto da Malta Insider tra i Top 15 Recruiters in Malta.</p>
-                                        <a href="https://www.linkedin.com/posts/maltainsider_top-15-recruiters-in-malta-activity-7401962260623040512-vQHH/" target="_blank" rel="noopener noreferrer" class="card-link">VEDI →</a>
-                                    </div>
-                                    <div class="media-item">
-                                        <div class="media-meta">MaltaCEOs.mt | 2026</div>
-                                        <h4>MaltaCEOs.mt, 2026</h4>
-                                        <p>Intervistato sui trend del mercato del lavoro e sulle decisioni dei candidati.</p>
-                                        <a href="https://maltaceos.mt/commute-over-cash-maltese-recruiters-say-traffic-becoming-a-deal-breaker-for-job-seekers/" target="_blank" rel="noopener noreferrer" class="card-link">LEGGI →</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="motto-tag">Let's Do Better.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 8. CONTATTI -->
-                <section id="contact-it" class="section-block">
-                    <h2 class="section-title">Parliamo della Sua ricerca</h2>
-                    <p>Sta assumendo e vuole capire se posso aiutarLa? Mi racconti la posizione. Senza alcun impegno ad avviare una ricerca.</p>
-
-                    <div class="grid-2" style="margin-top:30px;">
-                        <div>
-                            <div class="card" style="margin-bottom:20px;">
-                                <h3>Contatti diretti</h3>
-                                <p><strong>Marco Lia</strong><br>Consulente indipendente di Executive Search<br>Milano, Italia</p>
-                                <p style="margin-top:15px; margin-bottom:15px;">
-                                    <strong>Email:</strong> marco.talent.26@gmail.com<br>
-                                    <strong>Telefono / WhatsApp:</strong> +39 352 0378 133
-                                </p>
-                                <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
-                                    <a href="mailto:marco.talent.26@gmail.com" class="btn-cta-nav" style="padding:10px 18px; font-size:0.7rem;">EMAIL</a>
-                                    <a href="https://wa.me/393520378133" target="_blank" rel="noopener noreferrer" class="btn-cta-nav" style="padding:10px 18px; font-size:0.7rem;">WHATSAPP</a>
-                                    <a href="https://www.linkedin.com/in/marco-lia-liam0001" target="_blank" rel="noopener noreferrer" class="btn-cta-nav" style="padding:10px 18px; font-size:0.7rem; background:transparent; color:var(--gold-light); border:1px solid var(--gold);">LINKEDIN</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-card">
-                            <form action="https://formspree.io/f/mknpqqle" method="POST">
-                                <div class="form-group">
-                                    <label>Nome e cognome</label>
-                                    <input type="text" name="name" required placeholder="Il Suo nome">
-                                </div>
-                                <div class="form-group">
-                                    <label>Azienda</label>
-                                    <input type="text" name="company" required placeholder="Nome azienda">
-                                </div>
-                                <div class="form-group">
-                                    <label>Email aziendale</label>
-                                    <input type="email" name="email" required placeholder="nome@azienda.com">
-                                </div>
-                                <div class="form-group">
-                                    <label>Telefono (opzionale)</label>
-                                    <input type="tel" name="phone" placeholder="+39 ...">
-                                </div>
-                                <div class="form-group">
-                                    <label>Posizione / esigenza di recruiting</label>
-                                    <input type="text" name="position" placeholder="es. Direttore Vendite, Compliance Officer, Senior Auditor">
-                                </div>
-                                <div class="form-group">
-                                    <label>Messaggio</label>
-                                    <textarea name="message" rows="4" required placeholder="Descriva brevemente la figura ricercata..."></textarea>
-                                </div>
-                                <button type="submit" class="btn-submit btn-form-submit">PARLIAMO DELLA SUA RICERCA</button>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-
-            <!-- ==================== ENGLISH CONTENT ==================== -->
-            <div id="lang-en" class="lang-block active">
-
-                <!-- 1. HOME — HERO & NAVIGATION -->
-                <section id="home" class="section-block">
-                    <div class="hero">
-                        <h1>Executive Search & Specialist Recruitment Across Europe</h1>
-                        <p class="hero-sub">Independent recruitment consultancy based in Milan, supporting businesses across the European Union with specialist and senior-level talent acquisition. Financial Services, Fintech, Risk & Compliance, Audit and B2B Sales.</p>
-                        
-                        <div class="hero-highlight">
-                            Success-Fee Recruitment | No Upfront Fees | Cross-Border Talent Search
-                        </div>
-
-                        <p class="hero-desc">Finding the right person takes time, especially when the strongest candidates aren't actively looking. I map the market, approach potential candidates directly, assess them and present the people worth meeting.</p>
-                        
-                        <div class="hero-action">
-                            <a href="#contact" class="btn-cta-nav btn-main-cta" style="display:inline-block; padding:14px 32px;">DISCUSS A RECRUITMENT REQUIREMENT</a>
-                            <span class="hero-statement">Recruitment support when you need it, without adding another permanent recruiter.</span>
-                        </div>
-                    </div>
-
-                    <div class="grid-3">
-                        <div class="card">
-                            <div>
-                                <h3>Our Services</h3>
-                                <p>Executive Search, Specialist Recruitment and Cross-Border Search.</p>
-                            </div>
-                            <a href="#services" class="card-link">DISCOVER SERVICES →</a>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3>European Coverage</h3>
-                                <p>Targeted recruitment support across Italy, Luxembourg, and the Netherlands.</p>
-                            </div>
-                            <a href="#coverage" class="card-link">VIEW EU COVERAGE →</a>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3>Why Work With Me</h3>
-                                <p>14 years Financial Services background, 5 years Executive Search expertise.</p>
-                            </div>
-                            <a href="#why-this-model" class="card-link">WHY CHOOSE US →</a>
-                        </div>
-                    </div>
-
-                    <div class="card" style="margin-top:30px; text-align:center; padding:45px 30px;">
-                        <h2 class="end-cta-heading" style="font-size:1.8rem; margin-bottom:15px;">Hiring Specialist or Senior-Level Talent?</h2>
-                        <p style="margin-bottom:25px; max-width:680px; margin-left:auto; margin-right:auto;">Whether you're recruiting locally or exploring talent across European markets, let's discuss how Marco Lia Search can support your search.</p>
-                        <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-                            <a href="#contact" class="btn-cta-nav btn-main-cta" style="display:inline-block; padding:14px 32px;">DISCUSS A RECRUITMENT REQUIREMENT</a>
-                            <a href="#contact" class="btn-cta-nav" style="display:inline-block; padding:14px 32px; background:transparent; color:var(--gold-light); border:1px solid var(--gold);">CONTACT MARCO LIA</a>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 2. SERVICES -->
-                <section id="services" class="section-block">
-                    <h2 class="section-title">Our Services</h2>
-                    <p style="margin-bottom:30px;">Delivering flexible, success-driven recruitment solutions designed to identify and evaluate high-caliber professionals.</p>
-
-                    <div class="grid-3">
-                        <div class="card">
-                            <div>
-                                <h3>Executive Search</h3>
-                                <p>Recruitment of senior management, leadership and executive professionals through targeted headhunting and direct sourcing.</p>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3>Specialist Recruitment</h3>
-                                <p>Identification and assessment of qualified professionals in Financial Services, Fintech, Banking, Risk & Compliance, Audit, Corporate Functions and B2B Sales.</p>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3>Cross-Border Recruitment</h3>
-                                <p>Supporting EU-based companies with specialist searches across national borders, using direct sourcing, talent mapping and structured candidate assessment.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 3. EUROPEAN COVERAGE -->
-                <section id="coverage" class="section-block">
-                    <h2 class="section-title">Supporting Businesses Across the European Union</h2>
-                    <p>Based in Milan, Marco Lia Search supports companies across the European Union with specialist recruitment and executive search. Our approach combines targeted research, direct sourcing and personalised candidate assessment to identify professionals suited to each organisation's needs.</p>
-
-                    <div class="coverage-grid">
-                        <div class="coverage-card">
-                            <span class="coverage-badge">OUR HOME MARKET</span>
-                            <h3>Italy</h3>
-                            <p>Recruitment support for Italian businesses, including B2B Sales, Corporate functions and specialist positions.</p>
-                        </div>
-
-                        <div class="coverage-card">
-                            <span class="coverage-badge">BANKING, COMPLIANCE & AUDIT</span>
-                            <h3>Luxembourg</h3>
-                            <p>Specialist recruitment support for financial institutions, professional services firms and businesses seeking experienced finance, compliance and audit professionals.</p>
-                        </div>
-
-                        <div class="coverage-card">
-                            <span class="coverage-badge">FINTECH, PAYMENTS & B2B SALES</span>
-                            <h3>Netherlands</h3>
-                            <p>Supporting international businesses seeking commercial, financial services and specialist talent.</p>
-                        </div>
-                    </div>
-
-                    <p class="coverage-disclaimer">Recruitment assignments are considered individually based on role requirements, location and market expertise.</p>
-                </section>
-
-                <!-- 4. HOW IT WORKS -->
-                <section id="how-it-works" class="section-block">
-                    <h2 class="section-title">How It Works</h2>
-
-                    <div class="process-timeline">
-                        <div class="process-node">
-                            <div class="process-number">01</div>
-                            <div class="process-content">
-                                <h3>Understand</h3>
-                                <p>We define the role, context, priorities and the type of person you're looking for.</p>
-                            </div>
-                        </div>
-
-                        <div class="process-node">
-                            <div class="process-number">02</div>
-                            <div class="process-content">
-                                <h3>Map</h3>
-                                <p>I identify relevant companies and potential candidates rather than relying only on applications.</p>
-                            </div>
-                        </div>
-
-                        <div class="process-node">
-                            <div class="process-number">03</div>
-                            <div class="process-content">
-                                <h3>Approach</h3>
-                                <p>I contact potential candidates directly, including professionals who aren't actively looking.</p>
-                            </div>
-                        </div>
-
-                        <div class="process-node">
-                            <div class="process-number">04</div>
-                            <div class="process-content">
-                                <h3>Assess</h3>
-                                <p>I explore their experience, motivations, expectations and potential fit. If something isn't clear from the CV, I ask rather than assume.</p>
-                            </div>
-                        </div>
-
-                        <div class="process-node">
-                            <div class="process-number">05</div>
-                            <div class="process-content">
-                                <h3>Present</h3>
-                                <div class="featured-box" style="margin: 10px 0 12px 0;">
-                                    <p>I don't simply send CVs.</p>
-                                </div>
-                                <p>For each candidate I recommend, I highlight relevant experience, transferable skills, motivations and any points worth exploring.</p>
-                                <div class="featured-box" style="margin: 12px 0 0 0;">
-                                    <p>I present people I believe are worth meeting.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="process-node">
-                            <div class="process-number">06</div>
-                            <div class="process-content">
-                                <h3>Support</h3>
-                                <p>I remain involved through interviews, feedback and offer discussions, maintaining communication between client and candidate.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 5. WHAT PEOPLE SAY -->
-                <section id="recommendations" class="section-block">
-                    <h2 class="section-title">What People Say</h2>
-                    <p style="margin-bottom:25px;">Selected recommendations from managers and professionals I've worked with.</p>
-
-                    <div class="recommendation-featured">
-                        <span class="recommendation-category">CLIENT PARTNERSHIP</span>
-                        <p class="recommendation-quote">“Marco stands out for his excellent communication and collaboration skills. Over the years, he has consistently demonstrated the ability to align stakeholders, manage expectations, and keep complex recruitment processes running smoothly.”</p>
-                        <p class="recommendation-author">Dimitrios Panagiotopoulos</p>
-                        <p class="recommendation-role">Business Continuity Manager at MITA (Malta Information Technology Agency)</p>
-                        <span class="recommendation-source">LinkedIn Recommendation</span>
-                    </div>
-
-                    <div class="grid-3">
-                        <div class="recommendation-card">
-                            <div>
-                                <span class="recommendation-category">DIRECT SEARCH</span>
-                                <p class="recommendation-quote" style="font-size:0.95rem;">“A few months ago Marco approached me regarding a position that could interest me, and while I was not actively seeking to change jobs, I am very thankful I gave him a chance and now working at a new workplace.”</p>
-                            </div>
-                            <div>
-                                <p class="recommendation-author">Kirsten Abela</p>
-                                <p class="recommendation-role">Financial Risk Manager at Izola Bank plc</p>
-                                <span class="recommendation-source">LinkedIn Recommendation</span>
-                            </div>
-                        </div>
-
-                        <div class="recommendation-card">
-                            <div>
-                                <span class="recommendation-category">RECRUITMENT PROCESS</span>
-                                <p class="recommendation-quote" style="font-size:0.95rem;">“Marco has been instrumental in helping me secure the opportunity with the largest bank in Valletta. In fact, he was the one who reached out to me regarding the opening and managed the entire hiring process with the highest level of professionalism.”</p>
-                            </div>
-                            <div>
-                                <p class="recommendation-author">Somdeep Sen</p>
-                                <p class="recommendation-role">Senior Manager, Model Validation Unit</p>
-                                <span class="recommendation-source">LinkedIn Recommendation</span>
-                            </div>
-                        </div>
-
-                        <div class="recommendation-card">
-                            <div>
-                                <span class="recommendation-category">PROFESSIONALISM</span>
-                                <p class="recommendation-quote" style="font-size:0.95rem;">“I can highly recommend Marco for his professionalism, reliability, and consistently high standards. I have had the pleasure of knowing him as part of a placement, during which he demonstrated clear communication, constant availability, and unwavering support.”</p>
-                            </div>
-                            <div>
-                                <p class="recommendation-author">Pierluigi De Lillo</p>
-                                <p class="recommendation-role">Head of Legal at Stellantis Insurance</p>
-                                <span class="recommendation-source">LinkedIn Recommendation</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="text-align:center; margin-top:30px;">
-                        <a href="https://www.linkedin.com/in/marco-lia-liam0001/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noopener noreferrer" class="card-link">VIEW ALL RECOMMENDATIONS ON LINKEDIN →</a>
-                    </div>
-                </section>
-
-                <!-- 6. Why Work With Me -->
-                <section id="why-this-model" class="section-block">
-                    <h2 class="section-title">Why Work With Marco Lia Search?</h2>
-                    <p>Recruitment needs change, and finding specialist talent requires focused execution.</p>
-                    <p>You may need dedicated support for a complex search today without justifying another internal recruiter all year. That's where an agile, independent advisory partner brings immediate value.</p>
-
-                    <div class="card" style="margin:30px 0; padding:35px;">
-                        <h3 style="font-size:1.3rem; margin-bottom:12px;">Success-Fee Recruitment Support</h3>
-                        <p>I work alongside your HR/Talent Acquisition team or directly with corporate leadership. You get a single point of contact handling everything from market research to candidate evaluation.</p>
-
-                        <div class="commercial-highlights">
-                            <div class="commercial-card">
-                                <h4>NO UPFRONT RECRUITMENT FEE</h4>
-                            </div>
-                            <div class="commercial-card">
-                                <h4>NO RETAINER TO START THE SEARCH</h4>
-                            </div>
-                            <div class="commercial-card">
-                                <h4>NO FEE UNLESS YOU HIRE A CANDIDATE I INTRODUCE</h4>
-                            </div>
-                        </div>
-
-                        <p style="margin-top:15px; font-size:0.92rem; margin-bottom:0;">My fee is payable only if you hire a candidate I introduce, with payment due within 30 calendar days of their start date, according to the agreed terms.</p>
-                    </div>
-
-                    <div class="card" style="padding:30px;">
-                        <h3 style="font-size:1.2rem; margin-bottom:15px;">Key Advantages</h3>
-                        <ul style="list-style-type: none; color: var(--text-muted); line-height: 2;">
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> <strong>14 years of background</strong> in Banking and Financial Services.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> <strong>5 years of dedicated experience</strong> in Recruitment and Executive Search.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> Direct sourcing and <strong>proactive headhunting</strong> methodology.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> Hands-on experience assessing <strong>senior and executive candidates</strong>.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> Personalised recruitment, screening and candidate evaluation.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> International search experience across EU markets.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> Success-fee model with zero financial risk to initiate a search.</li>
-                            <li style="position:relative; padding-left:20px;"><span style="position:absolute; left:0; color:var(--gold);">—</span> Direct communication with an independent senior consultant.</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <!-- 7. WHO I AM -->
-                <section id="about" class="section-block">
-                    <h2 class="section-title">Who I Am</h2>
-                    <div class="about-wrapper">
-                        <img src="logo-avatar.jpg" alt="Marco Lia" class="section-mobile-avatar" onerror="this.style.display='none'">
-                        <div>
-                            <h3 style="color:var(--gold); font-size:1.6rem; margin-bottom:4px;">Marco Lia</h3>
-                            <p style="color:var(--gold-light); font-size:0.92rem; font-weight:600; margin-bottom:20px; text-transform:uppercase; letter-spacing:0.05em;">Independent Executive Search & Recruitment Consultant | Milan</p>
-                            <p>I'm an independent recruiter based in Milan with 5 years of Recruitment and Executive Search experience.</p>
-                            <p>My work includes direct search, headhunting, talent mapping, candidate assessment, market intelligence, salary benchmarking and offer management for senior and specialist roles.</p>
-                            <p>Before recruitment, I spent 14 years in Banking and Financial Services, working in environments where confidentiality, stakeholder management and structured processes matter.</p>
-                            <p>Today, I combine that sector experience with executive search methodology to help companies reach qualified professionals across the European Union who may not respond to traditional job advertising.</p>
-                            <p>I work professionally in English and Italian, supporting searches in Italy and internationally across the EU.</p>
-
-                            <!-- RECOGNITION & MEDIA -->
-                            <div style="margin-top: 35px; border-top: 1px solid var(--border-light); padding-top: 25px;">
-                                <h4 style="color: var(--gold); font-size: 1.25rem; margin-bottom: 18px;">Recognition & Media</h4>
-                                <div class="media-list">
-                                    <div class="media-item">
-                                        <div class="media-meta">WhosWho.mt | 15 October 2026 | Tim Diacono</div>
-                                        <h4>Traffic Driving More Jobseekers Away from Office-Based Roles – Maltese Recruiter</h4>
-                                        <p>Featured in WhosWho.mt discussing how commuting challenges and workplace flexibility influence recruitment, candidate decisions and talent retention in Malta.</p>
-                                        <a href="https://whoswho.mt/en/traffic-driving-more-jobseekers-away-from-office-based-roles-maltese-recruiter" target="_blank" rel="noopener noreferrer" class="card-link">READ ARTICLE →</a>
-                                    </div>
-                                    <div class="media-item">
-                                        <div class="media-meta">FreeMalta | May 2026</div>
-                                        <h4>The People Who Move Malta — BOARDROOM, FreeMalta</h4>
-                                        <p>Featured in FreeMalta's May 2026 BOARDROOM edition profiling ten recruitment professionals in Malta.</p>
-                                        <a href="https://freemalta.com/news/boardroom/top-10-recruiters-malta-2026" target="_blank" rel="noopener noreferrer" class="card-link">READ THE FEATURE →</a>
-                                    </div>
-                                    <div class="media-item">
-                                        <div class="media-meta">Malta Insider | 2025</div>
-                                        <h4>Malta Insider, 2025</h4>
-                                        <p>Named among the Top 15 Recruiters in Malta.</p>
-                                        <a href="https://www.linkedin.com/posts/maltainsider_top-15-recruiters-in-malta-activity-7401962260623040512-vQHH/" target="_blank" rel="noopener noreferrer" class="card-link">VIEW →</a>
-                                    </div>
-                                    <div class="media-item">
-                                        <div class="media-meta">MaltaCEOs.mt | 2026</div>
-                                        <h4>MaltaCEOs.mt, 2026</h4>
-                                        <p>Quoted on recruitment market trends and candidate decision-making.</p>
-                                        <a href="https://maltaceos.mt/commute-over-cash-maltese-recruiters-say-traffic-becoming-a-deal-breaker-for-job-seekers/" target="_blank" rel="noopener noreferrer" class="card-link">READ →</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="motto-tag">Let's Do Better.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 8. CONTACT -->
-                <section id="contact" class="section-block">
-                    <h2 class="section-title">Let's Discuss Your Search</h2>
-                    <p>Hiring and want to see whether I can help? Tell me about the role. There's no obligation to start a search.</p>
-
-                    <div class="grid-2" style="margin-top:30px;">
-                        <div>
-                            <div class="card" style="margin-bottom:20px;">
-                                <h3>Direct Contact</h3>
-                                <p><strong>Marco Lia</strong><br>Independent Executive Search Consultant<br>Milan, Italy</p>
-                                <p style="margin-top:15px; margin-bottom:15px;">
-                                    <strong>Email:</strong> marco.talent.26@gmail.com<br>
-                                    <strong>Phone / WhatsApp:</strong> +39 352 0378 133
-                                </p>
-                                <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
-                                    <a href="mailto:marco.talent.26@gmail.com" class="btn-cta-nav" style="padding:10px 18px; font-size:0.7rem;">EMAIL</a>
-                                    <a href="https://wa.me/393520378133" target="_blank" rel="noopener noreferrer" class="btn-cta-nav" style="padding:10px 18px; font-size:0.7rem;">WHATSAPP</a>
-                                    <a href="https://www.linkedin.com/in/marco-lia-liam0001" target="_blank" rel="noopener noreferrer" class="btn-cta-nav" style="padding:10px 18px; font-size:0.7rem; background:transparent; color:var(--gold-light); border:1px solid var(--gold);">LINKEDIN</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-card">
-                            <form action="https://formspree.io/f/mknpqqle" method="POST">
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input type="text" name="name" required placeholder="Your full name">
-                                </div>
-                                <div class="form-group">
-                                    <label>Company</label>
-                                    <input type="text" name="company" required placeholder="Company name">
-                                </div>
-                                <div class="form-group">
-                                    <label>Work Email</label>
-                                    <input type="email" name="email" required placeholder="name@company.com">
-                                </div>
-                                <div class="form-group">
-                                    <label>Telephone (optional)</label>
-                                    <input type="tel" name="phone" placeholder="+39 ...">
-                                </div>
-                                <div class="form-group">
-                                    <label>Position / Hiring Need</label>
-                                    <input type="text" name="position" placeholder="e.g. Sales Director, Compliance Officer, Senior Auditor">
-                                </div>
-                                <div class="form-group">
-                                    <label>Message</label>
-                                    <textarea name="message" rows="4" required placeholder="Briefly describe the role or recruitment need..."></textarea>
-                                </div>
-                                <button type="submit" class="btn-submit btn-form-submit">DISCUSS A RECRUITMENT REQUIREMENT</button>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-
-        </main>
-
-        <!-- FOOTER -->
-        <footer>
-            <p><strong>MARCO LIA SEARCH</strong> | Independent Executive Search & Recruitment Consultant | Milan, Italy</p>
-            <p class="footer-vat">P.IVA: 14682580965</p>
-        </footer>
+    <nav id="navigation">
+      <a href="#home" data-href-en="#home" data-href-it="#home-it" data-en="Home" data-it="Home">Home</a>
+      <a href="#services" data-href-en="#services" data-href-it="#services-it" data-en="Services" data-it="Servizi">Services</a>
+      <a href="#coverage" data-href-en="#coverage" data-href-it="#coverage-it" data-en="European Coverage" data-it="Copertura Europea">European Coverage</a>
+      <a href="#process" data-href-en="#process" data-href-it="#process-it" data-en="How It Works" data-it="Come Funziona">How It Works</a>
+      <a href="#recommendations" data-href-en="#recommendations" data-href-it="#recommendations-it" data-en="What People Say" data-it="Dicono di me">What People Say</a>
+      <a href="#why" data-href-en="#why" data-href-it="#why-it" data-en="Why Work With Me" data-it="Perché Lavorare Con Me">Why Work With Me</a>
+      <a href="#about" data-href-en="#about" data-href-it="#about-it" data-en="Who I Am" data-it="Chi Sono">Who I Am</a>
+      <a href="#contact" data-href-en="#contact" data-href-it="#contact-it" data-en="Contact" data-it="Contatti">Contact</a>
+    </nav>
+  </div>
+  <div class="sidebar-footer">
+    <a class="btn main-cta" href="#contact">DISCUSS YOUR RECRUITMENT NEEDS</a>
+  </div>
+</aside>
+
+<div class="main-wrapper">
+<main class="container">
+
+<!-- ENGLISH -->
+<div id="lang-en" class="lang-block active">
+
+<section id="home">
+  <div class="hero">
+    <h1>Executive Search & Specialist Recruitment Across Europe</h1>
+    <p class="hero-sub">Independent recruitment consultancy based in Milan, supporting businesses across the European Union with specialist and senior-level talent acquisition.</p>
+    <div class="highlight">Success-Fee Recruitment | No Upfront Fees | Cross-Border Talent Search</div>
+    <p>Finding the right person takes time, especially when the strongest candidates aren't actively looking. I map the market, approach potential candidates directly, assess them and present the people worth meeting.</p>
+    <a href="#contact" class="btn">DISCUSS A RECRUITMENT REQUIREMENT</a>
+  </div>
+  <div class="grid grid-3">
+    <div class="card"><h3>Our Services</h3><p>Executive Search, Specialist Recruitment and Cross-Border Search.</p><a href="#services">Discover Services →</a></div>
+    <div class="card"><h3>European Coverage</h3><p>Targeted recruitment support across Italy, Luxembourg and the Netherlands.</p><a href="#coverage">View Coverage →</a></div>
+    <div class="card"><h3>Why Work With Me</h3><p>14 years in Financial Services and 5 years in recruitment and executive search.</p><a href="#why">Discover More →</a></div>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+  <p>Flexible, success-driven recruitment solutions designed to identify and evaluate qualified professionals.</p>
+  <div class="grid grid-3">
+    <div class="card"><h3>Executive Search</h3><p>Recruitment of senior management, leadership and executive professionals through targeted headhunting and direct sourcing.</p></div>
+    <div class="card"><h3>Specialist Recruitment</h3><p>Identification and assessment of professionals in Financial Services, Fintech, Banking, Risk & Compliance, Audit, Corporate Functions and B2B Sales.</p></div>
+    <div class="card"><h3>Cross-Border Recruitment</h3><p>Supporting EU-based companies with specialist searches across national borders through direct sourcing, talent mapping and structured candidate assessment.</p></div>
+  </div>
+</section>
+
+<section id="coverage">
+  <h2 class="section-title">Supporting Businesses Across the European Union</h2>
+  <p>Based in Milan, Marco Lia Search combines targeted research, direct sourcing and personalised candidate assessment to support businesses across European markets.</p>
+  <div class="grid grid-3">
+    <div class="card"><span class="small-label">HOME MARKET</span><h3>Italy</h3><p>B2B Sales, corporate functions and specialist positions.</p></div>
+    <div class="card"><span class="small-label">BANKING & COMPLIANCE</span><h3>Luxembourg</h3><p>Finance, compliance, audit and professional services recruitment.</p></div>
+    <div class="card"><span class="small-label">FINTECH & PAYMENTS</span><h3>Netherlands</h3><p>Commercial, financial services and specialist talent.</p></div>
+  </div>
+  <p style="margin-top:20px;font-style:italic">Recruitment assignments are considered individually based on role requirements, location and market expertise.</p>
+</section>
+
+<section id="process">
+  <h2 class="section-title">How It Works</h2>
+  <div class="grid grid-2">
+    <div class="card process"><div class="process-number">01</div><div><h3>Understand</h3><p>Define the role, context, priorities and ideal candidate.</p></div></div>
+    <div class="card process"><div class="process-number">02</div><div><h3>Map</h3><p>Identify relevant companies and professionals beyond job applications.</p></div></div>
+    <div class="card process"><div class="process-number">03</div><div><h3>Approach</h3><p>Contact candidates directly, including those not actively seeking new roles.</p></div></div>
+    <div class="card process"><div class="process-number">04</div><div><h3>Assess</h3><p>Explore experience, motivations, expectations and suitability.</p></div></div>
+    <div class="card process"><div class="process-number">05</div><div><h3>Present</h3><p>Provide selected profiles with relevant experience, transferable skills and assessment insights. I don't simply send CVs.</p></div></div>
+    <div class="card process"><div class="process-number">06</div><div><h3>Support</h3><p>Remain involved through interviews, feedback and offer discussions.</p></div></div>
+  </div>
+</section>
+
+<section id="recommendations">
+  <h2 class="section-title">What People Say</h2>
+  <p>Selected recommendations from managers and professionals I've worked with.</p>
+  <div class="featured">
+    <span class="small-label">CLIENT PARTNERSHIP</span>
+    <p class="quote">“Marco stands out for his excellent communication and collaboration skills. Over the years, he has consistently demonstrated the ability to align stakeholders, manage expectations, and keep complex recruitment processes running smoothly.”</p>
+    <div class="author">Dimitrios Panagiotopoulos</div>
+    <p>Business Continuity Manager at MITA (Malta Information Technology Agency)</p>
+  </div>
+  <div class="grid grid-3" style="margin-top:22px">
+    <div class="card"><span class="small-label">DIRECT SEARCH</span><p class="quote">“A few months ago Marco approached me regarding a position that could interest me, and while I was not actively seeking to change jobs, I am very thankful I gave him a chance and now working at a new workplace.”</p><div class="author">Kirsten Abela</div><p>Financial Risk Manager at Izola Bank plc</p></div>
+    <div class="card"><span class="small-label">RECRUITMENT PROCESS</span><p class="quote">“Marco has been instrumental in helping me secure the opportunity with the largest bank in Valletta. In fact, he was the one who reached out to me regarding the opening and managed the entire hiring process with the highest level of professionalism.”</p><div class="author">Somdeep Sen</div><p>Senior Manager, Model Validation Unit</p></div>
+    <div class="card"><span class="small-label">PROFESSIONALISM</span><p class="quote">“I can highly recommend Marco for his professionalism, reliability, and consistently high standards.”</p><div class="author">Pierluigi De Lillo</div><p>Head of Legal at Stellantis Insurance</p></div>
+  </div>
+  <p style="margin-top:25px"><a href="https://www.linkedin.com/in/marco-lia-liam0001/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noopener noreferrer">View LinkedIn Recommendations →</a></p>
+</section>
+
+<section id="why">
+  <h2 class="section-title">Why Work With Marco Lia Search</h2>
+  <p>Recruitment needs change, and accessing the right talent requires a flexible, focused approach.</p>
+  <div class="featured">
+    <h3>Flexible, Success-Fee Recruitment Support</h3>
+    <p>I work alongside HR and Talent Acquisition teams or directly with business leaders, providing one dedicated point of contact throughout the recruitment process.</p>
+    <div class="grid grid-3">
+      <div class="card"><strong>NO UPFRONT FEES</strong></div>
+      <div class="card"><strong>NO RETAINER TO START</strong></div>
+      <div class="card"><strong>PAYMENT ONLY ON SUCCESSFUL HIRE</strong></div>
     </div>
+    <p style="margin-top:20px">Fees are payable only following the hiring of a candidate I introduce, within 30 calendar days of their start date, subject to agreed terms.</p>
+  </div>
+  <div class="card" style="margin-top:22px">
+    <h3>Key Advantages</h3>
+    <p>14 years of Banking and Financial Services experience; 5 years in recruitment and executive search; proactive direct sourcing; senior-level candidate assessment; cross-border EU experience; and direct communication with a dedicated independent consultant.</p>
+  </div>
+</section>
 
-    <!-- JAVASCRIPT DIRECTIVE -->
-    <script>
-        let currentLang = 'it';
+<section id="about">
+  <h2 class="section-title">Who I Am</h2>
+  <div class="card">
+    <h3>Marco Lia</h3>
+    <span class="small-label">INDEPENDENT EXECUTIVE SEARCH & RECRUITMENT CONSULTANT | MILAN</span>
+    <p>I am an independent recruiter based in Milan with 5 years of experience in recruitment and executive search.</p>
+    <p>My work includes direct sourcing, headhunting, talent mapping, candidate assessment, market research, salary benchmarking and offer management.</p>
+    <p>Before recruitment, I spent 14 years in Banking and Financial Services, developing experience in complex environments where confidentiality, stakeholder management and structured processes are essential.</p>
+    <p>I work professionally in English and Italian on domestic and cross-border assignments.</p>
+    <h3 style="margin-top:30px">Media & Recognition</h3>
+    <div class="media-item"><span class="small-label">WHOSWHO.MT | OCTOBER 2026</span><p>Traffic Driving More Jobseekers Away from Office-Based Roles – Maltese Recruiter</p><a href="https://whoswho.mt/en/traffic-driving-more-jobseekers-away-from-office-based-roles-maltese-recruiter" target="_blank" rel="noopener noreferrer">Read Article →</a></div>
+    <div class="media-item"><span class="small-label">FREEMALTA | MAY 2026</span><p>The People Who Move Malta — BOARDROOM</p><a href="https://freemalta.com/news/boardroom/top-10-recruiters-malta-2026" target="_blank" rel="noopener noreferrer">Read Article →</a></div>
+    <div class="media-item"><span class="small-label">MALTA INSIDER | 2025</span><p>Top 15 Recruiters in Malta</p><a href="https://www.linkedin.com/posts/maltainsider_top-15-recruiters-in-malta-activity-7401962260623040512-vQHH/" target="_blank" rel="noopener noreferrer">View →</a></div>
+    <div class="media-item"><span class="small-label">MALTACEOS.MT | 2026</span><p>Interviewed on recruitment trends and candidate decisions.</p><a href="https://maltaceos.mt/commute-over-cash-maltese-recruiters-say-traffic-becoming-a-deal-breaker-for-job-seekers/" target="_blank" rel="noopener noreferrer">Read Article →</a></div>
+    <h3 style="margin-top:25px">Let's Do Better.</h3>
+  </div>
+</section>
 
-        const stickyCtaTranslations = {
-            en: "DISCOVER MORE",
-            it: "SCOPRI DI PIÙ"
-        };
+<section id="contact">
+  <h2 class="section-title">Let's Discuss Your Recruitment Needs</h2>
+  <p>Hiring and wondering whether I can help? Tell me about the role. There is no obligation to start a search.</p>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>Direct Contact</h3>
+      <p><strong>Marco Lia</strong><br>Independent Executive Search Consultant<br>Milan, Italy</p>
+      <p>Email: marco.talent.26@gmail.com<br>Phone / WhatsApp: +39 352 0378 133</p>
+      <p><a href="mailto:marco.talent.26@gmail.com">Email</a> · <a href="https://wa.me/393520378133" target="_blank" rel="noopener noreferrer">WhatsApp</a> · <a href="https://www.linkedin.com/in/marco-lia-liam0001" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </div>
+    <div class="form-card">
+      <form action="https://formspree.io/f/mknpqqle" method="POST">
+        <div class="form-group"><label for="en-name">Full Name</label><input id="en-name" name="name" required></div>
+        <div class="form-group"><label for="en-company">Company</label><input id="en-company" name="company" required></div>
+        <div class="form-group"><label for="en-email">Business Email</label><input id="en-email" name="email" type="email" required></div>
+        <div class="form-group"><label for="en-phone">Phone (Optional)</label><input id="en-phone" name="phone" type="tel"></div>
+        <div class="form-group"><label for="en-position">Recruitment Requirement</label><input id="en-position" name="position"></div>
+        <div class="form-group"><label for="en-message">Message</label><textarea id="en-message" name="message" rows="4" required></textarea></div>
+        <button class="btn" type="submit">SEND ENQUIRY</button>
+      </form>
+    </div>
+  </div>
+</section>
+</div>
 
-        const translations = {
-            en: {
-                mainCta: "DISCUSS A RECRUITMENT REQUIREMENT",
-                endCtaHeading: "Hiring Specialist or Senior-Level Talent?",
-                formSubmit: "DISCUSS A RECRUITMENT REQUIREMENT"
-            },
-            it: {
-                mainCta: "PARLIAMO DELLA SUA RICERCA",
-                endCtaHeading: "Cerca Talent Specialist o di Livello Senior?",
-                formSubmit: "PARLIAMO DELLA SUA RICERCA"
-            }
-        };
+<!-- ITALIAN -->
+<div id="lang-it" class="lang-block">
 
-        function switchLang(lang) {
-            currentLang = lang;
-            const enBlock = document.getElementById('lang-en');
-            const itBlock = document.getElementById('lang-it');
-            const buttons = document.querySelectorAll('.lang-btn');
-            const mainCtaButtons = document.querySelectorAll('.btn-main-cta');
-            const endCtaHeadings = document.querySelectorAll('.end-cta-heading');
-            const formSubmitButtons = document.querySelectorAll('.btn-form-submit');
-            const mobileBrandLogo = document.getElementById('mobile-brand-logo');
-            const sidebarBrandLogo = document.getElementById('sidebar-brand-logo');
-            const mobileStickyBtn = document.getElementById('mobile-sticky-link');
+<section id="home-it">
+  <div class="hero">
+    <h1>Executive Search & Ricerca Specialistica in Europa</h1>
+    <p class="hero-sub">Consulenza indipendente di ricerca e selezione con sede a Milano, al servizio delle aziende dell'Unione Europea per l'acquisizione di talenti specializzati e senior.</p>
+    <div class="highlight">Selezione a Success-Fee | Nessun Costo Iniziale | Ricerca Transfrontaliera</div>
+    <p>Trovare la persona giusta richiede tempo, soprattutto quando i migliori professionisti non cercano attivamente. Mappo il mercato, contatto direttamente i candidati, li valuto e presento i profili che vale la pena incontrare.</p>
+    <a href="#contact-it" class="btn">PARLIAMO DELLA SUA RICERCA</a>
+  </div>
+  <div class="grid grid-3">
+    <div class="card"><h3>I Nostri Servizi</h3><p>Executive Search, Ricerca Specialistica e Selezione Transfrontaliera.</p><a href="#services-it">Scopri i Servizi →</a></div>
+    <div class="card"><h3>Copertura Europea</h3><p>Supporto mirato in Italia, Lussemburgo e Paesi Bassi.</p><a href="#coverage-it">Copertura Europea →</a></div>
+    <div class="card"><h3>Perché Scegliermi</h3><p>14 anni nei Servizi Finanziari e 5 anni nel recruiting ed executive search.</p><a href="#why-it">Scopri di Più →</a></div>
+  </div>
+</section>
 
-            buttons.forEach(btn => btn.classList.remove('active'));
+<section id="services-it">
+  <h2 class="section-title">I Nostri Servizi</h2>
+  <p>Soluzioni di recruiting flessibili e orientate ai risultati per identificare e valutare professionisti qualificati.</p>
+  <div class="grid grid-3">
+    <div class="card"><h3>Executive Search</h3><p>Ricerca di dirigenti, senior manager e figure executive attraverso headhunting e direct sourcing mirato.</p></div>
+    <div class="card"><h3>Ricerca Specialistica</h3><p>Selezione di professionisti in Servizi Finanziari, Fintech, Banking, Risk & Compliance, Audit, Funzioni Aziendali e Vendite B2B.</p></div>
+    <div class="card"><h3>Ricerca Transfrontaliera</h3><p>Supporto alle aziende europee attraverso ricerca diretta, talent mapping e valutazione strutturata dei candidati.</p></div>
+  </div>
+</section>
 
-            if (lang === 'en') {
-                if (itBlock) itBlock.classList.remove('active');
-                if (enBlock) enBlock.classList.add('active');
-                if (buttons[1]) buttons[1].classList.add('active');
-                
-                document.querySelectorAll('.nav-link').forEach(link => {
-                    link.textContent = link.getAttribute('data-en');
-                    link.setAttribute('href', link.getAttribute('data-href-en'));
-                });
+<section id="coverage-it">
+  <h2 class="section-title">A Supporto delle Aziende nell'Unione Europea</h2>
+  <p>Con sede a Milano, Marco Lia Search unisce ricerca mirata, direct sourcing e valutazione personalizzata per supportare le aziende europee.</p>
+  <div class="grid grid-3">
+    <div class="card"><span class="small-label">MERCATO DI RIFERIMENTO</span><h3>Italia</h3><p>Vendite B2B, funzioni aziendali e posizioni specialistiche.</p></div>
+    <div class="card"><span class="small-label">BANCA E COMPLIANCE</span><h3>Lussemburgo</h3><p>Finanza, compliance, audit e servizi professionali.</p></div>
+    <div class="card"><span class="small-label">FINTECH E PAGAMENTI</span><h3>Paesi Bassi</h3><p>Profili commerciali, finanziari e specialistici.</p></div>
+  </div>
+  <p style="margin-top:20px;font-style:italic">Le ricerche vengono valutate singolarmente in base al ruolo, alla localizzazione e alle competenze di mercato richieste.</p>
+</section>
 
-                if (mobileBrandLogo) mobileBrandLogo.setAttribute('href', '#home');
-                if (sidebarBrandLogo) sidebarBrandLogo.setAttribute('href', '#home');
+<section id="process-it">
+  <h2 class="section-title">Come Funziona</h2>
+  <div class="grid grid-2">
+    <div class="card process"><div class="process-number">01</div><div><h3>Analisi</h3><p>Definisco posizione, contesto, priorità e profilo ideale.</p></div></div>
+    <div class="card process"><div class="process-number">02</div><div><h3>Mappatura</h3><p>Identifico aziende e professionisti rilevanti oltre alle candidature spontanee.</p></div></div>
+    <div class="card process"><div class="process-number">03</div><div><h3>Contatto</h3><p>Contatto direttamente anche professionisti che non cercano attivamente.</p></div></div>
+    <div class="card process"><div class="process-number">04</div><div><h3>Valutazione</h3><p>Approfondisco esperienza, motivazioni, aspettative e compatibilità.</p></div></div>
+    <div class="card process"><div class="process-number">05</div><div><h3>Presentazione</h3><p>Presento profili selezionati con informazioni su esperienza, competenze e aspetti da approfondire. Non mi limito a inviare CV.</p></div></div>
+    <div class="card process"><div class="process-number">06</div><div><h3>Supporto</h3><p>Rimango coinvolto durante colloqui, feedback e offerte.</p></div></div>
+  </div>
+</section>
 
-                mainCtaButtons.forEach(btn => {
-                    btn.textContent = translations.en.mainCta;
-                    btn.setAttribute('href', '#contact');
-                });
-                
-                if (mobileStickyBtn) {
-                    mobileStickyBtn.textContent = stickyCtaTranslations.en;
-                }
+<section id="recommendations-it">
+  <h2 class="section-title">Dicono di Me</h2>
+  <p>Alcune raccomandazioni ricevute da manager e professionisti con cui ho collaborato.</p>
+  <div class="featured">
+    <span class="small-label">COLLABORAZIONE CON I CLIENTI</span>
+    <p class="quote">“Marco stands out for his excellent communication and collaboration skills. Over the years, he has consistently demonstrated the ability to align stakeholders, manage expectations, and keep complex recruitment processes running smoothly.”</p>
+    <div class="author">Dimitrios Panagiotopoulos</div>
+    <p>Business Continuity Manager at MITA</p>
+  </div>
+  <div class="grid grid-3" style="margin-top:22px">
+    <div class="card"><span class="small-label">RICERCA DIRETTA</span><p class="quote">“A few months ago Marco approached me regarding a position that could interest me, and while I was not actively seeking to change jobs, I am very thankful I gave him a chance and now working at a new workplace.”</p><div class="author">Kirsten Abela</div><p>Financial Risk Manager at Izola Bank plc</p></div>
+    <div class="card"><span class="small-label">PROCESSO DI SELEZIONE</span><p class="quote">“Marco has been instrumental in helping me secure the opportunity with the largest bank in Valletta. In fact, he was the one who reached out to me regarding the opening and managed the entire hiring process with the highest level of professionalism.”</p><div class="author">Somdeep Sen</div><p>Senior Manager, Model Validation Unit</p></div>
+    <div class="card"><span class="small-label">PROFESSIONALITÀ</span><p class="quote">“I can highly recommend Marco for his professionalism, reliability, and consistently high standards.”</p><div class="author">Pierluigi De Lillo</div><p>Head of Legal at Stellantis Insurance</p></div>
+  </div>
+  <p style="margin-top:25px"><a href="https://www.linkedin.com/in/marco-lia-liam0001/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noopener noreferrer">Vedi le Raccomandazioni su LinkedIn →</a></p>
+</section>
 
-                endCtaHeadings.forEach(h => {
-                    h.textContent = translations.en.endCtaHeading;
-                });
-                formSubmitButtons.forEach(btn => {
-                    btn.textContent = translations.en.formSubmit;
-                });
+<section id="why-it">
+  <h2 class="section-title">Perché Lavorare Con Marco Lia Search</h2>
+  <p>Le esigenze di recruiting cambiano e trovare i talenti giusti richiede un approccio flessibile e mirato.</p>
+  <div class="featured">
+    <h3>Supporto Flessibile a Success-Fee</h3>
+    <p>Affianco team HR e Talent Acquisition o direttamente la direzione aziendale, offrendo un interlocutore dedicato durante tutto il processo.</p>
+    <div class="grid grid-3">
+      <div class="card"><strong>NESSUN COSTO INIZIALE</strong></div>
+      <div class="card"><strong>NESSUN RETAINER</strong></div>
+      <div class="card"><strong>PAGAMENTO SOLO AD ASSUNZIONE AVVENUTA</strong></div>
+    </div>
+    <p style="margin-top:20px">Il compenso è dovuto solo in caso di assunzione di un candidato presentato, entro 30 giorni di calendario dalla data di inizio, secondo i termini concordati.</p>
+  </div>
+  <div class="card" style="margin-top:22px">
+    <h3>I Vantaggi Chiave</h3>
+    <p>14 anni di esperienza bancaria e finanziaria; 5 anni nel recruiting e nell'executive search; direct sourcing proattivo; valutazione di profili senior; esperienza transfrontaliera nell'UE e comunicazione diretta con un consulente indipendente.</p>
+  </div>
+</section>
 
-            } else {
-                if (enBlock) enBlock.classList.remove('active');
-                if (itBlock) itBlock.classList.add('active');
-                if (buttons[0]) buttons[0].classList.add('active');
-                
-                document.querySelectorAll('.nav-link').forEach(link => {
-                    link.textContent = link.getAttribute('data-it');
-                    link.setAttribute('href', link.getAttribute('data-href-it'));
-                });
+<section id="about-it">
+  <h2 class="section-title">Chi Sono</h2>
+  <div class="card">
+    <h3>Marco Lia</h3>
+    <span class="small-label">CONSULENTE INDIPENDENTE DI EXECUTIVE SEARCH & RECRUITMENT | MILANO</span>
+    <p>Sono un recruiter indipendente con sede a Milano e 5 anni di esperienza nel recruitment e nell'executive search.</p>
+    <p>Mi occupo di ricerca diretta, headhunting, talent mapping, valutazione dei candidati, analisi di mercato, benchmarking retributivo e gestione delle offerte.</p>
+    <p>Prima del recruiting, ho lavorato per 14 anni nel settore bancario e dei servizi finanziari, sviluppando esperienza in contesti complessi dove riservatezza e gestione degli stakeholder sono fondamentali.</p>
+    <p>Lavoro professionalmente in italiano e inglese su ricerche nazionali e transfrontaliere.</p>
+    <h3 style="margin-top:30px">Riconoscimenti e Media</h3>
+    <div class="media-item"><span class="small-label">WHOSWHO.MT | OTTOBRE 2026</span><p>Traffic Driving More Jobseekers Away from Office-Based Roles – Maltese Recruiter</p><a href="https://whoswho.mt/en/traffic-driving-more-jobseekers-away-from-office-based-roles-maltese-recruiter" target="_blank" rel="noopener noreferrer">Leggi l'Articolo →</a></div>
+    <div class="media-item"><span class="small-label">FREEMALTA | MAGGIO 2026</span><p>The People Who Move Malta — BOARDROOM</p><a href="https://freemalta.com/news/boardroom/top-10-recruiters-malta-2026" target="_blank" rel="noopener noreferrer">Leggi l'Articolo →</a></div>
+    <div class="media-item"><span class="small-label">MALTA INSIDER | 2025</span><p>Top 15 Recruiters in Malta</p><a href="https://www.linkedin.com/posts/maltainsider_top-15-recruiters-in-malta-activity-7401962260623040512-vQHH/" target="_blank" rel="noopener noreferrer">Vedi →</a></div>
+    <div class="media-item"><span class="small-label">MALTACEOS.MT | 2026</span><p>Intervista sui trend del mercato del lavoro e sulle decisioni dei candidati.</p><a href="https://maltaceos.mt/commute-over-cash-maltese-recruiters-say-traffic-becoming-a-deal-breaker-for-job-seekers/" target="_blank" rel="noopener noreferrer">Leggi →</a></div>
+    <h3 style="margin-top:25px">Let's Do Better.</h3>
+  </div>
+</section>
 
-                if (mobileBrandLogo) mobileBrandLogo.setAttribute('href', '#home-it');
-                if (sidebarBrandLogo) sidebarBrandLogo.setAttribute('href', '#home-it');
+<section id="contact-it">
+  <h2 class="section-title">Parliamo della Sua Ricerca</h2>
+  <p>Sta assumendo e vuole capire se posso aiutarLa? Mi racconti la posizione, senza alcun impegno ad avviare una ricerca.</p>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>Contatti Diretti</h3>
+      <p><strong>Marco Lia</strong><br>Consulente indipendente di Executive Search<br>Milano, Italia</p>
+      <p>Email: marco.talent.26@gmail.com<br>Telefono / WhatsApp: +39 352 0378 133</p>
+      <p><a href="mailto:marco.talent.26@gmail.com">Email</a> · <a href="https://wa.me/393520378133" target="_blank" rel="noopener noreferrer">WhatsApp</a> · <a href="https://www.linkedin.com/in/marco-lia-liam0001" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </div>
+    <div class="form-card">
+      <form action="https://formspree.io/f/mknpqqle" method="POST">
+        <div class="form-group"><label for="it-name">Nome e Cognome</label><input id="it-name" name="name" required></div>
+        <div class="form-group"><label for="it-company">Azienda</label><input id="it-company" name="company" required></div>
+        <div class="form-group"><label for="it-email">Email Aziendale</label><input id="it-email" name="email" type="email" required></div>
+        <div class="form-group"><label for="it-phone">Telefono (Opzionale)</label><input id="it-phone" name="phone" type="tel"></div>
+        <div class="form-group"><label for="it-position">Posizione Ricercata</label><input id="it-position" name="position"></div>
+        <div class="form-group"><label for="it-message">Messaggio</label><textarea id="it-message" name="message" rows="4" required></textarea></div>
+        <button class="btn" type="submit">INVIA RICHIESTA</button>
+      </form>
+    </div>
+  </div>
+</section>
+</div>
 
-                mainCtaButtons.forEach(btn => {
-                    btn.textContent = translations.it.mainCta;
-                    btn.setAttribute('href', '#contact-it');
-                });
+</main>
 
-                if (mobileStickyBtn) {
-                    mobileStickyBtn.textContent = stickyCtaTranslations.it;
-                }
+<footer>
+  <p>© <span id="year"></span> Marco Lia Search — Executive Search & Specialist Recruitment</p>
+  <p>Milano, Italia | P. IVA 14682580965</p>
+</footer>
+</div>
 
-                endCtaHeadings.forEach(h => {
-                    h.textContent = translations.it.endCtaHeading;
-                });
-                formSubmitButtons.forEach(btn => {
-                    btn.textContent = translations.it.formSubmit;
-                });
-            }
-        }
+<div class="mobile-cta">
+  <a href="#contact" id="mobile-cta-link" class="btn">DISCUSS YOUR RECRUITMENT NEEDS</a>
+</div>
 
-        function toggleMobileMenu() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('mobile-open');
-        }
+<script>
+(function () {
+  "use strict";
 
-        function closeMobileMenu() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.remove('mobile-open');
-        }
+  let currentLang = "en";
 
-        function discoverMoreNextSection() {
-            const activeBlockId = currentLang === 'it' ? 'lang-it' : 'lang-en';
-            const activeBlock = document.getElementById(activeBlockId);
-            if (!activeBlock) return;
+  function closeMobileMenu() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.remove("mobile-open");
+    document.querySelector(".menu-button")
+      .setAttribute("aria-expanded", "false");
+  }
 
-            const sections = Array.from(activeBlock.querySelectorAll('.section-block'));
-            const scrollPosition = window.scrollY + 120;
+  window.toggleMobileMenu = function () {
+    const sidebar = document.getElementById("sidebar");
+    const isOpen = sidebar.classList.toggle("mobile-open");
+    document.querySelector(".menu-button")
+      .setAttribute("aria-expanded", String(isOpen));
+  };
 
-            let nextSection = null;
-            for (let section of sections) {
-                if (section.offsetTop > scrollPosition) {
-                    nextSection = section;
-                    break;
-                }
-            }
+  window.switchLang = function (lang) {
+    if (lang !== "en" && lang !== "it") return;
+    currentLang = lang;
 
-            if (!nextSection) {
-                const contactId = currentLang === 'it' ? 'contact-it' : 'contact';
-                nextSection = document.getElementById(contactId);
-            }
+    document.documentElement.lang = lang;
 
-            if (nextSection) {
-                nextSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
+    document.querySelectorAll(".lang-block").forEach(block => {
+      const active = block.id === "lang-" + lang;
+      block.classList.toggle("active", active);
+      block.setAttribute("aria-hidden", String(!active));
+      block.inert = !active;
+    });
 
-        document.querySelectorAll('.nav-link, .btn-main-cta').forEach(link => {
-            link.addEventListener('click', () => {
-                closeMobileMenu();
-            });
-        });
+    document.querySelectorAll(".lang-btn").forEach(button => {
+      const active = button.dataset.lang === lang;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
 
-        window.addEventListener('scroll', () => {
-            const activeBlockId = currentLang === 'it' ? 'lang-it' : 'lang-en';
-            const activeBlock = document.getElementById(activeBlockId);
-            if (!activeBlock) return;
+    document.querySelectorAll("#navigation a").forEach(link => {
+      link.textContent = link.dataset[lang];
+      link.href = link.dataset["href" + (lang === "en" ? "En" : "It")];
+    });
 
-            const sections = activeBlock.querySelectorAll('.section-block');
-            let current = '';
+    const home = lang === "en" ? "#home" : "#home-it";
+    const contact = lang === "en" ? "#contact" : "#contact-it";
 
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 150;
-                if (window.scrollY >= sectionTop) {
-                    current = '#' + section.getAttribute('id');
-                }
-            });
+    document.getElementById("sidebar-brand-logo").href = home;
+    document.getElementById("mobile-brand-logo").href = home;
 
-            document.querySelectorAll('.nav-link').forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href') === current) {
-                    a.classList.add('active');
-                }
-            });
-        });
+    const ctaText = lang === "en"
+      ? "DISCUSS YOUR RECRUITMENT NEEDS"
+      : "PARLIAMO DELLA SUA RICERCA";
 
-        document.addEventListener('DOMContentLoaded', () => {
-            switchLang('it');
-        });
-    </script>
+    document.querySelectorAll(".main-cta").forEach(cta => {
+      cta.href = contact;
+      cta.textContent = ctaText;
+    });
+
+    const mobileCta = document.getElementById("mobile-cta-link");
+    mobileCta.href = contact;
+    mobileCta.textContent = ctaText;
+
+    closeMobileMenu();
+
+    // Switching languages returns to the selected homepage.
+    history.replaceState(null, "", location.pathname + location.search + home);
+    window.scrollTo({top:0,behavior:"instant"});
+  };
+
+  document.querySelectorAll("#navigation a").forEach(link => {
+    link.addEventListener("click", closeMobileMenu);
+  });
+
+  document.getElementById("mobile-cta-link")
+    .addEventListener("click", closeMobileMenu);
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+  // English is always the default on a fresh page load.
+  // Preserve explicit links to Italian sections.
+  const italianHash = location.hash.endsWith("-it");
+  const initialLang = italianHash ? "it" : "en";
+
+  // Initialise without overriding the incoming anchor.
+  const originalHash = location.hash;
+  window.switchLang(initialLang);
+
+  if (originalHash && document.getElementById(originalHash.slice(1))) {
+    history.replaceState(null, "", location.pathname + location.search + originalHash);
+    requestAnimationFrame(() => {
+      document.getElementById(originalHash.slice(1)).scrollIntoView();
+    });
+  } else if (!originalHash) {
+    history.replaceState(null, "", location.pathname + location.search);
+  }
+})();
+</script>
 </body>
 </html>

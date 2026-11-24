@@ -1,10 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Marco Lia Search | Executive Search & Specialist Recruitment Europe</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Marco Lia Search | Executive Search &amp; Specialist Recruitment">
+<meta property="og:description" content="Independent recruitment consultancy based in Milan, supporting European employers with direct search and specialist recruitment.">
+<meta property="og:url" content="https://marcolia323.github.io/MarcoLiaSearch/">
 <meta name="description" content="Independent executive search and specialist recruitment consultancy based in Milan, supporting businesses across Europe.">
 <link rel="canonical" href="https://marcolia323.github.io/MarcoLiaSearch/">
 
@@ -308,6 +311,42 @@ footer p { margin:5px; }
 @media(prefers-reduced-motion:reduce) {
   *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; }
 }
+/* Mobile and accessibility refinements */
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+.btn, .lang-btn, .menu-button { min-height:44px; }
+.btn { display:inline-flex; align-items:center; justify-content:center; }
+.form-group input,.form-group textarea { font-size:16px; }
+.card,.form-card,.featured { min-width:0; overflow-wrap:anywhere; }
+.mobile-controls { display:flex; align-items:center; gap:4px; }
+.mobile-controls button { min-width:44px; }
+@media(max-width:900px) {
+  .sidebar:not(.mobile-open) { visibility:hidden; }
+  .sidebar .lang-toggle { display:none; }
+  .mobile-header { padding:0 12px; gap:8px; }
+  .mobile-header > a { font-size:clamp(.76rem,3.4vw,1rem); line-height:1.2; }
+  .mobile-controls .lang-btn { border-radius:3px; }
+  .sidebar nav a { display:flex; align-items:center; min-height:44px; }
+  .container { padding:24px 16px 40px; }
+  .hero { padding:28px 20px; }
+  .hero h1 { font-size:clamp(1.75rem,6vw,2.6rem); }
+  .hero-sub { font-size:1rem; }
+  .card,.featured,.form-card { padding:20px; }
+  .grid { gap:14px; }
+  section { margin-bottom:42px; }
+  .process { grid-template-columns:40px minmax(0,1fr); gap:10px; }
+  .botanical { opacity:.14; filter:none; }
+  .botanical.second { display:none; }
+  .hero .btn,.form-card .btn { width:100%; }
+  .mobile-cta .btn { display:flex; }
+  footer { padding-bottom:calc(100px + env(safe-area-inset-bottom)); }
+  html { scroll-padding-bottom:90px; }
+}
+@media(max-width:360px) {
+  .container { padding-inline:12px; }
+  .mobile-controls { gap:0; }
+  .hero,.card,.featured,.form-card { padding:16px; }
+}
+@media(hover:none) { .card:hover { transform:none; } }
 </style>
 </head>
 
@@ -387,7 +426,7 @@ footer p { margin:5px; }
 
 <header class="mobile-header">
   <a href="#home" id="mobile-brand-logo">MARCO LIA SEARCH</a>
-  <button class="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMobileMenu()">☰</button>
+  <div class="mobile-controls"><button type="button" class="lang-btn" data-lang="en" onclick="switchLang('en')">EN</button><button type="button" class="lang-btn" data-lang="it" onclick="switchLang('it')">IT</button><button aria-controls="sidebar" class="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMobileMenu()">☰</button></div>
 </header>
 
 <aside class="sidebar" id="sidebar">
@@ -413,7 +452,7 @@ footer p { margin:5px; }
     </nav>
   </div>
   <div class="sidebar-footer">
-    <a class="btn main-cta" href="#contact">DISCUSS YOUR RECRUITMENT NEEDS</a>
+    <a class="btn main-cta" href="#contact">Discuss Your Hiring Needs</a>
   </div>
 </aside>
 
@@ -421,7 +460,7 @@ footer p { margin:5px; }
 <main class="container">
 
 <!-- ENGLISH -->
-<div id="lang-en" class="lang-block active">
+<div id="lang-en" class="lang-block active" lang="en">
 
 <section id="home">
   <div class="hero">
@@ -429,17 +468,17 @@ footer p { margin:5px; }
     <p class="hero-sub">Independent recruitment consultancy based in Milan, supporting businesses across the European Union with specialist and senior-level talent acquisition.</p>
     <div class="highlight">Success-Fee Recruitment | No Upfront Fees | Cross-Border Talent Search</div>
     <p>Finding the right person takes time, especially when the strongest candidates aren't actively looking. I map the market, approach potential candidates directly, assess them and present the people worth meeting.</p>
-    <a href="#contact" class="btn">DISCUSS A RECRUITMENT REQUIREMENT</a>
+    <a href="#contact" class="btn">Discuss Your Hiring Needs</a>
   </div>
   <div class="grid grid-3">
-    <div class="card"><h3>Our Services</h3><p>Executive Search, Specialist Recruitment and Cross-Border Search.</p><a href="#services">Discover Services →</a></div>
+    <div class="card"><h3>Recruitment Services</h3><p>Executive Search, Specialist Recruitment and Cross-Border Search.</p><a href="#services">Discover Services →</a></div>
     <div class="card"><h3>European Coverage</h3><p>Targeted recruitment support across Italy, Luxembourg and the Netherlands.</p><a href="#coverage">View Coverage →</a></div>
     <div class="card"><h3>Why Work With Me</h3><p>14 years in Financial Services and 5 years in recruitment and executive search.</p><a href="#why">Discover More →</a></div>
   </div>
 </section>
 
 <section id="services">
-  <h2 class="section-title">Our Services</h2>
+  <h2 class="section-title">Recruitment Services</h2>
   <p>Flexible, success-driven recruitment solutions designed to identify and evaluate qualified professionals.</p>
   <div class="grid grid-3">
     <div class="card"><h3>Executive Search</h3><p>Recruitment of senior management, leadership and executive professionals through targeted headhunting and direct sourcing.</p></div>
@@ -532,15 +571,15 @@ footer p { margin:5px; }
     <div class="card">
       <h3>Direct Contact</h3>
       <p><strong>Marco Lia</strong><br>Independent Executive Search Consultant<br>Milan, Italy</p>
-      <p>Email: marco.talent.26@gmail.com<br>Phone / WhatsApp: +39 352 0378 133</p>
+      <p>Email: <a href="mailto:marco.talent.26@gmail.com">marco.talent.26@gmail.com</a><br>Phone / WhatsApp: <a href="tel:+393520378133">+39 352 0378 133</a></p>
       <p><a href="mailto:marco.talent.26@gmail.com">Email</a> · <a href="https://wa.me/393520378133" target="_blank" rel="noopener noreferrer">WhatsApp</a> · <a href="https://www.linkedin.com/in/marco-lia-liam0001" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </div>
     <div class="form-card">
       <form action="https://formspree.io/f/mknpqqle" method="POST">
-        <div class="form-group"><label for="en-name">Full Name</label><input id="en-name" name="name" required></div>
-        <div class="form-group"><label for="en-company">Company</label><input id="en-company" name="company" required></div>
-        <div class="form-group"><label for="en-email">Business Email</label><input id="en-email" name="email" type="email" required></div>
-        <div class="form-group"><label for="en-phone">Phone (Optional)</label><input id="en-phone" name="phone" type="tel"></div>
+        <div class="form-group"><label for="en-name">Full Name</label><input id="en-name" autocomplete="name" name="name" required></div>
+        <div class="form-group"><label for="en-company">Company</label><input id="en-company" autocomplete="organization" name="company" required></div>
+        <div class="form-group"><label for="en-email">Business Email</label><input id="en-email" autocomplete="email" name="email" type="email" required></div>
+        <div class="form-group"><label for="en-phone">Phone (Optional)</label><input id="en-phone" autocomplete="tel" name="phone" type="tel"></div>
         <div class="form-group"><label for="en-position">Recruitment Requirement</label><input id="en-position" name="position"></div>
         <div class="form-group"><label for="en-message">Message</label><textarea id="en-message" name="message" rows="4" required></textarea></div>
         <button class="btn" type="submit">SEND ENQUIRY</button>
@@ -551,7 +590,7 @@ footer p { margin:5px; }
 </div>
 
 <!-- ITALIAN -->
-<div id="lang-it" class="lang-block">
+<div id="lang-it" class="lang-block" lang="it">
 
 <section id="home-it">
   <div class="hero">
@@ -559,17 +598,17 @@ footer p { margin:5px; }
     <p class="hero-sub">Consulenza indipendente di ricerca e selezione con sede a Milano, al servizio delle aziende dell'Unione Europea per l'acquisizione di talenti specializzati e senior.</p>
     <div class="highlight">Selezione a Success-Fee | Nessun Costo Iniziale | Ricerca Transfrontaliera</div>
     <p>Trovare la persona giusta richiede tempo, soprattutto quando i migliori professionisti non cercano attivamente. Mappo il mercato, contatto direttamente i candidati, li valuto e presento i profili che vale la pena incontrare.</p>
-    <a href="#contact-it" class="btn">PARLIAMO DELLA SUA RICERCA</a>
+    <a href="#contact-it" class="btn">Parliamo della tua ricerca</a>
   </div>
   <div class="grid grid-3">
-    <div class="card"><h3>I Nostri Servizi</h3><p>Executive Search, Ricerca Specialistica e Selezione Transfrontaliera.</p><a href="#services-it">Scopri i Servizi →</a></div>
+    <div class="card"><h3>Servizi di ricerca e selezione</h3><p>Executive Search, Ricerca Specialistica e Selezione Transfrontaliera.</p><a href="#services-it">Scopri i Servizi →</a></div>
     <div class="card"><h3>Copertura Europea</h3><p>Supporto mirato in Italia, Lussemburgo e Paesi Bassi.</p><a href="#coverage-it">Copertura Europea →</a></div>
     <div class="card"><h3>Perché Scegliermi</h3><p>14 anni nei Servizi Finanziari e 5 anni nel recruiting ed executive search.</p><a href="#why-it">Scopri di Più →</a></div>
   </div>
 </section>
 
 <section id="services-it">
-  <h2 class="section-title">I Nostri Servizi</h2>
+  <h2 class="section-title">Servizi di ricerca e selezione</h2>
   <p>Soluzioni di recruiting flessibili e orientate ai risultati per identificare e valutare professionisti qualificati.</p>
   <div class="grid grid-3">
     <div class="card"><h3>Executive Search</h3><p>Ricerca di dirigenti, senior manager e figure executive attraverso headhunting e direct sourcing mirato.</p></div>
@@ -656,21 +695,21 @@ footer p { margin:5px; }
 </section>
 
 <section id="contact-it">
-  <h2 class="section-title">Parliamo della Sua Ricerca</h2>
-  <p>Sta assumendo e vuole capire se posso aiutarLa? Mi racconti la posizione, senza alcun impegno ad avviare una ricerca.</p>
+  <h2 class="section-title">Parliamo della tua ricerca</h2>
+  <p>Stai cercando un nuovo collaboratore? Raccontami le esigenze della tua azienda, senza alcun impegno ad avviare una ricerca.</p>
   <div class="grid grid-2">
     <div class="card">
       <h3>Contatti Diretti</h3>
       <p><strong>Marco Lia</strong><br>Consulente indipendente di Executive Search<br>Milano, Italia</p>
-      <p>Email: marco.talent.26@gmail.com<br>Telefono / WhatsApp: +39 352 0378 133</p>
+      <p>Email: <a href="mailto:marco.talent.26@gmail.com">marco.talent.26@gmail.com</a><br>Telefono / WhatsApp: <a href="tel:+393520378133">+39 352 0378 133</a></p>
       <p><a href="mailto:marco.talent.26@gmail.com">Email</a> · <a href="https://wa.me/393520378133" target="_blank" rel="noopener noreferrer">WhatsApp</a> · <a href="https://www.linkedin.com/in/marco-lia-liam0001" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </div>
     <div class="form-card">
       <form action="https://formspree.io/f/mknpqqle" method="POST">
-        <div class="form-group"><label for="it-name">Nome e Cognome</label><input id="it-name" name="name" required></div>
-        <div class="form-group"><label for="it-company">Azienda</label><input id="it-company" name="company" required></div>
-        <div class="form-group"><label for="it-email">Email Aziendale</label><input id="it-email" name="email" type="email" required></div>
-        <div class="form-group"><label for="it-phone">Telefono (Opzionale)</label><input id="it-phone" name="phone" type="tel"></div>
+        <div class="form-group"><label for="it-name">Nome e Cognome</label><input id="it-name" autocomplete="name" name="name" required></div>
+        <div class="form-group"><label for="it-company">Azienda</label><input id="it-company" autocomplete="organization" name="company" required></div>
+        <div class="form-group"><label for="it-email">Email Aziendale</label><input id="it-email" autocomplete="email" name="email" type="email" required></div>
+        <div class="form-group"><label for="it-phone">Telefono (Opzionale)</label><input id="it-phone" autocomplete="tel" name="phone" type="tel"></div>
         <div class="form-group"><label for="it-position">Posizione Ricercata</label><input id="it-position" name="position"></div>
         <div class="form-group"><label for="it-message">Messaggio</label><textarea id="it-message" name="message" rows="4" required></textarea></div>
         <button class="btn" type="submit">INVIA RICHIESTA</button>
@@ -689,7 +728,7 @@ footer p { margin:5px; }
 </div>
 
 <div class="mobile-cta">
-  <a href="#contact" id="mobile-cta-link" class="btn">DISCUSS YOUR RECRUITMENT NEEDS</a>
+  <a href="#contact" id="mobile-cta-link" class="btn">Discuss Your Hiring Needs</a>
 </div>
 
 <script>
@@ -715,6 +754,7 @@ footer p { margin:5px; }
   window.switchLang = function (lang) {
     if (lang !== "en" && lang !== "it") return;
     currentLang = lang;
+    try { localStorage.setItem("mls-language", lang); } catch (_) {}
 
     document.documentElement.lang = lang;
 
@@ -743,8 +783,8 @@ footer p { margin:5px; }
     document.getElementById("mobile-brand-logo").href = home;
 
     const ctaText = lang === "en"
-      ? "DISCUSS YOUR RECRUITMENT NEEDS"
-      : "PARLIAMO DELLA SUA RICERCA";
+      ? "Discuss Your Hiring Needs"
+      : "Parliamo della tua ricerca";
 
     document.querySelectorAll(".main-cta").forEach(cta => {
       cta.href = contact;
@@ -762,7 +802,12 @@ footer p { margin:5px; }
     window.scrollTo({top:0,behavior:"instant"});
   };
 
-  document.querySelectorAll("#navigation a").forEach(link => {
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && document.getElementById("sidebar").classList.contains("mobile-open")) {
+      closeMobileMenu(); document.querySelector(".menu-button").focus();
+    }
+  });
+  document.querySelectorAll("#navigation a, .sidebar .brand, .sidebar .main-cta").forEach(link => {
     link.addEventListener("click", closeMobileMenu);
   });
 
@@ -775,7 +820,9 @@ footer p { margin:5px; }
   // English is always the default on a fresh page load.
   // Preserve explicit links to Italian sections.
   const italianHash = location.hash.endsWith("-it");
-  const initialLang = italianHash ? "it" : "en";
+  let savedLang = "en";
+  try { savedLang = localStorage.getItem("mls-language") === "it" ? "it" : "en"; } catch (_) {}
+  const initialLang = italianHash ? "it" : location.hash ? "en" : savedLang;
 
   // Initialise without overriding the incoming anchor.
   const originalHash = location.hash;

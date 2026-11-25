@@ -347,6 +347,18 @@ footer p { margin:5px; }
   .hero,.card,.featured,.form-card { padding:16px; }
 }
 @media(hover:none) { .card:hover { transform:none; } }
+
+/* Newsletter feature */
+.newsletter { margin-top:24px; margin-bottom:0; scroll-margin-top:85px; }
+.newsletter-panel { display:grid; grid-template-columns:minmax(0,1fr) minmax(180px, .36fr); align-items:center; gap:24px; padding:30px; border:1px solid var(--border); border-left:3px solid var(--gold); background:linear-gradient(120deg,#10223b,#10182b); border-radius:4px; }
+.newsletter-panel h2 { margin:0 0 12px; color:white; }
+.newsletter-panel p { margin-bottom:12px; }
+.newsletter-action { display:flex; flex-direction:column; gap:10px; align-items:stretch; text-align:center; }
+.newsletter-action small { color:var(--text); font-size:.85rem; line-height:1.5; }
+.newsletter-panel .small-label { margin-bottom:10px; }
+@media(max-width:1100px) { .newsletter-panel { grid-template-columns:minmax(0,1fr); } .newsletter-action { align-items:flex-start; text-align:left; } }
+@media(max-width:900px) { .newsletter-panel { padding:22px 18px; gap:12px; } .newsletter-action { align-items:stretch; text-align:center; } .newsletter-action .btn { width:100%; min-height:48px; } .newsletter { margin-top:18px; } .newsletter-panel h2 { font-size:clamp(1.55rem,5vw,2rem); } .mobile-header > a { min-width:0; } .mobile-controls { flex-shrink:0; } }
+@media(max-width:360px) { .newsletter-panel { padding:16px; } }
 </style>
 </head>
 
@@ -448,6 +460,7 @@ footer p { margin:5px; }
       <a href="#recommendations" data-href-en="#recommendations" data-href-it="#recommendations-it" data-en="What People Say" data-it="Dicono di me">What People Say</a>
       <a href="#why" data-href-en="#why" data-href-it="#why-it" data-en="Why Work With Me" data-it="Perché Lavorare Con Me">Why Work With Me</a>
       <a href="#about" data-href-en="#about" data-href-it="#about-it" data-en="Who I Am" data-it="Chi Sono">Who I Am</a>
+      <a href="#newsletter" data-href-en="#newsletter" data-href-it="#newsletter-it" data-en="Newsletter" data-it="Newsletter">Newsletter</a>
       <a href="#contact" data-href-en="#contact" data-href-it="#contact-it" data-en="Contact" data-it="Contatti">Contact</a>
     </nav>
   </div>
@@ -470,6 +483,21 @@ footer p { margin:5px; }
     <p>Finding the right person takes time, especially when the strongest candidates aren't actively looking. I map the market, approach potential candidates directly, assess them and present the people worth meeting.</p>
     <a href="#contact" class="btn">Discuss Your Hiring Needs</a>
   </div>
+  <section id="newsletter" class="newsletter" aria-labelledby="newsletter-title">
+    <div class="newsletter-panel">
+      <div>
+        <span class="small-label">THE NEWSLETTER BY MARCO LIA</span>
+        <h2 id="newsletter-title" lang="en">Behind the Shortlist</h2>
+        <p>Recruitment, hiring and modern work from a recruiter who believes people should never feel like numbers.</p>
+        <p><strong>First issue: 9 December 2026</strong> · Published every two weeks on LinkedIn.</p>
+      </div>
+      <div class="newsletter-action">
+        <a class="btn btn-outline" href="https://www.linkedin.com/newsletters/behind-the-shortlist-7529137265407836160" target="_blank" rel="noopener noreferrer">Subscribe on LinkedIn ↗</a>
+        <small>A LinkedIn account is required.</small>
+      </div>
+    </div>
+  </section>
+  <div style="height:24px" aria-hidden="true"></div>
   <div class="grid grid-3">
     <div class="card"><h3>Recruitment Services</h3><p>Executive Search, Specialist Recruitment and Cross-Border Search.</p><a href="#services">Discover Services →</a></div>
     <div class="card"><h3>European Coverage</h3><p>Targeted recruitment support across Italy, Luxembourg and the Netherlands.</p><a href="#coverage">View Coverage →</a></div>
@@ -600,6 +628,21 @@ footer p { margin:5px; }
     <p>Trovare la persona giusta richiede tempo, soprattutto quando i migliori professionisti non cercano attivamente. Mappo il mercato, contatto direttamente i candidati, li valuto e presento i profili che vale la pena incontrare.</p>
     <a href="#contact-it" class="btn">Parliamo della tua ricerca</a>
   </div>
+  <section id="newsletter-it" class="newsletter" aria-labelledby="newsletter-title-it">
+    <div class="newsletter-panel">
+      <div>
+        <span class="small-label">LA NEWSLETTER DI MARCO LIA</span>
+        <h2 id="newsletter-title-it" lang="en">Behind the Shortlist</h2>
+        <p>Recruitment, selezione e mondo del lavoro: il punto di vista di un recruiter convinto che le persone non debbano mai sentirsi numeri.</p>
+        <p><strong>Prima uscita: 9 dicembre 2026</strong> · Ogni due settimane su LinkedIn.</p>
+      </div>
+      <div class="newsletter-action">
+        <a class="btn btn-outline" href="https://www.linkedin.com/newsletters/behind-the-shortlist-7529137265407836160" target="_blank" rel="noopener noreferrer">Iscriviti su LinkedIn ↗</a>
+        <small>È necessario un account LinkedIn.</small>
+      </div>
+    </div>
+  </section>
+  <div style="height:24px" aria-hidden="true"></div>
   <div class="grid grid-3">
     <div class="card"><h3>Servizi di ricerca e selezione</h3><p>Executive Search, Ricerca Specialistica e Selezione Transfrontaliera.</p><a href="#services-it">Scopri i Servizi →</a></div>
     <div class="card"><h3>Copertura Europea</h3><p>Supporto mirato in Italia, Lussemburgo e Paesi Bassi.</p><a href="#coverage-it">Copertura Europea →</a></div>
